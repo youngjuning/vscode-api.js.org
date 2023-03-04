@@ -11,7 +11,6 @@ jobs:
       - uses: c-hive/gha-yarn-cache@v2
       - run: yarn install
       - run: yarn build
-      - run: mv googled29fba422c357ff8.html docs/
       - run: mv robots.txt docs/
       - run: mv ads.txt docs/
       - run: node sitemap.js
@@ -20,4 +19,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
-          cname: vscode-api-cn.js.org

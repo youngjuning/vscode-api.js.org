@@ -1,0 +1,8 @@
+{
+  "name": "VS Code API | Visual Studio Code Extension API",
+  "entryPoints": ["./vscode.d.ts"],
+  "theme": "./theme",
+  "out": "docs",
+  "readme": "./README.md",
+  "sort": ["source-order"]
+}

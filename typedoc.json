@@ -1,5 +1,5 @@
 {
-  "name": "VS Code API | Visual Studio Code Extension API",
+  "name": "VS Code API",
   "entryPoints": ["./vscode.d.ts"],
   "theme": "./theme",
   "out": "docs",

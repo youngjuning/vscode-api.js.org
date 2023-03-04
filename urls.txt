@@ -133,9 +133,9 @@ https://youngjuning.js.org/vscode-api/enums/vscode.QuickPickItemKind.html
 https://youngjuning.js.org/vscode-api/enums/vscode.ShellQuoting.html
 https://youngjuning.js.org/vscode-api/enums/vscode.SignatureHelpTriggerKind.html
 https://youngjuning.js.org/vscode-api/enums/vscode.StatusBarAlignment.html
+https://youngjuning.js.org/vscode-api/enums/vscode.SymbolKind.html
 https://youngjuning.js.org/vscode-api/enums/vscode.SymbolTag.html
 https://youngjuning.js.org/vscode-api/enums/vscode.TaskPanelKind.html
-https://youngjuning.js.org/vscode-api/enums/vscode.SymbolKind.html
 https://youngjuning.js.org/vscode-api/enums/vscode.TaskRevealKind.html
 https://youngjuning.js.org/vscode-api/enums/vscode.TaskScope.html
 https://youngjuning.js.org/vscode-api/enums/vscode.TerminalExitReason.html
@@ -152,9 +152,9 @@ https://youngjuning.js.org/vscode-api/enums/vscode.UIKind.html
 https://youngjuning.js.org/vscode-api/enums/vscode.ViewColumn.html
 https://youngjuning.js.org/vscode-api/interfaces/Thenable.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AccessibilityInformation.html
+https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationGetSessionOptions.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationProvider.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationProviderAuthenticationSessionsChangeEvent.html
-https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationGetSessionOptions.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationProviderInformation.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationProviderOptions.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationSession.html
@@ -206,6 +206,7 @@ https://youngjuning.js.org/vscode-api/interfaces/vscode.DebugProtocolMessage.htm
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DebugProtocolSource.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DebugSession.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DebugSessionCustomEvent.html
+https://youngjuning.js.org/vscode-api/interfaces/vscode.DebugSessionOptions.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DeclarationProvider.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DecorationInstanceRenderOptions.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DecorationOptions.html
@@ -222,7 +223,6 @@ https://youngjuning.js.org/vscode-api/interfaces/vscode.DocumentLinkProvider.htm
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DocumentRangeFormattingEditProvider.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DocumentRangeSemanticTokensProvider.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DocumentSemanticTokensProvider.html
-https://youngjuning.js.org/vscode-api/interfaces/vscode.DebugSessionOptions.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DocumentSymbolProvider.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.DocumentSymbolProviderMetadata.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.EnterAction.html

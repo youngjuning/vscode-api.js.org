@@ -1,0 +1,2149 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>&quot;vscode&quot; | VS Code API | Visual Studio Code Extension API</title>
+	<meta name="description" content="VS Code API is a set of JavaScript APIs that you can invoke in your Visual Studio Code extension. This page lists all VS Code APIs available to extension authors.">
+	<meta property="og:site_name" content="VS Code API">
+	<meta property="og:type" content="docs">
+	<meta property="og:url" content="https://youngjuning.js.org/vscode-api/index.html">
+	<meta property="article:tag" content="vscode">
+	<meta property="article:tag" content="vscode api">
+	<meta property="article:tag" content="VS Code API">
+	<meta property="article:tag" content="VS Code Extension API">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="https://code.visualstudio.com/favicon.ico" sizes="128x128">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7962287588031867" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		(function (c, l, a, r, i, t, y) {
+			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+		})(window, document, "clarity", "script", "g38ad9cfrg");
+	</script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4D7WZ6E85W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-4D7WZ6E85W');
+	</script>
+	<style>
+        .github-corner svg {
+            z-index: 1;
+        }
+        .github-corner:hover .octo-arm {
+            animation:octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,100%{transform:rotate(0)}
+            20%,60%{transform:rotate(-25deg)}
+            40%,80%{transform:rotate(10deg)}
+        }
+        @media (max-width:500px) {
+            .github-corner:hover
+            .octo-arm{animation:none}
+            .github-corner .octo-arm{
+                animation:octocat-wave 560ms ease-in-out
+            }
+        }
+        .container-main {
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">VS Code API | Visual Studio Code Extension API</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">VS Code API | Visual Studio Code Extension API</a>
+				</li>
+				<li>
+					<a href="_vscode_.html">&quot;vscode&quot;</a>
+				</li>
+			</ul>
+			<h1>Namespace &quot;vscode&quot;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>索引</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Variables（1）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="_vscode_.html#version" class="tsd-kind-icon">version</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces（249）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.Command.html" class="tsd-kind-icon">Command</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextLine.html" class="tsd-kind-icon">Text<wbr>Line</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextDocument.html" class="tsd-kind-icon">Text<wbr>Document</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextEditorSelectionChangeEvent.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextEditorVisibleRangesChangeEvent.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Visible<wbr>Ranges<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextEditorOptionsChangeEvent.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Options<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextEditorViewColumnChangeEvent.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>View<wbr>Column<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextEditorOptions.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextEditorDecorationType.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Decoration<wbr>Type</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextDocumentShowOptions.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Show<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookEditorSelectionChangeEvent.html" class="tsd-kind-icon">Notebook<wbr>Editor<wbr>Selection<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookEditorVisibleRangesChangeEvent.html" class="tsd-kind-icon">Notebook<wbr>Editor<wbr>Visible<wbr>Ranges<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookDocumentShowOptions.html" class="tsd-kind-icon">Notebook<wbr>Document<wbr>Show<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ThemableDecorationRenderOptions.html" class="tsd-kind-icon">Themable<wbr>Decoration<wbr>Render<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ThemableDecorationAttachmentRenderOptions.html" class="tsd-kind-icon">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DecorationRenderOptions.html" class="tsd-kind-icon">Decoration<wbr>Render<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DecorationOptions.html" class="tsd-kind-icon">Decoration<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ThemableDecorationInstanceRenderOptions.html" class="tsd-kind-icon">Themable<wbr>Decoration<wbr>Instance<wbr>Render<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DecorationInstanceRenderOptions.html" class="tsd-kind-icon">Decoration<wbr>Instance<wbr>Render<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextEditor.html" class="tsd-kind-icon">Text<wbr>Editor</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextEditorEdit.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Edit</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CancellationToken.html" class="tsd-kind-icon">Cancellation<wbr>Token</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.Event.html" class="tsd-kind-icon">Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileSystemWatcher.html" class="tsd-kind-icon">File<wbr>System<wbr>Watcher</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextDocumentContentProvider.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Content<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.QuickPickItem.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Item</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.QuickPickOptions.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WorkspaceFolderPickOptions.html" class="tsd-kind-icon">Workspace<wbr>Folder<wbr>Pick<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.OpenDialogOptions.html" class="tsd-kind-icon">Open<wbr>Dialog<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SaveDialogOptions.html" class="tsd-kind-icon">Save<wbr>Dialog<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.MessageItem.html" class="tsd-kind-icon">Message<wbr>Item</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.MessageOptions.html" class="tsd-kind-icon">Message<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.InputBoxValidationMessage.html" class="tsd-kind-icon">Input<wbr>Box<wbr>Validation<wbr>Message</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.InputBoxOptions.html" class="tsd-kind-icon">Input<wbr>Box<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DocumentFilter.html" class="tsd-kind-icon">Document<wbr>Filter</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CodeActionContext.html" class="tsd-kind-icon">Code<wbr>Action<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.CodeActionProvider.html" class="tsd-kind-icon">Code<wbr>Action<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CodeActionProviderMetadata.html" class="tsd-kind-icon">Code<wbr>Action<wbr>Provider<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.CodeLensProvider.html" class="tsd-kind-icon">Code<wbr>Lens<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DefinitionProvider.html" class="tsd-kind-icon">Definition<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ImplementationProvider.html" class="tsd-kind-icon">Implementation<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TypeDefinitionProvider.html" class="tsd-kind-icon">Type<wbr>Definition<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DeclarationProvider.html" class="tsd-kind-icon">Declaration<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.HoverProvider.html" class="tsd-kind-icon">Hover<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.EvaluatableExpressionProvider.html" class="tsd-kind-icon">Evaluatable<wbr>Expression<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.InlineValueContext.html" class="tsd-kind-icon">Inline<wbr>Value<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.InlineValuesProvider.html" class="tsd-kind-icon">Inline<wbr>Values<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DocumentHighlightProvider.html" class="tsd-kind-icon">Document<wbr>Highlight<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DocumentSymbolProvider.html" class="tsd-kind-icon">Document<wbr>Symbol<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DocumentSymbolProviderMetadata.html" class="tsd-kind-icon">Document<wbr>Symbol<wbr>Provider<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.WorkspaceSymbolProvider.html" class="tsd-kind-icon">Workspace<wbr>Symbol<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ReferenceContext.html" class="tsd-kind-icon">Reference<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ReferenceProvider.html" class="tsd-kind-icon">Reference<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WorkspaceEditEntryMetadata.html" class="tsd-kind-icon">Workspace<wbr>Edit<wbr>Entry<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WorkspaceEditMetadata.html" class="tsd-kind-icon">Workspace<wbr>Edit<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.RenameProvider.html" class="tsd-kind-icon">Rename<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DocumentSemanticTokensProvider.html" class="tsd-kind-icon">Document<wbr>Semantic<wbr>Tokens<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DocumentRangeSemanticTokensProvider.html" class="tsd-kind-icon">Document<wbr>Range<wbr>Semantic<wbr>Tokens<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FormattingOptions.html" class="tsd-kind-icon">Formatting<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DocumentFormattingEditProvider.html" class="tsd-kind-icon">Document<wbr>Formatting<wbr>Edit<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DocumentRangeFormattingEditProvider.html" class="tsd-kind-icon">Document<wbr>Range<wbr>Formatting<wbr>Edit<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.OnTypeFormattingEditProvider.html" class="tsd-kind-icon">On<wbr>Type<wbr>Formatting<wbr>Edit<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SignatureHelpContext.html" class="tsd-kind-icon">Signature<wbr>Help<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SignatureHelpProvider.html" class="tsd-kind-icon">Signature<wbr>Help<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SignatureHelpProviderMetadata.html" class="tsd-kind-icon">Signature<wbr>Help<wbr>Provider<wbr>Metadata</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CompletionItemLabel.html" class="tsd-kind-icon">Completion<wbr>Item<wbr>Label</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CompletionContext.html" class="tsd-kind-icon">Completion<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.CompletionItemProvider.html" class="tsd-kind-icon">Completion<wbr>Item<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.InlineCompletionItemProvider.html" class="tsd-kind-icon">Inline<wbr>Completion<wbr>Item<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.InlineCompletionContext.html" class="tsd-kind-icon">Inline<wbr>Completion<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SelectedCompletionInfo.html" class="tsd-kind-icon">Selected<wbr>Completion<wbr>Info</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.DocumentLinkProvider.html" class="tsd-kind-icon">Document<wbr>Link<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DocumentColorProvider.html" class="tsd-kind-icon">Document<wbr>Color<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.InlayHintsProvider.html" class="tsd-kind-icon">Inlay<wbr>Hints<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FoldingContext.html" class="tsd-kind-icon">Folding<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FoldingRangeProvider.html" class="tsd-kind-icon">Folding<wbr>Range<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SelectionRangeProvider.html" class="tsd-kind-icon">Selection<wbr>Range<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CallHierarchyProvider.html" class="tsd-kind-icon">Call<wbr>Hierarchy<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TypeHierarchyProvider.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.LinkedEditingRangeProvider.html" class="tsd-kind-icon">Linked<wbr>Editing<wbr>Range<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DocumentDropEditProvider.html" class="tsd-kind-icon">Document<wbr>Drop<wbr>Edit<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CommentRule.html" class="tsd-kind-icon">Comment<wbr>Rule</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.IndentationRule.html" class="tsd-kind-icon">Indentation<wbr>Rule</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.EnterAction.html" class="tsd-kind-icon">Enter<wbr>Action</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.OnEnterRule.html" class="tsd-kind-icon">On<wbr>Enter<wbr>Rule</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.LanguageConfiguration.html" class="tsd-kind-icon">Language<wbr>Configuration</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WorkspaceConfiguration.html" class="tsd-kind-icon">Workspace<wbr>Configuration</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.LocationLink.html" class="tsd-kind-icon">Location<wbr>Link</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DiagnosticChangeEvent.html" class="tsd-kind-icon">Diagnostic<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DiagnosticCollection.html" class="tsd-kind-icon">Diagnostic<wbr>Collection</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.LanguageStatusItem.html" class="tsd-kind-icon">Language<wbr>Status<wbr>Item</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.OutputChannel.html" class="tsd-kind-icon">Output<wbr>Channel</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.LogOutputChannel.html" class="tsd-kind-icon">Log<wbr>Output<wbr>Channel</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.AccessibilityInformation.html" class="tsd-kind-icon">Accessibility<wbr>Information</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.StatusBarItem.html" class="tsd-kind-icon">Status<wbr>Bar<wbr>Item</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.Progress.html" class="tsd-kind-icon">Progress</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.Terminal.html" class="tsd-kind-icon">Terminal</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TerminalEditorLocationOptions.html" class="tsd-kind-icon">Terminal<wbr>Editor<wbr>Location<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TerminalSplitLocationOptions.html" class="tsd-kind-icon">Terminal<wbr>Split<wbr>Location<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TerminalState.html" class="tsd-kind-icon">Terminal<wbr>State</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TerminalLinkContext.html" class="tsd-kind-icon">Terminal<wbr>Link<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.TerminalLinkProvider.html" class="tsd-kind-icon">Terminal<wbr>Link<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TerminalProfileProvider.html" class="tsd-kind-icon">Terminal<wbr>Profile<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileDecorationProvider.html" class="tsd-kind-icon">File<wbr>Decoration<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.Extension.html" class="tsd-kind-icon">Extension</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ExtensionContext.html" class="tsd-kind-icon">Extension<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.Memento.html" class="tsd-kind-icon">Memento</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SecretStorageChangeEvent.html" class="tsd-kind-icon">Secret<wbr>Storage<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SecretStorage.html" class="tsd-kind-icon">Secret<wbr>Storage</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ColorTheme.html" class="tsd-kind-icon">Color<wbr>Theme</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TaskPresentationOptions.html" class="tsd-kind-icon">Task<wbr>Presentation<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TaskDefinition.html" class="tsd-kind-icon">Task<wbr>Definition</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ProcessExecutionOptions.html" class="tsd-kind-icon">Process<wbr>Execution<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ShellQuotingOptions.html" class="tsd-kind-icon">Shell<wbr>Quoting<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ShellExecutionOptions.html" class="tsd-kind-icon">Shell<wbr>Execution<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ShellQuotedString.html" class="tsd-kind-icon">Shell<wbr>Quoted<wbr>String</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.RunOptions.html" class="tsd-kind-icon">Run<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.TaskProvider.html" class="tsd-kind-icon">Task<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TaskExecution.html" class="tsd-kind-icon">Task<wbr>Execution</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TaskStartEvent.html" class="tsd-kind-icon">Task<wbr>Start<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TaskEndEvent.html" class="tsd-kind-icon">Task<wbr>End<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TaskProcessStartEvent.html" class="tsd-kind-icon">Task<wbr>Process<wbr>Start<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TaskProcessEndEvent.html" class="tsd-kind-icon">Task<wbr>Process<wbr>End<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TaskFilter.html" class="tsd-kind-icon">Task<wbr>Filter</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileStat.html" class="tsd-kind-icon">File<wbr>Stat</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileChangeEvent.html" class="tsd-kind-icon">File<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileSystemProvider.html" class="tsd-kind-icon">File<wbr>System<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileSystem.html" class="tsd-kind-icon">File<wbr>System</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WebviewPortMapping.html" class="tsd-kind-icon">Webview<wbr>Port<wbr>Mapping</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WebviewOptions.html" class="tsd-kind-icon">Webview<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.Webview.html" class="tsd-kind-icon">Webview</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WebviewPanelOptions.html" class="tsd-kind-icon">Webview<wbr>Panel<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WebviewPanel.html" class="tsd-kind-icon">Webview<wbr>Panel</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WebviewPanelOnDidChangeViewStateEvent.html" class="tsd-kind-icon">Webview<wbr>Panel<wbr>OnDid<wbr>Change<wbr>View<wbr>State<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.WebviewPanelSerializer.html" class="tsd-kind-icon">Webview<wbr>Panel<wbr>Serializer</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WebviewView.html" class="tsd-kind-icon">Webview<wbr>View</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.WebviewViewResolveContext.html" class="tsd-kind-icon">Webview<wbr>View<wbr>Resolve<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WebviewViewProvider.html" class="tsd-kind-icon">Webview<wbr>View<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CustomTextEditorProvider.html" class="tsd-kind-icon">Custom<wbr>Text<wbr>Editor<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CustomDocument.html" class="tsd-kind-icon">Custom<wbr>Document</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.CustomDocumentEditEvent.html" class="tsd-kind-icon">Custom<wbr>Document<wbr>Edit<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.CustomDocumentContentChangeEvent.html" class="tsd-kind-icon">Custom<wbr>Document<wbr>Content<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CustomDocumentBackup.html" class="tsd-kind-icon">Custom<wbr>Document<wbr>Backup</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CustomDocumentBackupContext.html" class="tsd-kind-icon">Custom<wbr>Document<wbr>Backup<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CustomDocumentOpenContext.html" class="tsd-kind-icon">Custom<wbr>Document<wbr>Open<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.CustomReadonlyEditorProvider.html" class="tsd-kind-icon">Custom<wbr>Readonly<wbr>Editor<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.CustomEditorProvider.html" class="tsd-kind-icon">Custom<wbr>Editor<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.Clipboard.html" class="tsd-kind-icon">Clipboard</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WindowState.html" class="tsd-kind-icon">Window<wbr>State</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.UriHandler.html" class="tsd-kind-icon">Uri<wbr>Handler</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.TreeViewOptions.html" class="tsd-kind-icon">Tree<wbr>View<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.TreeViewExpansionEvent.html" class="tsd-kind-icon">Tree<wbr>View<wbr>Expansion<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.TreeViewSelectionChangeEvent.html" class="tsd-kind-icon">Tree<wbr>View<wbr>Selection<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TreeViewVisibilityChangeEvent.html" class="tsd-kind-icon">Tree<wbr>View<wbr>Visibility<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DataTransferFile.html" class="tsd-kind-icon">Data<wbr>Transfer<wbr>File</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.TreeDragAndDropController.html" class="tsd-kind-icon">Tree<wbr>Drag<wbr>And<wbr>Drop<wbr>Controller</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ViewBadge.html" class="tsd-kind-icon">View<wbr>Badge</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.TreeView.html" class="tsd-kind-icon">Tree<wbr>View</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.TreeDataProvider.html" class="tsd-kind-icon">Tree<wbr>Data<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TreeItemLabel.html" class="tsd-kind-icon">Tree<wbr>Item<wbr>Label</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TerminalOptions.html" class="tsd-kind-icon">Terminal<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ExtensionTerminalOptions.html" class="tsd-kind-icon">Extension<wbr>Terminal<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.Pseudoterminal.html" class="tsd-kind-icon">Pseudoterminal</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TerminalDimensions.html" class="tsd-kind-icon">Terminal<wbr>Dimensions</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TerminalExitStatus.html" class="tsd-kind-icon">Terminal<wbr>Exit<wbr>Status</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.EnvironmentVariableMutator.html" class="tsd-kind-icon">Environment<wbr>Variable<wbr>Mutator</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.EnvironmentVariableCollection.html" class="tsd-kind-icon">Environment<wbr>Variable<wbr>Collection</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ProgressOptions.html" class="tsd-kind-icon">Progress<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.QuickInput.html" class="tsd-kind-icon">Quick<wbr>Input</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.QuickPick.html" class="tsd-kind-icon">Quick<wbr>Pick</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.InputBox.html" class="tsd-kind-icon">Input<wbr>Box</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.QuickInputButton.html" class="tsd-kind-icon">Quick<wbr>Input<wbr>Button</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../interfaces/_vscode_.QuickPickItemButtonEvent.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Item<wbr>Button<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextDocumentContentChangeEvent.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Content<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextDocumentChangeEvent.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TextDocumentWillSaveEvent.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Will<wbr>Save<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileWillCreateEvent.html" class="tsd-kind-icon">File<wbr>Will<wbr>Create<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileCreateEvent.html" class="tsd-kind-icon">File<wbr>Create<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileWillDeleteEvent.html" class="tsd-kind-icon">File<wbr>Will<wbr>Delete<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileDeleteEvent.html" class="tsd-kind-icon">File<wbr>Delete<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileWillRenameEvent.html" class="tsd-kind-icon">File<wbr>Will<wbr>Rename<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.FileRenameEvent.html" class="tsd-kind-icon">File<wbr>Rename<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WorkspaceFoldersChangeEvent.html" class="tsd-kind-icon">Workspace<wbr>Folders<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.WorkspaceFolder.html" class="tsd-kind-icon">Workspace<wbr>Folder</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.ConfigurationChangeEvent.html" class="tsd-kind-icon">Configuration<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookEditor.html" class="tsd-kind-icon">Notebook<wbr>Editor</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookRendererMessaging.html" class="tsd-kind-icon">Notebook<wbr>Renderer<wbr>Messaging</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookCell.html" class="tsd-kind-icon">Notebook<wbr>Cell</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookDocument.html" class="tsd-kind-icon">Notebook<wbr>Document</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookDocumentCellChange.html" class="tsd-kind-icon">Notebook<wbr>Document<wbr>Cell<wbr>Change</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookDocumentContentChange.html" class="tsd-kind-icon">Notebook<wbr>Document<wbr>Content<wbr>Change</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookDocumentChangeEvent.html" class="tsd-kind-icon">Notebook<wbr>Document<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookCellExecutionSummary.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Execution<wbr>Summary</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookSerializer.html" class="tsd-kind-icon">Notebook<wbr>Serializer</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookDocumentContentOptions.html" class="tsd-kind-icon">Notebook<wbr>Document<wbr>Content<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookController.html" class="tsd-kind-icon">Notebook<wbr>Controller</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookCellExecution.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Execution</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.NotebookCellStatusBarItemProvider.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Item<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SourceControlInputBox.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Input<wbr>Box</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.QuickDiffProvider.html" class="tsd-kind-icon">Quick<wbr>Diff<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SourceControlResourceThemableDecorations.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Resource<wbr>Themable<wbr>Decorations</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SourceControlResourceDecorations.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Resource<wbr>Decorations</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SourceControlResourceState.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Resource<wbr>State</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SourceControlResourceGroup.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Resource<wbr>Group</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.SourceControl.html" class="tsd-kind-icon">Source<wbr>Control</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugProtocolMessage.html" class="tsd-kind-icon">Debug<wbr>Protocol<wbr>Message</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugProtocolSource.html" class="tsd-kind-icon">Debug<wbr>Protocol<wbr>Source</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugProtocolBreakpoint.html" class="tsd-kind-icon">Debug<wbr>Protocol<wbr>Breakpoint</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugConfiguration.html" class="tsd-kind-icon">Debug<wbr>Configuration</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugSession.html" class="tsd-kind-icon">Debug<wbr>Session</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugSessionCustomEvent.html" class="tsd-kind-icon">Debug<wbr>Session<wbr>Custom<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugConfigurationProvider.html" class="tsd-kind-icon">Debug<wbr>Configuration<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugAdapterExecutableOptions.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Executable<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugAdapter.html" class="tsd-kind-icon">Debug<wbr>Adapter</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugAdapterDescriptorFactory.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Descriptor<wbr>Factory</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugAdapterTracker.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Tracker</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugAdapterTrackerFactory.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Tracker<wbr>Factory</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugConsole.html" class="tsd-kind-icon">Debug<wbr>Console</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.BreakpointsChangeEvent.html" class="tsd-kind-icon">Breakpoints<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.DebugSessionOptions.html" class="tsd-kind-icon">Debug<wbr>Session<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CommentThread.html" class="tsd-kind-icon">Comment<wbr>Thread</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CommentAuthorInformation.html" class="tsd-kind-icon">Comment<wbr>Author<wbr>Information</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CommentReaction.html" class="tsd-kind-icon">Comment<wbr>Reaction</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.Comment.html" class="tsd-kind-icon">Comment</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CommentReply.html" class="tsd-kind-icon">Comment<wbr>Reply</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CommentingRangeProvider.html" class="tsd-kind-icon">Commenting<wbr>Range<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CommentOptions.html" class="tsd-kind-icon">Comment<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.CommentController.html" class="tsd-kind-icon">Comment<wbr>Controller</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.AuthenticationSession.html" class="tsd-kind-icon">Authentication<wbr>Session</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.AuthenticationSessionAccountInformation.html" class="tsd-kind-icon">Authentication<wbr>Session<wbr>Account<wbr>Information</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.AuthenticationGetSessionOptions.html" class="tsd-kind-icon">Authentication<wbr>Get<wbr>Session<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.AuthenticationProviderInformation.html" class="tsd-kind-icon">Authentication<wbr>Provider<wbr>Information</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.AuthenticationSessionsChangeEvent.html" class="tsd-kind-icon">Authentication<wbr>Sessions<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.AuthenticationProviderOptions.html" class="tsd-kind-icon">Authentication<wbr>Provider<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.AuthenticationProviderAuthenticationSessionsChangeEvent.html" class="tsd-kind-icon">Authentication<wbr>Provider<wbr>Authentication<wbr>Sessions<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.AuthenticationProvider.html" class="tsd-kind-icon">Authentication<wbr>Provider</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TestRunProfile.html" class="tsd-kind-icon">Test<wbr>Run<wbr>Profile</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TestController.html" class="tsd-kind-icon">Test<wbr>Controller</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TestRun.html" class="tsd-kind-icon">Test<wbr>Run</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TestItemCollection.html" class="tsd-kind-icon">Test<wbr>Item<wbr>Collection</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TestItem.html" class="tsd-kind-icon">Test<wbr>Item</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.Tab.html" class="tsd-kind-icon">Tab</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TabChangeEvent.html" class="tsd-kind-icon">Tab<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TabGroupChangeEvent.html" class="tsd-kind-icon">Tab<wbr>Group<wbr>Change<wbr>Event</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TabGroup.html" class="tsd-kind-icon">Tab<wbr>Group</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TabGroups.html" class="tsd-kind-icon">Tab<wbr>Groups</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TelemetryLogger.html" class="tsd-kind-icon">Telemetry<wbr>Logger</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TelemetrySender.html" class="tsd-kind-icon">Telemetry<wbr>Sender</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/_vscode_.TelemetryLoggerOptions.html" class="tsd-kind-icon">Telemetry<wbr>Logger<wbr>Options</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Classes（94）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Position.html" class="tsd-kind-icon">Position</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Range.html" class="tsd-kind-icon">Range</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Selection.html" class="tsd-kind-icon">Selection</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.ThemeColor.html" class="tsd-kind-icon">Theme<wbr>Color</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.ThemeIcon.html" class="tsd-kind-icon">Theme<wbr>Icon</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Uri.html" class="tsd-kind-icon">Uri</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.CancellationTokenSource.html" class="tsd-kind-icon">Cancellation<wbr>Token<wbr>Source</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.CancellationError.html" class="tsd-kind-icon">Cancellation<wbr>Error</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Disposable.html" class="tsd-kind-icon">Disposable</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../classes/_vscode_.EventEmitter.html" class="tsd-kind-icon">Event<wbr>Emitter</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.RelativePattern.html" class="tsd-kind-icon">Relative<wbr>Pattern</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.CodeActionKind.html" class="tsd-kind-icon">Code<wbr>Action<wbr>Kind</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.CodeAction.html" class="tsd-kind-icon">Code<wbr>Action</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.CodeLens.html" class="tsd-kind-icon">Code<wbr>Lens</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.MarkdownString.html" class="tsd-kind-icon">Markdown<wbr>String</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Hover.html" class="tsd-kind-icon">Hover</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.EvaluatableExpression.html" class="tsd-kind-icon">Evaluatable<wbr>Expression</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.InlineValueText.html" class="tsd-kind-icon">Inline<wbr>Value<wbr>Text</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.InlineValueVariableLookup.html" class="tsd-kind-icon">Inline<wbr>Value<wbr>Variable<wbr>Lookup</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.InlineValueEvaluatableExpression.html" class="tsd-kind-icon">Inline<wbr>Value<wbr>Evaluatable<wbr>Expression</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DocumentHighlight.html" class="tsd-kind-icon">Document<wbr>Highlight</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SymbolInformation.html" class="tsd-kind-icon">Symbol<wbr>Information</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DocumentSymbol.html" class="tsd-kind-icon">Document<wbr>Symbol</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TextEdit.html" class="tsd-kind-icon">Text<wbr>Edit</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SnippetTextEdit.html" class="tsd-kind-icon">Snippet<wbr>Text<wbr>Edit</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.NotebookEdit.html" class="tsd-kind-icon">Notebook<wbr>Edit</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.WorkspaceEdit.html" class="tsd-kind-icon">Workspace<wbr>Edit</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SnippetString.html" class="tsd-kind-icon">Snippet<wbr>String</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SemanticTokensLegend.html" class="tsd-kind-icon">Semantic<wbr>Tokens<wbr>Legend</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SemanticTokensBuilder.html" class="tsd-kind-icon">Semantic<wbr>Tokens<wbr>Builder</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SemanticTokens.html" class="tsd-kind-icon">Semantic<wbr>Tokens</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SemanticTokensEdits.html" class="tsd-kind-icon">Semantic<wbr>Tokens<wbr>Edits</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SemanticTokensEdit.html" class="tsd-kind-icon">Semantic<wbr>Tokens<wbr>Edit</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.ParameterInformation.html" class="tsd-kind-icon">Parameter<wbr>Information</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SignatureInformation.html" class="tsd-kind-icon">Signature<wbr>Information</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SignatureHelp.html" class="tsd-kind-icon">Signature<wbr>Help</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.CompletionItem.html" class="tsd-kind-icon">Completion<wbr>Item</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../classes/_vscode_.CompletionList.html" class="tsd-kind-icon">Completion<wbr>List</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.InlineCompletionList.html" class="tsd-kind-icon">Inline<wbr>Completion<wbr>List</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.InlineCompletionItem.html" class="tsd-kind-icon">Inline<wbr>Completion<wbr>Item</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DocumentLink.html" class="tsd-kind-icon">Document<wbr>Link</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Color.html" class="tsd-kind-icon">Color</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.ColorInformation.html" class="tsd-kind-icon">Color<wbr>Information</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.ColorPresentation.html" class="tsd-kind-icon">Color<wbr>Presentation</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.InlayHintLabelPart.html" class="tsd-kind-icon">Inlay<wbr>Hint<wbr>Label<wbr>Part</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.InlayHint.html" class="tsd-kind-icon">Inlay<wbr>Hint</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.FoldingRange.html" class="tsd-kind-icon">Folding<wbr>Range</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SelectionRange.html" class="tsd-kind-icon">Selection<wbr>Range</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.CallHierarchyItem.html" class="tsd-kind-icon">Call<wbr>Hierarchy<wbr>Item</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.CallHierarchyIncomingCall.html" class="tsd-kind-icon">Call<wbr>Hierarchy<wbr>Incoming<wbr>Call</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.CallHierarchyOutgoingCall.html" class="tsd-kind-icon">Call<wbr>Hierarchy<wbr>Outgoing<wbr>Call</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TypeHierarchyItem.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Item</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.LinkedEditingRanges.html" class="tsd-kind-icon">Linked<wbr>Editing<wbr>Ranges</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DocumentDropEdit.html" class="tsd-kind-icon">Document<wbr>Drop<wbr>Edit</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Location.html" class="tsd-kind-icon">Location</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DiagnosticRelatedInformation.html" class="tsd-kind-icon">Diagnostic<wbr>Related<wbr>Information</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Diagnostic.html" class="tsd-kind-icon">Diagnostic</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TerminalLink.html" class="tsd-kind-icon">Terminal<wbr>Link</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TerminalProfile.html" class="tsd-kind-icon">Terminal<wbr>Profile</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.FileDecoration.html" class="tsd-kind-icon">File<wbr>Decoration</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TaskGroup.html" class="tsd-kind-icon">Task<wbr>Group</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.ProcessExecution.html" class="tsd-kind-icon">Process<wbr>Execution</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.ShellExecution.html" class="tsd-kind-icon">Shell<wbr>Execution</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.CustomExecution.html" class="tsd-kind-icon">Custom<wbr>Execution</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Task.html" class="tsd-kind-icon">Task</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.FileSystemError.html" class="tsd-kind-icon">File<wbr>System<wbr>Error</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DataTransferItem.html" class="tsd-kind-icon">Data<wbr>Transfer<wbr>Item</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DataTransfer.html" class="tsd-kind-icon">Data<wbr>Transfer</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TreeItem.html" class="tsd-kind-icon">Tree<wbr>Item</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.QuickInputButtons.html" class="tsd-kind-icon">Quick<wbr>Input<wbr>Buttons</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.NotebookRange.html" class="tsd-kind-icon">Notebook<wbr>Range</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.NotebookCellOutputItem.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Output<wbr>Item</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.NotebookCellOutput.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Output</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.NotebookCellData.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Data</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.NotebookData.html" class="tsd-kind-icon">Notebook<wbr>Data</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.NotebookCellStatusBarItem.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Item</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DebugAdapterExecutable.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Executable</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DebugAdapterServer.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Server</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DebugAdapterNamedPipeServer.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Named<wbr>Pipe<wbr>Server</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.DebugAdapterInlineImplementation.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Inline<wbr>Implementation</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.Breakpoint.html" class="tsd-kind-icon">Breakpoint</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.SourceBreakpoint.html" class="tsd-kind-icon">Source<wbr>Breakpoint</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.FunctionBreakpoint.html" class="tsd-kind-icon">Function<wbr>Breakpoint</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TestTag.html" class="tsd-kind-icon">Test<wbr>Tag</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TestRunRequest.html" class="tsd-kind-icon">Test<wbr>Run<wbr>Request</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TestMessage.html" class="tsd-kind-icon">Test<wbr>Message</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TabInputText.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Text</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TabInputTextDiff.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Text<wbr>Diff</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TabInputCustom.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Custom</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TabInputWebview.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Webview</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TabInputNotebook.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Notebook</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TabInputNotebookDiff.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Notebook<wbr>Diff</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace"><a href="../classes/_vscode_.TabInputTerminal.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Terminal</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-namespace tsd-has-type-parameter"><a href="../classes/_vscode_.TelemetryTrustedValue.html" class="tsd-kind-icon">Telemetry<wbr>Trusted<wbr>Value</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Enumerations（56）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TextEditorSelectionChangeKind.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TextEditorCursorStyle.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Cursor<wbr>Style</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TextEditorLineNumbersStyle.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Line<wbr>Numbers<wbr>Style</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TextEditorRevealType.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Reveal<wbr>Type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.OverviewRulerLane.html" class="tsd-kind-icon">Overview<wbr>Ruler<wbr>Lane</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.DecorationRangeBehavior.html" class="tsd-kind-icon">Decoration<wbr>Range<wbr>Behavior</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.EndOfLine.html" class="tsd-kind-icon">End<wbr>OfLine</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.QuickPickItemKind.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Item<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.InputBoxValidationSeverity.html" class="tsd-kind-icon">Input<wbr>Box<wbr>Validation<wbr>Severity</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.CodeActionTriggerKind.html" class="tsd-kind-icon">Code<wbr>Action<wbr>Trigger<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.DocumentHighlightKind.html" class="tsd-kind-icon">Document<wbr>Highlight<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.SymbolKind.html" class="tsd-kind-icon">Symbol<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.SymbolTag.html" class="tsd-kind-icon">Symbol<wbr>Tag</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.SignatureHelpTriggerKind.html" class="tsd-kind-icon">Signature<wbr>Help<wbr>Trigger<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.CompletionItemKind.html" class="tsd-kind-icon">Completion<wbr>Item<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.CompletionItemTag.html" class="tsd-kind-icon">Completion<wbr>Item<wbr>Tag</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.CompletionTriggerKind.html" class="tsd-kind-icon">Completion<wbr>Trigger<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.InlineCompletionTriggerKind.html" class="tsd-kind-icon">Inline<wbr>Completion<wbr>Trigger<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.InlayHintKind.html" class="tsd-kind-icon">Inlay<wbr>Hint<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.FoldingRangeKind.html" class="tsd-kind-icon">Folding<wbr>Range<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.IndentAction.html" class="tsd-kind-icon">Indent<wbr>Action</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.ConfigurationTarget.html" class="tsd-kind-icon">Configuration<wbr>Target</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.DiagnosticSeverity.html" class="tsd-kind-icon">Diagnostic<wbr>Severity</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.DiagnosticTag.html" class="tsd-kind-icon">Diagnostic<wbr>Tag</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.LanguageStatusSeverity.html" class="tsd-kind-icon">Language<wbr>Status<wbr>Severity</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.ViewColumn.html" class="tsd-kind-icon">View<wbr>Column</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.StatusBarAlignment.html" class="tsd-kind-icon">Status<wbr>Bar<wbr>Alignment</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TerminalLocation.html" class="tsd-kind-icon">Terminal<wbr>Location</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.ExtensionKind.html" class="tsd-kind-icon">Extension<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.ExtensionMode.html" class="tsd-kind-icon">Extension<wbr>Mode</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.ColorThemeKind.html" class="tsd-kind-icon">Color<wbr>Theme<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TaskRevealKind.html" class="tsd-kind-icon">Task<wbr>Reveal<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TaskPanelKind.html" class="tsd-kind-icon">Task<wbr>Panel<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.ShellQuoting.html" class="tsd-kind-icon">Shell<wbr>Quoting</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TaskScope.html" class="tsd-kind-icon">Task<wbr>Scope</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.FileType.html" class="tsd-kind-icon">File<wbr>Type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.FilePermission.html" class="tsd-kind-icon">File<wbr>Permission</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.FileChangeType.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.UIKind.html" class="tsd-kind-icon">UIKind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.LogLevel.html" class="tsd-kind-icon">Log<wbr>Level</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TreeItemCollapsibleState.html" class="tsd-kind-icon">Tree<wbr>Item<wbr>Collapsible<wbr>State</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TerminalExitReason.html" class="tsd-kind-icon">Terminal<wbr>Exit<wbr>Reason</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.EnvironmentVariableMutatorType.html" class="tsd-kind-icon">Environment<wbr>Variable<wbr>Mutator<wbr>Type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.ProgressLocation.html" class="tsd-kind-icon">Progress<wbr>Location</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TextDocumentChangeReason.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Change<wbr>Reason</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TextDocumentSaveReason.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Save<wbr>Reason</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.NotebookEditorRevealType.html" class="tsd-kind-icon">Notebook<wbr>Editor<wbr>Reveal<wbr>Type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.NotebookCellKind.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.NotebookControllerAffinity.html" class="tsd-kind-icon">Notebook<wbr>Controller<wbr>Affinity</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.NotebookCellStatusBarAlignment.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Alignment</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.DebugConsoleMode.html" class="tsd-kind-icon">Debug<wbr>Console<wbr>Mode</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.DebugConfigurationProviderTriggerKind.html" class="tsd-kind-icon">Debug<wbr>Configuration<wbr>Provider<wbr>Trigger<wbr>Kind</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.CommentThreadCollapsibleState.html" class="tsd-kind-icon">Comment<wbr>Thread<wbr>Collapsible<wbr>State</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.CommentMode.html" class="tsd-kind-icon">Comment<wbr>Mode</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.CommentThreadState.html" class="tsd-kind-icon">Comment<wbr>Thread<wbr>State</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-namespace"><a href="../enums/_vscode_.TestRunProfileKind.html" class="tsd-kind-icon">Test<wbr>Run<wbr>Profile<wbr>Kind</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases（11）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="_vscode_.html#GlobPattern" class="tsd-kind-icon">Glob<wbr>Pattern</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="_vscode_.html#DocumentSelector" class="tsd-kind-icon">Document<wbr>Selector</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter"><a href="_vscode_.html#ProviderResult" class="tsd-kind-icon">Provider<wbr>Result</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="_vscode_.html#DefinitionLink" class="tsd-kind-icon">Definition<wbr>Link</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="_vscode_.html#Definition" class="tsd-kind-icon">Definition</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="_vscode_.html#Declaration" class="tsd-kind-icon">Declaration</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="_vscode_.html#MarkedString" class="tsd-kind-icon">Marked<wbr>String</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="_vscode_.html#InlineValue" class="tsd-kind-icon">Inline<wbr>Value</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="_vscode_.html#CharacterPair" class="tsd-kind-icon">Character<wbr>Pair</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="_vscode_.html#ConfigurationScope" class="tsd-kind-icon">Configuration<wbr>Scope</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="_vscode_.html#DebugAdapterDescriptor" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Descriptor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Namespaces（14）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.tasks.html" class="tsd-kind-icon">tasks</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.env.html" class="tsd-kind-icon">env</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.commands.html" class="tsd-kind-icon">commands</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.window.html" class="tsd-kind-icon">window</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.workspace.html" class="tsd-kind-icon">workspace</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.languages.html" class="tsd-kind-icon">languages</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.notebooks.html" class="tsd-kind-icon">notebooks</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.scm.html" class="tsd-kind-icon">scm</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.debug.html" class="tsd-kind-icon">debug</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.extensions.html" class="tsd-kind-icon">extensions</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.comments.html" class="tsd-kind-icon">comments</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.authentication.html" class="tsd-kind-icon">authentication</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.l10n.html" class="tsd-kind-icon">l10n</a></li>
+								<li class="tsd-kind-namespace tsd-parent-kind-namespace"><a href="_vscode_.tests.html" class="tsd-kind-icon">tests</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables（1）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
+					<a name="version" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> version</h3>
+					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L11">vscode.d.ts:11</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The version of the editor.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases（11）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="GlobPattern" class="tsd-anchor"></a>
+					<h3>Glob<wbr>Pattern</h3>
+					<div class="tsd-signature tsd-kind-icon">Glob<wbr>Pattern<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/_vscode_.RelativePattern.html" class="tsd-signature-type" data-tsd-kind="Class">RelativePattern</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L2138">vscode.d.ts:2138</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A file glob pattern to match file paths against. This can either be a glob pattern string
+							(like <code>**​/*.{ts,js}</code> or <code>*.{ts,js}</code>) or a <a href="../classes/_vscode_.RelativePattern.html">relative pattern</a>.</p>
+						</div>
+						<p>Glob patterns can have the following syntax:</p>
+						<ul>
+							<li><code>*</code> to match zero or more characters in a path segment</li>
+							<li><code>?</code> to match on one character in a path segment</li>
+							<li><code>**</code> to match any number of path segments, including none</li>
+							<li><code>{}</code> to group conditions (e.g. <code>**​/*.{ts,js}</code> matches all TypeScript and JavaScript files)</li>
+							<li><code>[]</code> to declare a range of characters to match in a path segment (e.g., <code>example.[0-9]</code> to match on <code>example.0</code>, <code>example.1</code>, …)</li>
+							<li><code>[!...]</code> to negate a range of characters to match in a path segment (e.g., <code>example.[!0-9]</code> to match on <code>example.a</code>, <code>example.b</code>, but not <code>example.0</code>)</li>
+						</ul>
+						<p>Note: a backslash (<code>\</code>) is not valid within a glob pattern. If you have an existing file
+							path to match against, consider to use the <a href="../classes/_vscode_.RelativePattern.html">relative pattern</a> support
+							that takes care of converting any backslash into slash. Otherwise, make sure to convert
+						any backslash to slash when creating the glob pattern.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="DocumentSelector" class="tsd-anchor"></a>
+					<h3>Document<wbr>Selector</h3>
+					<div class="tsd-signature tsd-kind-icon">Document<wbr>Selector<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_vscode_.DocumentFilter.html" class="tsd-signature-type" data-tsd-kind="Interface">DocumentFilter</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_vscode_.DocumentFilter.html" class="tsd-signature-type" data-tsd-kind="Interface">DocumentFilter</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L2194">vscode.d.ts:2194</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A language selector is the combination of one or many language identifiers
+							and <a href="../interfaces/_vscode_.DocumentFilter.html">language filters</a>.</p>
+						</div>
+						<p><em>Note</em> that a document selector that is just a language identifier selects <em>all</em>
+							documents, even those that are not saved on disk. Only use such selectors when
+							a feature works without further context, e.g. without the need to resolve related
+						&#39;files&#39;.</p>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><p>let sel:DocumentSelector = { scheme: &#39;file&#39;, language: &#39;typescript&#39; };</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter">
+					<a name="ProviderResult" class="tsd-anchor"></a>
+					<h3>Provider<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Provider<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L2226">vscode.d.ts:2226</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A provider result represents the values a provider, like the <a href="../interfaces/_vscode_.HoverProvider.html"><code>HoverProvider</code></a>,
+								may return. For once this is the actual result type <code>T</code>, like <code>Hover</code>, or a thenable that resolves
+								to that type <code>T</code>. In addition, <code>null</code> and <code>undefined</code> can be returned - either directly or from a
+							thenable.</p>
+						</div>
+						<p>The snippets below are all valid implementations of the <a href="../interfaces/_vscode_.HoverProvider.html"><code>HoverProvider</code></a>:</p>
+						<pre><code class="language-ts"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">a</span><span style="color: #000000">: </span><span style="color: #267F99">HoverProvider</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">provideHover</span><span style="color: #000000">(</span><span style="color: #001080">doc</span><span style="color: #000000">, </span><span style="color: #001080">pos</span><span style="color: #000000">, </span><span style="color: #001080">token</span><span style="color: #000000">): </span><span style="color: #267F99">ProviderResult</span><span style="color: #000000">&lt;</span><span style="color: #267F99">Hover</span><span style="color: #000000">&gt; {</span>
+<span style="color: #000000">        </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Hover</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Hello World&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">b</span><span style="color: #000000">: </span><span style="color: #267F99">HoverProvider</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">provideHover</span><span style="color: #000000">(</span><span style="color: #001080">doc</span><span style="color: #000000">, </span><span style="color: #001080">pos</span><span style="color: #000000">, </span><span style="color: #001080">token</span><span style="color: #000000">): </span><span style="color: #267F99">ProviderResult</span><span style="color: #000000">&lt;</span><span style="color: #267F99">Hover</span><span style="color: #000000">&gt; {</span>
+<span style="color: #000000">        </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Promise</span><span style="color: #000000">(</span><span style="color: #001080">resolve</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">            </span><span style="color: #795E26">resolve</span><span style="color: #000000">(</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Hover</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Hello World&#039;</span><span style="color: #000000">));</span>
+<span style="color: #000000">         });</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">}</span>
+
+<span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">c</span><span style="color: #000000">: </span><span style="color: #267F99">HoverProvider</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">provideHover</span><span style="color: #000000">(</span><span style="color: #001080">doc</span><span style="color: #000000">, </span><span style="color: #001080">pos</span><span style="color: #000000">, </span><span style="color: #001080">token</span><span style="color: #000000">): </span><span style="color: #267F99">ProviderResult</span><span style="color: #000000">&lt;</span><span style="color: #267F99">Hover</span><span style="color: #000000">&gt; {</span>
+<span style="color: #000000">        </span><span style="color: #AF00DB">return</span><span style="color: #000000">; </span><span style="color: #008000">// undefined</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">}</span>
+</code></pre>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="DefinitionLink" class="tsd-anchor"></a>
+					<h3>Definition<wbr>Link</h3>
+					<div class="tsd-signature tsd-kind-icon">Definition<wbr>Link<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_vscode_.LocationLink.html" class="tsd-signature-type" data-tsd-kind="Interface">LocationLink</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L2664">vscode.d.ts:2664</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Information about where a symbol is defined.</p>
+						</div>
+						<p>Provides additional metadata over normal <a href="../classes/_vscode_.Location.html">Location</a> definitions, including the range of
+						the defining symbol</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="Definition" class="tsd-anchor"></a>
+					<h3>Definition</h3>
+					<div class="tsd-signature tsd-kind-icon">Definition<span class="tsd-signature-symbol">:</span> <a href="../classes/_vscode_.Location.html" class="tsd-signature-type" data-tsd-kind="Class">Location</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_vscode_.Location.html" class="tsd-signature-type" data-tsd-kind="Class">Location</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L2671">vscode.d.ts:2671</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The definition of a symbol represented as one or many <a href="../classes/_vscode_.Location.html">locations</a>.
+								For most programming languages there is only one location at which a symbol is
+							defined.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="Declaration" class="tsd-anchor"></a>
+					<h3>Declaration</h3>
+					<div class="tsd-signature tsd-kind-icon">Declaration<span class="tsd-signature-symbol">:</span> <a href="../classes/_vscode_.Location.html" class="tsd-signature-type" data-tsd-kind="Class">Location</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_vscode_.Location.html" class="tsd-signature-type" data-tsd-kind="Class">Location</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_vscode_.LocationLink.html" class="tsd-signature-type" data-tsd-kind="Interface">LocationLink</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L2732">vscode.d.ts:2732</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The declaration of a symbol representation as one or many <a href="../classes/_vscode_.Location.html">locations</a>
+							or <a href="../interfaces/_vscode_.LocationLink.html">location links</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="MarkedString" class="tsd-anchor"></a>
+					<h3>Marked<wbr>String</h3>
+					<div class="tsd-signature tsd-kind-icon">Marked<wbr>String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>language<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L2850">vscode.d.ts:2850</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>MarkedString can be used to render human-readable text. It is either a markdown string
+								or a code-block that provides a language and a code snippet. Note that
+							markdown strings will be sanitized - that means html will be escaped.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>This type is deprecated, please use <a href="../classes/_vscode_.MarkdownString.html"><code>MarkdownString</code></a> instead.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="InlineValue" class="tsd-anchor"></a>
+					<h3>Inline<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">Inline<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../classes/_vscode_.InlineValueText.html" class="tsd-signature-type" data-tsd-kind="Class">InlineValueText</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_vscode_.InlineValueVariableLookup.html" class="tsd-signature-type" data-tsd-kind="Class">InlineValueVariableLookup</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_vscode_.InlineValueEvaluatableExpression.html" class="tsd-signature-type" data-tsd-kind="Class">InlineValueEvaluatableExpression</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L3029">vscode.d.ts:3029</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Inline value information can be provided by different means:</p>
+							<ul>
+								<li>directly as a text value (class InlineValueText).</li>
+								<li>as a name to use for a variable lookup (class InlineValueVariableLookup)</li>
+								<li>as an evaluatable expression (class InlineValueEvaluatableExpression)
+								The InlineValue types combines all inline value types into one type.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="CharacterPair" class="tsd-anchor"></a>
+					<h3>Character<wbr>Pair</h3>
+					<div class="tsd-signature tsd-kind-icon">Character<wbr>Pair<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L5636">vscode.d.ts:5636</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A tuple of two characters, like a pair of
+							opening and closing brackets.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="ConfigurationScope" class="tsd-anchor"></a>
+					<h3>Configuration<wbr>Scope</h3>
+					<div class="tsd-signature tsd-kind-icon">Configuration<wbr>Scope<span class="tsd-signature-symbol">:</span> <a href="../classes/_vscode_.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_vscode_.TextDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">TextDocument</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_vscode_.WorkspaceFolder.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkspaceFolder</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>uri<span class="tsd-signature-symbol">?: </span><a href="../classes/_vscode_.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">; </span>languageId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L12656">vscode.d.ts:12656</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The configuration scope which can be a
+								a &#39;resource&#39; or a languageId or both or
+								a &#39;<a href="../interfaces/_vscode_.TextDocument.html">TextDocument</a>&#39; or
+							a &#39;<a href="../interfaces/_vscode_.WorkspaceFolder.html">WorkspaceFolder</a>&#39;</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
+					<a name="DebugAdapterDescriptor" class="tsd-anchor"></a>
+					<h3>Debug<wbr>Adapter<wbr>Descriptor</h3>
+					<div class="tsd-signature tsd-kind-icon">Debug<wbr>Adapter<wbr>Descriptor<span class="tsd-signature-symbol">:</span> <a href="../classes/_vscode_.DebugAdapterExecutable.html" class="tsd-signature-type" data-tsd-kind="Class">DebugAdapterExecutable</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_vscode_.DebugAdapterServer.html" class="tsd-signature-type" data-tsd-kind="Class">DebugAdapterServer</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_vscode_.DebugAdapterNamedPipeServer.html" class="tsd-signature-type" data-tsd-kind="Class">DebugAdapterNamedPipeServer</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_vscode_.DebugAdapterInlineImplementation.html" class="tsd-signature-type" data-tsd-kind="Class">DebugAdapterInlineImplementation</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api/blob/7a5aaa9/vscode.d.ts#L14780">vscode.d.ts:14780</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="_vscode_.html">&quot;vscode&quot;</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.authentication.html">authentication</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.commands.html">commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.comments.html">comments</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.debug.html">debug</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.env.html">env</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.extensions.html">extensions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.l10n.html">l10n</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.languages.html">languages</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.notebooks.html">notebooks</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.scm.html">scm</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.tasks.html">tasks</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.tests.html">tests</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.window.html">window</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="_vscode_.workspace.html">workspace</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<div style="width: 200px">
+					<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=qVIkfOBwRQEYQ-KeEJi1mydEksAUHl5sDCkc1TsemHE"></script>
+				</div>
+				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="_vscode_.html#version" class="tsd-kind-icon">version</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.Command.html" class="tsd-kind-icon">Command</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextLine.html" class="tsd-kind-icon">Text<wbr>Line</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextDocument.html" class="tsd-kind-icon">Text<wbr>Document</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Position.html" class="tsd-kind-icon">Position</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Range.html" class="tsd-kind-icon">Range</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Selection.html" class="tsd-kind-icon">Selection</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TextEditorSelectionChangeKind.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextEditorSelectionChangeEvent.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Selection<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextEditorVisibleRangesChangeEvent.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Visible<wbr>Ranges<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextEditorOptionsChangeEvent.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Options<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextEditorViewColumnChangeEvent.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>View<wbr>Column<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TextEditorCursorStyle.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Cursor<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TextEditorLineNumbersStyle.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Line<wbr>Numbers<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextEditorOptions.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextEditorDecorationType.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Decoration<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TextEditorRevealType.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Reveal<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.OverviewRulerLane.html" class="tsd-kind-icon">Overview<wbr>Ruler<wbr>Lane</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.DecorationRangeBehavior.html" class="tsd-kind-icon">Decoration<wbr>Range<wbr>Behavior</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextDocumentShowOptions.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Show<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookEditorSelectionChangeEvent.html" class="tsd-kind-icon">Notebook<wbr>Editor<wbr>Selection<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookEditorVisibleRangesChangeEvent.html" class="tsd-kind-icon">Notebook<wbr>Editor<wbr>Visible<wbr>Ranges<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookDocumentShowOptions.html" class="tsd-kind-icon">Notebook<wbr>Document<wbr>Show<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.ThemeColor.html" class="tsd-kind-icon">Theme<wbr>Color</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.ThemeIcon.html" class="tsd-kind-icon">Theme<wbr>Icon</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ThemableDecorationRenderOptions.html" class="tsd-kind-icon">Themable<wbr>Decoration<wbr>Render<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ThemableDecorationAttachmentRenderOptions.html" class="tsd-kind-icon">Themable<wbr>Decoration<wbr>Attachment<wbr>Render<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DecorationRenderOptions.html" class="tsd-kind-icon">Decoration<wbr>Render<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DecorationOptions.html" class="tsd-kind-icon">Decoration<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ThemableDecorationInstanceRenderOptions.html" class="tsd-kind-icon">Themable<wbr>Decoration<wbr>Instance<wbr>Render<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DecorationInstanceRenderOptions.html" class="tsd-kind-icon">Decoration<wbr>Instance<wbr>Render<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextEditor.html" class="tsd-kind-icon">Text<wbr>Editor</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.EndOfLine.html" class="tsd-kind-icon">End<wbr>OfLine</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextEditorEdit.html" class="tsd-kind-icon">Text<wbr>Editor<wbr>Edit</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Uri.html" class="tsd-kind-icon">Uri</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CancellationToken.html" class="tsd-kind-icon">Cancellation<wbr>Token</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.CancellationTokenSource.html" class="tsd-kind-icon">Cancellation<wbr>Token<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.CancellationError.html" class="tsd-kind-icon">Cancellation<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Disposable.html" class="tsd-kind-icon">Disposable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.Event.html" class="tsd-kind-icon">Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../classes/_vscode_.EventEmitter.html" class="tsd-kind-icon">Event<wbr>Emitter</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileSystemWatcher.html" class="tsd-kind-icon">File<wbr>System<wbr>Watcher</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextDocumentContentProvider.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Content<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.QuickPickItemKind.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Item<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.QuickPickItem.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.QuickPickOptions.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WorkspaceFolderPickOptions.html" class="tsd-kind-icon">Workspace<wbr>Folder<wbr>Pick<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.OpenDialogOptions.html" class="tsd-kind-icon">Open<wbr>Dialog<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SaveDialogOptions.html" class="tsd-kind-icon">Save<wbr>Dialog<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.MessageItem.html" class="tsd-kind-icon">Message<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.MessageOptions.html" class="tsd-kind-icon">Message<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.InputBoxValidationSeverity.html" class="tsd-kind-icon">Input<wbr>Box<wbr>Validation<wbr>Severity</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.InputBoxValidationMessage.html" class="tsd-kind-icon">Input<wbr>Box<wbr>Validation<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.InputBoxOptions.html" class="tsd-kind-icon">Input<wbr>Box<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.RelativePattern.html" class="tsd-kind-icon">Relative<wbr>Pattern</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="_vscode_.html#GlobPattern" class="tsd-kind-icon">Glob<wbr>Pattern</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DocumentFilter.html" class="tsd-kind-icon">Document<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="_vscode_.html#DocumentSelector" class="tsd-kind-icon">Document<wbr>Selector</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="_vscode_.html#ProviderResult" class="tsd-kind-icon">Provider<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.CodeActionKind.html" class="tsd-kind-icon">Code<wbr>Action<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.CodeActionTriggerKind.html" class="tsd-kind-icon">Code<wbr>Action<wbr>Trigger<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CodeActionContext.html" class="tsd-kind-icon">Code<wbr>Action<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.CodeAction.html" class="tsd-kind-icon">Code<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.CodeActionProvider.html" class="tsd-kind-icon">Code<wbr>Action<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CodeActionProviderMetadata.html" class="tsd-kind-icon">Code<wbr>Action<wbr>Provider<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.CodeLens.html" class="tsd-kind-icon">Code<wbr>Lens</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.CodeLensProvider.html" class="tsd-kind-icon">Code<wbr>Lens<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="_vscode_.html#DefinitionLink" class="tsd-kind-icon">Definition<wbr>Link</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="_vscode_.html#Definition" class="tsd-kind-icon">Definition</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DefinitionProvider.html" class="tsd-kind-icon">Definition<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ImplementationProvider.html" class="tsd-kind-icon">Implementation<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TypeDefinitionProvider.html" class="tsd-kind-icon">Type<wbr>Definition<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="_vscode_.html#Declaration" class="tsd-kind-icon">Declaration</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DeclarationProvider.html" class="tsd-kind-icon">Declaration<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.MarkdownString.html" class="tsd-kind-icon">Markdown<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="_vscode_.html#MarkedString" class="tsd-kind-icon">Marked<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Hover.html" class="tsd-kind-icon">Hover</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.HoverProvider.html" class="tsd-kind-icon">Hover<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.EvaluatableExpression.html" class="tsd-kind-icon">Evaluatable<wbr>Expression</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.EvaluatableExpressionProvider.html" class="tsd-kind-icon">Evaluatable<wbr>Expression<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.InlineValueText.html" class="tsd-kind-icon">Inline<wbr>Value<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.InlineValueVariableLookup.html" class="tsd-kind-icon">Inline<wbr>Value<wbr>Variable<wbr>Lookup</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.InlineValueEvaluatableExpression.html" class="tsd-kind-icon">Inline<wbr>Value<wbr>Evaluatable<wbr>Expression</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="_vscode_.html#InlineValue" class="tsd-kind-icon">Inline<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.InlineValueContext.html" class="tsd-kind-icon">Inline<wbr>Value<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.InlineValuesProvider.html" class="tsd-kind-icon">Inline<wbr>Values<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.DocumentHighlightKind.html" class="tsd-kind-icon">Document<wbr>Highlight<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DocumentHighlight.html" class="tsd-kind-icon">Document<wbr>Highlight</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DocumentHighlightProvider.html" class="tsd-kind-icon">Document<wbr>Highlight<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.SymbolKind.html" class="tsd-kind-icon">Symbol<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.SymbolTag.html" class="tsd-kind-icon">Symbol<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SymbolInformation.html" class="tsd-kind-icon">Symbol<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DocumentSymbol.html" class="tsd-kind-icon">Document<wbr>Symbol</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DocumentSymbolProvider.html" class="tsd-kind-icon">Document<wbr>Symbol<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DocumentSymbolProviderMetadata.html" class="tsd-kind-icon">Document<wbr>Symbol<wbr>Provider<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.WorkspaceSymbolProvider.html" class="tsd-kind-icon">Workspace<wbr>Symbol<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ReferenceContext.html" class="tsd-kind-icon">Reference<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ReferenceProvider.html" class="tsd-kind-icon">Reference<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TextEdit.html" class="tsd-kind-icon">Text<wbr>Edit</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SnippetTextEdit.html" class="tsd-kind-icon">Snippet<wbr>Text<wbr>Edit</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.NotebookEdit.html" class="tsd-kind-icon">Notebook<wbr>Edit</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WorkspaceEditEntryMetadata.html" class="tsd-kind-icon">Workspace<wbr>Edit<wbr>Entry<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WorkspaceEditMetadata.html" class="tsd-kind-icon">Workspace<wbr>Edit<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.WorkspaceEdit.html" class="tsd-kind-icon">Workspace<wbr>Edit</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SnippetString.html" class="tsd-kind-icon">Snippet<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.RenameProvider.html" class="tsd-kind-icon">Rename<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SemanticTokensLegend.html" class="tsd-kind-icon">Semantic<wbr>Tokens<wbr>Legend</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SemanticTokensBuilder.html" class="tsd-kind-icon">Semantic<wbr>Tokens<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SemanticTokens.html" class="tsd-kind-icon">Semantic<wbr>Tokens</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SemanticTokensEdits.html" class="tsd-kind-icon">Semantic<wbr>Tokens<wbr>Edits</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SemanticTokensEdit.html" class="tsd-kind-icon">Semantic<wbr>Tokens<wbr>Edit</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DocumentSemanticTokensProvider.html" class="tsd-kind-icon">Document<wbr>Semantic<wbr>Tokens<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DocumentRangeSemanticTokensProvider.html" class="tsd-kind-icon">Document<wbr>Range<wbr>Semantic<wbr>Tokens<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FormattingOptions.html" class="tsd-kind-icon">Formatting<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DocumentFormattingEditProvider.html" class="tsd-kind-icon">Document<wbr>Formatting<wbr>Edit<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DocumentRangeFormattingEditProvider.html" class="tsd-kind-icon">Document<wbr>Range<wbr>Formatting<wbr>Edit<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.OnTypeFormattingEditProvider.html" class="tsd-kind-icon">On<wbr>Type<wbr>Formatting<wbr>Edit<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.ParameterInformation.html" class="tsd-kind-icon">Parameter<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SignatureInformation.html" class="tsd-kind-icon">Signature<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SignatureHelp.html" class="tsd-kind-icon">Signature<wbr>Help</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.SignatureHelpTriggerKind.html" class="tsd-kind-icon">Signature<wbr>Help<wbr>Trigger<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SignatureHelpContext.html" class="tsd-kind-icon">Signature<wbr>Help<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SignatureHelpProvider.html" class="tsd-kind-icon">Signature<wbr>Help<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SignatureHelpProviderMetadata.html" class="tsd-kind-icon">Signature<wbr>Help<wbr>Provider<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CompletionItemLabel.html" class="tsd-kind-icon">Completion<wbr>Item<wbr>Label</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.CompletionItemKind.html" class="tsd-kind-icon">Completion<wbr>Item<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.CompletionItemTag.html" class="tsd-kind-icon">Completion<wbr>Item<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.CompletionItem.html" class="tsd-kind-icon">Completion<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../classes/_vscode_.CompletionList.html" class="tsd-kind-icon">Completion<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.CompletionTriggerKind.html" class="tsd-kind-icon">Completion<wbr>Trigger<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CompletionContext.html" class="tsd-kind-icon">Completion<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.CompletionItemProvider.html" class="tsd-kind-icon">Completion<wbr>Item<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.InlineCompletionItemProvider.html" class="tsd-kind-icon">Inline<wbr>Completion<wbr>Item<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.InlineCompletionList.html" class="tsd-kind-icon">Inline<wbr>Completion<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.InlineCompletionContext.html" class="tsd-kind-icon">Inline<wbr>Completion<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SelectedCompletionInfo.html" class="tsd-kind-icon">Selected<wbr>Completion<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.InlineCompletionTriggerKind.html" class="tsd-kind-icon">Inline<wbr>Completion<wbr>Trigger<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.InlineCompletionItem.html" class="tsd-kind-icon">Inline<wbr>Completion<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DocumentLink.html" class="tsd-kind-icon">Document<wbr>Link</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.DocumentLinkProvider.html" class="tsd-kind-icon">Document<wbr>Link<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Color.html" class="tsd-kind-icon">Color</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.ColorInformation.html" class="tsd-kind-icon">Color<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.ColorPresentation.html" class="tsd-kind-icon">Color<wbr>Presentation</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DocumentColorProvider.html" class="tsd-kind-icon">Document<wbr>Color<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.InlayHintKind.html" class="tsd-kind-icon">Inlay<wbr>Hint<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.InlayHintLabelPart.html" class="tsd-kind-icon">Inlay<wbr>Hint<wbr>Label<wbr>Part</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.InlayHint.html" class="tsd-kind-icon">Inlay<wbr>Hint</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.InlayHintsProvider.html" class="tsd-kind-icon">Inlay<wbr>Hints<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.FoldingRange.html" class="tsd-kind-icon">Folding<wbr>Range</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.FoldingRangeKind.html" class="tsd-kind-icon">Folding<wbr>Range<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FoldingContext.html" class="tsd-kind-icon">Folding<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FoldingRangeProvider.html" class="tsd-kind-icon">Folding<wbr>Range<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SelectionRange.html" class="tsd-kind-icon">Selection<wbr>Range</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SelectionRangeProvider.html" class="tsd-kind-icon">Selection<wbr>Range<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.CallHierarchyItem.html" class="tsd-kind-icon">Call<wbr>Hierarchy<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.CallHierarchyIncomingCall.html" class="tsd-kind-icon">Call<wbr>Hierarchy<wbr>Incoming<wbr>Call</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.CallHierarchyOutgoingCall.html" class="tsd-kind-icon">Call<wbr>Hierarchy<wbr>Outgoing<wbr>Call</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CallHierarchyProvider.html" class="tsd-kind-icon">Call<wbr>Hierarchy<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TypeHierarchyItem.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TypeHierarchyProvider.html" class="tsd-kind-icon">Type<wbr>Hierarchy<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.LinkedEditingRanges.html" class="tsd-kind-icon">Linked<wbr>Editing<wbr>Ranges</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.LinkedEditingRangeProvider.html" class="tsd-kind-icon">Linked<wbr>Editing<wbr>Range<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DocumentDropEdit.html" class="tsd-kind-icon">Document<wbr>Drop<wbr>Edit</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DocumentDropEditProvider.html" class="tsd-kind-icon">Document<wbr>Drop<wbr>Edit<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="_vscode_.html#CharacterPair" class="tsd-kind-icon">Character<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CommentRule.html" class="tsd-kind-icon">Comment<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.IndentationRule.html" class="tsd-kind-icon">Indentation<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.IndentAction.html" class="tsd-kind-icon">Indent<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.EnterAction.html" class="tsd-kind-icon">Enter<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.OnEnterRule.html" class="tsd-kind-icon">On<wbr>Enter<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.LanguageConfiguration.html" class="tsd-kind-icon">Language<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.ConfigurationTarget.html" class="tsd-kind-icon">Configuration<wbr>Target</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WorkspaceConfiguration.html" class="tsd-kind-icon">Workspace<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Location.html" class="tsd-kind-icon">Location</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.LocationLink.html" class="tsd-kind-icon">Location<wbr>Link</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DiagnosticChangeEvent.html" class="tsd-kind-icon">Diagnostic<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.DiagnosticSeverity.html" class="tsd-kind-icon">Diagnostic<wbr>Severity</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DiagnosticRelatedInformation.html" class="tsd-kind-icon">Diagnostic<wbr>Related<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.DiagnosticTag.html" class="tsd-kind-icon">Diagnostic<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Diagnostic.html" class="tsd-kind-icon">Diagnostic</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DiagnosticCollection.html" class="tsd-kind-icon">Diagnostic<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.LanguageStatusSeverity.html" class="tsd-kind-icon">Language<wbr>Status<wbr>Severity</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.LanguageStatusItem.html" class="tsd-kind-icon">Language<wbr>Status<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.ViewColumn.html" class="tsd-kind-icon">View<wbr>Column</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.OutputChannel.html" class="tsd-kind-icon">Output<wbr>Channel</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.LogOutputChannel.html" class="tsd-kind-icon">Log<wbr>Output<wbr>Channel</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.AccessibilityInformation.html" class="tsd-kind-icon">Accessibility<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.StatusBarAlignment.html" class="tsd-kind-icon">Status<wbr>Bar<wbr>Alignment</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.StatusBarItem.html" class="tsd-kind-icon">Status<wbr>Bar<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.Progress.html" class="tsd-kind-icon">Progress</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.Terminal.html" class="tsd-kind-icon">Terminal</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TerminalLocation.html" class="tsd-kind-icon">Terminal<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TerminalEditorLocationOptions.html" class="tsd-kind-icon">Terminal<wbr>Editor<wbr>Location<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TerminalSplitLocationOptions.html" class="tsd-kind-icon">Terminal<wbr>Split<wbr>Location<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TerminalState.html" class="tsd-kind-icon">Terminal<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TerminalLinkContext.html" class="tsd-kind-icon">Terminal<wbr>Link<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.TerminalLinkProvider.html" class="tsd-kind-icon">Terminal<wbr>Link<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TerminalLink.html" class="tsd-kind-icon">Terminal<wbr>Link</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TerminalProfileProvider.html" class="tsd-kind-icon">Terminal<wbr>Profile<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TerminalProfile.html" class="tsd-kind-icon">Terminal<wbr>Profile</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.FileDecoration.html" class="tsd-kind-icon">File<wbr>Decoration</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileDecorationProvider.html" class="tsd-kind-icon">File<wbr>Decoration<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.ExtensionKind.html" class="tsd-kind-icon">Extension<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.Extension.html" class="tsd-kind-icon">Extension</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.ExtensionMode.html" class="tsd-kind-icon">Extension<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ExtensionContext.html" class="tsd-kind-icon">Extension<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.Memento.html" class="tsd-kind-icon">Memento</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SecretStorageChangeEvent.html" class="tsd-kind-icon">Secret<wbr>Storage<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SecretStorage.html" class="tsd-kind-icon">Secret<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.ColorThemeKind.html" class="tsd-kind-icon">Color<wbr>Theme<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ColorTheme.html" class="tsd-kind-icon">Color<wbr>Theme</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TaskRevealKind.html" class="tsd-kind-icon">Task<wbr>Reveal<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TaskPanelKind.html" class="tsd-kind-icon">Task<wbr>Panel<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TaskPresentationOptions.html" class="tsd-kind-icon">Task<wbr>Presentation<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TaskGroup.html" class="tsd-kind-icon">Task<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TaskDefinition.html" class="tsd-kind-icon">Task<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ProcessExecutionOptions.html" class="tsd-kind-icon">Process<wbr>Execution<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.ProcessExecution.html" class="tsd-kind-icon">Process<wbr>Execution</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ShellQuotingOptions.html" class="tsd-kind-icon">Shell<wbr>Quoting<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ShellExecutionOptions.html" class="tsd-kind-icon">Shell<wbr>Execution<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.ShellQuoting.html" class="tsd-kind-icon">Shell<wbr>Quoting</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ShellQuotedString.html" class="tsd-kind-icon">Shell<wbr>Quoted<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.ShellExecution.html" class="tsd-kind-icon">Shell<wbr>Execution</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.CustomExecution.html" class="tsd-kind-icon">Custom<wbr>Execution</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TaskScope.html" class="tsd-kind-icon">Task<wbr>Scope</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.RunOptions.html" class="tsd-kind-icon">Run<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Task.html" class="tsd-kind-icon">Task</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.TaskProvider.html" class="tsd-kind-icon">Task<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TaskExecution.html" class="tsd-kind-icon">Task<wbr>Execution</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TaskStartEvent.html" class="tsd-kind-icon">Task<wbr>Start<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TaskEndEvent.html" class="tsd-kind-icon">Task<wbr>End<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TaskProcessStartEvent.html" class="tsd-kind-icon">Task<wbr>Process<wbr>Start<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TaskProcessEndEvent.html" class="tsd-kind-icon">Task<wbr>Process<wbr>End<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TaskFilter.html" class="tsd-kind-icon">Task<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.FileType.html" class="tsd-kind-icon">File<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.FilePermission.html" class="tsd-kind-icon">File<wbr>Permission</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileStat.html" class="tsd-kind-icon">File<wbr>Stat</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.FileSystemError.html" class="tsd-kind-icon">File<wbr>System<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.FileChangeType.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileChangeEvent.html" class="tsd-kind-icon">File<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileSystemProvider.html" class="tsd-kind-icon">File<wbr>System<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileSystem.html" class="tsd-kind-icon">File<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WebviewPortMapping.html" class="tsd-kind-icon">Webview<wbr>Port<wbr>Mapping</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WebviewOptions.html" class="tsd-kind-icon">Webview<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.Webview.html" class="tsd-kind-icon">Webview</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WebviewPanelOptions.html" class="tsd-kind-icon">Webview<wbr>Panel<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WebviewPanel.html" class="tsd-kind-icon">Webview<wbr>Panel</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WebviewPanelOnDidChangeViewStateEvent.html" class="tsd-kind-icon">Webview<wbr>Panel<wbr>OnDid<wbr>Change<wbr>View<wbr>State<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.WebviewPanelSerializer.html" class="tsd-kind-icon">Webview<wbr>Panel<wbr>Serializer</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WebviewView.html" class="tsd-kind-icon">Webview<wbr>View</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.WebviewViewResolveContext.html" class="tsd-kind-icon">Webview<wbr>View<wbr>Resolve<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WebviewViewProvider.html" class="tsd-kind-icon">Webview<wbr>View<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CustomTextEditorProvider.html" class="tsd-kind-icon">Custom<wbr>Text<wbr>Editor<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CustomDocument.html" class="tsd-kind-icon">Custom<wbr>Document</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.CustomDocumentEditEvent.html" class="tsd-kind-icon">Custom<wbr>Document<wbr>Edit<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.CustomDocumentContentChangeEvent.html" class="tsd-kind-icon">Custom<wbr>Document<wbr>Content<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CustomDocumentBackup.html" class="tsd-kind-icon">Custom<wbr>Document<wbr>Backup</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CustomDocumentBackupContext.html" class="tsd-kind-icon">Custom<wbr>Document<wbr>Backup<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CustomDocumentOpenContext.html" class="tsd-kind-icon">Custom<wbr>Document<wbr>Open<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.CustomReadonlyEditorProvider.html" class="tsd-kind-icon">Custom<wbr>Readonly<wbr>Editor<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.CustomEditorProvider.html" class="tsd-kind-icon">Custom<wbr>Editor<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.Clipboard.html" class="tsd-kind-icon">Clipboard</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.UIKind.html" class="tsd-kind-icon">UIKind</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.LogLevel.html" class="tsd-kind-icon">Log<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WindowState.html" class="tsd-kind-icon">Window<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.UriHandler.html" class="tsd-kind-icon">Uri<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.TreeViewOptions.html" class="tsd-kind-icon">Tree<wbr>View<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.TreeViewExpansionEvent.html" class="tsd-kind-icon">Tree<wbr>View<wbr>Expansion<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.TreeViewSelectionChangeEvent.html" class="tsd-kind-icon">Tree<wbr>View<wbr>Selection<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TreeViewVisibilityChangeEvent.html" class="tsd-kind-icon">Tree<wbr>View<wbr>Visibility<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DataTransferFile.html" class="tsd-kind-icon">Data<wbr>Transfer<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DataTransferItem.html" class="tsd-kind-icon">Data<wbr>Transfer<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DataTransfer.html" class="tsd-kind-icon">Data<wbr>Transfer</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.TreeDragAndDropController.html" class="tsd-kind-icon">Tree<wbr>Drag<wbr>And<wbr>Drop<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ViewBadge.html" class="tsd-kind-icon">View<wbr>Badge</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.TreeView.html" class="tsd-kind-icon">Tree<wbr>View</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.TreeDataProvider.html" class="tsd-kind-icon">Tree<wbr>Data<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TreeItem.html" class="tsd-kind-icon">Tree<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TreeItemCollapsibleState.html" class="tsd-kind-icon">Tree<wbr>Item<wbr>Collapsible<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TreeItemLabel.html" class="tsd-kind-icon">Tree<wbr>Item<wbr>Label</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TerminalOptions.html" class="tsd-kind-icon">Terminal<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ExtensionTerminalOptions.html" class="tsd-kind-icon">Extension<wbr>Terminal<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.Pseudoterminal.html" class="tsd-kind-icon">Pseudoterminal</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TerminalDimensions.html" class="tsd-kind-icon">Terminal<wbr>Dimensions</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TerminalExitStatus.html" class="tsd-kind-icon">Terminal<wbr>Exit<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TerminalExitReason.html" class="tsd-kind-icon">Terminal<wbr>Exit<wbr>Reason</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.EnvironmentVariableMutatorType.html" class="tsd-kind-icon">Environment<wbr>Variable<wbr>Mutator<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.EnvironmentVariableMutator.html" class="tsd-kind-icon">Environment<wbr>Variable<wbr>Mutator</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.EnvironmentVariableCollection.html" class="tsd-kind-icon">Environment<wbr>Variable<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.ProgressLocation.html" class="tsd-kind-icon">Progress<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ProgressOptions.html" class="tsd-kind-icon">Progress<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.QuickInput.html" class="tsd-kind-icon">Quick<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.QuickPick.html" class="tsd-kind-icon">Quick<wbr>Pick</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.InputBox.html" class="tsd-kind-icon">Input<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.QuickInputButton.html" class="tsd-kind-icon">Quick<wbr>Input<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.QuickInputButtons.html" class="tsd-kind-icon">Quick<wbr>Input<wbr>Buttons</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../interfaces/_vscode_.QuickPickItemButtonEvent.html" class="tsd-kind-icon">Quick<wbr>Pick<wbr>Item<wbr>Button<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextDocumentContentChangeEvent.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Content<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TextDocumentChangeReason.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Change<wbr>Reason</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextDocumentChangeEvent.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TextDocumentSaveReason.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Save<wbr>Reason</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TextDocumentWillSaveEvent.html" class="tsd-kind-icon">Text<wbr>Document<wbr>Will<wbr>Save<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileWillCreateEvent.html" class="tsd-kind-icon">File<wbr>Will<wbr>Create<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileCreateEvent.html" class="tsd-kind-icon">File<wbr>Create<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileWillDeleteEvent.html" class="tsd-kind-icon">File<wbr>Will<wbr>Delete<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileDeleteEvent.html" class="tsd-kind-icon">File<wbr>Delete<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileWillRenameEvent.html" class="tsd-kind-icon">File<wbr>Will<wbr>Rename<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.FileRenameEvent.html" class="tsd-kind-icon">File<wbr>Rename<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WorkspaceFoldersChangeEvent.html" class="tsd-kind-icon">Workspace<wbr>Folders<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.WorkspaceFolder.html" class="tsd-kind-icon">Workspace<wbr>Folder</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="_vscode_.html#ConfigurationScope" class="tsd-kind-icon">Configuration<wbr>Scope</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.ConfigurationChangeEvent.html" class="tsd-kind-icon">Configuration<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.NotebookEditorRevealType.html" class="tsd-kind-icon">Notebook<wbr>Editor<wbr>Reveal<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookEditor.html" class="tsd-kind-icon">Notebook<wbr>Editor</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookRendererMessaging.html" class="tsd-kind-icon">Notebook<wbr>Renderer<wbr>Messaging</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.NotebookCellKind.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookCell.html" class="tsd-kind-icon">Notebook<wbr>Cell</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookDocument.html" class="tsd-kind-icon">Notebook<wbr>Document</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookDocumentCellChange.html" class="tsd-kind-icon">Notebook<wbr>Document<wbr>Cell<wbr>Change</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookDocumentContentChange.html" class="tsd-kind-icon">Notebook<wbr>Document<wbr>Content<wbr>Change</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookDocumentChangeEvent.html" class="tsd-kind-icon">Notebook<wbr>Document<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookCellExecutionSummary.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Execution<wbr>Summary</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.NotebookRange.html" class="tsd-kind-icon">Notebook<wbr>Range</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.NotebookCellOutputItem.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Output<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.NotebookCellOutput.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.NotebookCellData.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.NotebookData.html" class="tsd-kind-icon">Notebook<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookSerializer.html" class="tsd-kind-icon">Notebook<wbr>Serializer</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookDocumentContentOptions.html" class="tsd-kind-icon">Notebook<wbr>Document<wbr>Content<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.NotebookControllerAffinity.html" class="tsd-kind-icon">Notebook<wbr>Controller<wbr>Affinity</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookController.html" class="tsd-kind-icon">Notebook<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookCellExecution.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Execution</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.NotebookCellStatusBarAlignment.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Alignment</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.NotebookCellStatusBarItem.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.NotebookCellStatusBarItemProvider.html" class="tsd-kind-icon">Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Item<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SourceControlInputBox.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Input<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.QuickDiffProvider.html" class="tsd-kind-icon">Quick<wbr>Diff<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SourceControlResourceThemableDecorations.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Resource<wbr>Themable<wbr>Decorations</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SourceControlResourceDecorations.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Resource<wbr>Decorations</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SourceControlResourceState.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Resource<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SourceControlResourceGroup.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Resource<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.SourceControl.html" class="tsd-kind-icon">Source<wbr>Control</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugProtocolMessage.html" class="tsd-kind-icon">Debug<wbr>Protocol<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugProtocolSource.html" class="tsd-kind-icon">Debug<wbr>Protocol<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugProtocolBreakpoint.html" class="tsd-kind-icon">Debug<wbr>Protocol<wbr>Breakpoint</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugConfiguration.html" class="tsd-kind-icon">Debug<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugSession.html" class="tsd-kind-icon">Debug<wbr>Session</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugSessionCustomEvent.html" class="tsd-kind-icon">Debug<wbr>Session<wbr>Custom<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugConfigurationProvider.html" class="tsd-kind-icon">Debug<wbr>Configuration<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DebugAdapterExecutable.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Executable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugAdapterExecutableOptions.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Executable<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DebugAdapterServer.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DebugAdapterNamedPipeServer.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Named<wbr>Pipe<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugAdapter.html" class="tsd-kind-icon">Debug<wbr>Adapter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.DebugAdapterInlineImplementation.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Inline<wbr>Implementation</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="_vscode_.html#DebugAdapterDescriptor" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Descriptor</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugAdapterDescriptorFactory.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Descriptor<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugAdapterTracker.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Tracker</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugAdapterTrackerFactory.html" class="tsd-kind-icon">Debug<wbr>Adapter<wbr>Tracker<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugConsole.html" class="tsd-kind-icon">Debug<wbr>Console</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.BreakpointsChangeEvent.html" class="tsd-kind-icon">Breakpoints<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.Breakpoint.html" class="tsd-kind-icon">Breakpoint</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.SourceBreakpoint.html" class="tsd-kind-icon">Source<wbr>Breakpoint</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.FunctionBreakpoint.html" class="tsd-kind-icon">Function<wbr>Breakpoint</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.DebugConsoleMode.html" class="tsd-kind-icon">Debug<wbr>Console<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.DebugSessionOptions.html" class="tsd-kind-icon">Debug<wbr>Session<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.DebugConfigurationProviderTriggerKind.html" class="tsd-kind-icon">Debug<wbr>Configuration<wbr>Provider<wbr>Trigger<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.CommentThreadCollapsibleState.html" class="tsd-kind-icon">Comment<wbr>Thread<wbr>Collapsible<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.CommentMode.html" class="tsd-kind-icon">Comment<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.CommentThreadState.html" class="tsd-kind-icon">Comment<wbr>Thread<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CommentThread.html" class="tsd-kind-icon">Comment<wbr>Thread</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CommentAuthorInformation.html" class="tsd-kind-icon">Comment<wbr>Author<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CommentReaction.html" class="tsd-kind-icon">Comment<wbr>Reaction</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.Comment.html" class="tsd-kind-icon">Comment</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CommentReply.html" class="tsd-kind-icon">Comment<wbr>Reply</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CommentingRangeProvider.html" class="tsd-kind-icon">Commenting<wbr>Range<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CommentOptions.html" class="tsd-kind-icon">Comment<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.CommentController.html" class="tsd-kind-icon">Comment<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.AuthenticationSession.html" class="tsd-kind-icon">Authentication<wbr>Session</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.AuthenticationSessionAccountInformation.html" class="tsd-kind-icon">Authentication<wbr>Session<wbr>Account<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.AuthenticationGetSessionOptions.html" class="tsd-kind-icon">Authentication<wbr>Get<wbr>Session<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.AuthenticationProviderInformation.html" class="tsd-kind-icon">Authentication<wbr>Provider<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.AuthenticationSessionsChangeEvent.html" class="tsd-kind-icon">Authentication<wbr>Sessions<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.AuthenticationProviderOptions.html" class="tsd-kind-icon">Authentication<wbr>Provider<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.AuthenticationProviderAuthenticationSessionsChangeEvent.html" class="tsd-kind-icon">Authentication<wbr>Provider<wbr>Authentication<wbr>Sessions<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.AuthenticationProvider.html" class="tsd-kind-icon">Authentication<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-namespace">
+						<a href="../enums/_vscode_.TestRunProfileKind.html" class="tsd-kind-icon">Test<wbr>Run<wbr>Profile<wbr>Kind</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TestTag.html" class="tsd-kind-icon">Test<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TestRunProfile.html" class="tsd-kind-icon">Test<wbr>Run<wbr>Profile</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TestController.html" class="tsd-kind-icon">Test<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TestRunRequest.html" class="tsd-kind-icon">Test<wbr>Run<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TestRun.html" class="tsd-kind-icon">Test<wbr>Run</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TestItemCollection.html" class="tsd-kind-icon">Test<wbr>Item<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TestItem.html" class="tsd-kind-icon">Test<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TestMessage.html" class="tsd-kind-icon">Test<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TabInputText.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Text</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TabInputTextDiff.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Text<wbr>Diff</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TabInputCustom.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Custom</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TabInputWebview.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Webview</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TabInputNotebook.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Notebook</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TabInputNotebookDiff.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Notebook<wbr>Diff</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="../classes/_vscode_.TabInputTerminal.html" class="tsd-kind-icon">Tab<wbr>Input<wbr>Terminal</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.Tab.html" class="tsd-kind-icon">Tab</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TabChangeEvent.html" class="tsd-kind-icon">Tab<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TabGroupChangeEvent.html" class="tsd-kind-icon">Tab<wbr>Group<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TabGroup.html" class="tsd-kind-icon">Tab<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TabGroups.html" class="tsd-kind-icon">Tab<wbr>Groups</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="../classes/_vscode_.TelemetryTrustedValue.html" class="tsd-kind-icon">Telemetry<wbr>Trusted<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TelemetryLogger.html" class="tsd-kind-icon">Telemetry<wbr>Logger</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TelemetrySender.html" class="tsd-kind-icon">Telemetry<wbr>Sender</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_vscode_.TelemetryLoggerOptions.html" class="tsd-kind-icon">Telemetry<wbr>Logger<wbr>Options</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>图例</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p><a href="https://liiked.github.io/VS-Code-Extension-Doc-ZH/" target="_blank">VS Code 插件开发中文文档</a> | <a href="https://jeasonstudio.gitbooks.io/vscode-cn-doc/content/" target="_blank">VS Code 中文文档</a> | <a href="https://code.visualstudio.com/docs" target="_blank">VS Code 官网文档</a> | <a href="https://marketplace.visualstudio.com/" target="_blank">VS Code 扩展市场</a></p>
+	<p>Generated by <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<a href="https://github.com/youngjuning/vscode-api" target="_blank" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: fixed; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+</body>
+</html>

@@ -22,9 +22,9 @@ https://youngjuning.js.org/vscode-api/classes/vscode.DebugAdapterInlineImplement
 https://youngjuning.js.org/vscode-api/classes/vscode.DebugAdapterNamedPipeServer.html
 https://youngjuning.js.org/vscode-api/classes/vscode.DebugAdapterServer.html
 https://youngjuning.js.org/vscode-api/classes/vscode.Diagnostic.html
+https://youngjuning.js.org/vscode-api/classes/vscode.DiagnosticRelatedInformation.html
 https://youngjuning.js.org/vscode-api/classes/vscode.Disposable.html
 https://youngjuning.js.org/vscode-api/classes/vscode.DocumentDropEdit.html
-https://youngjuning.js.org/vscode-api/classes/vscode.DiagnosticRelatedInformation.html
 https://youngjuning.js.org/vscode-api/classes/vscode.DocumentHighlight.html
 https://youngjuning.js.org/vscode-api/classes/vscode.DocumentLink.html
 https://youngjuning.js.org/vscode-api/classes/vscode.DocumentSymbol.html
@@ -168,7 +168,6 @@ https://youngjuning.js.org/vscode-api/modules/vscode.workspace.html
 https://youngjuning.js.org/vscode-api/interfaces/Thenable.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AccessibilityInformation.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationGetSessionOptions.html
-https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationProvider.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationProviderAuthenticationSessionsChangeEvent.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationProviderInformation.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationProviderOptions.html
@@ -177,6 +176,7 @@ https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationSessionAcc
 https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationSessionsChangeEvent.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.BreakpointsChangeEvent.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.CallHierarchyProvider.html
+https://youngjuning.js.org/vscode-api/interfaces/vscode.AuthenticationProvider.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.CancellationToken.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.Clipboard.html
 https://youngjuning.js.org/vscode-api/interfaces/vscode.CodeActionContext.html

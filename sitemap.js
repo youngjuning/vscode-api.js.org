@@ -8,7 +8,7 @@ const execSh = require("exec-sh");
 	}
 	const files = await recursive("./docs");
 	const urls = files.filter(file => file.endsWith('.html')).map(file => {
-		return file.replace('docs/', 'https://youngjuning.js.org/vscode-api/')
+		return file.replace('docs/', 'https://vscode-api.js.org/')
 	})
 	fs.writeFileSync("./docs/urls.txt", urls.join("\n"));
 	execSh("npx sitemap < ./docs/urls.txt > ./docs/sitemap.xml");

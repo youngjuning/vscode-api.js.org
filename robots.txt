@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://youngjuning.js.org/vscode-api/sitemap.xml
+Sitemap: https://vscode-api.js.org/sitemap.xml

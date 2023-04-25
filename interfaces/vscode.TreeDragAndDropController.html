@@ -1,0 +1,420 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TreeDragAndDropController | VS Code API</title>
+	<meta name="description" content="VS Code API is a set of JavaScript APIs that you can invoke in your Visual Studio Code extension. This page lists all VS Code APIs available to extension authors.">
+	<meta name="author" content="洛竹">
+	<meta name="copyright" content="洛竹">
+	<meta property="og:title" content="VS Code API" />
+	<meta property="og:type" content="docs">
+	<meta property="og:image" content="https://code.visualstudio.com/favicon.ico" />
+	<meta property="og:url" content="https://vscode-api.js.org/index.html">
+	<meta property="og:site_name" content="VS Code API">
+	<meta property="og:description" content="VS Code API is a set of JavaScript APIs that you can invoke in your Visual Studio Code extension. This page lists all VS Code APIs available to extension authors.">
+	<meta property="article:tag" content="vscode">
+	<meta property="article:tag" content="vscode api">
+	<meta property="article:tag" content="VS Code API">
+	<meta property="article:tag" content="VS Code Extension API">
+	<meta property="article:tag" content="vscode VS Code API">
+	<meta property="article:tag" content="vscode TreeDragAndDropController">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<link rel="shortcut icon" href="https://code.visualstudio.com/favicon.ico" sizes="128x128">
+	<link rel='canonical' href='https://vscode-api-cn.js.org/interfaces/vscode.TreeDragAndDropController.html' />
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7962287588031867" crossorigin="anonymous"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4D7WZ6E85W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-4D7WZ6E85W');
+	</script>
+	<style>
+        .github-corner svg {
+            z-index: 1;
+        }
+        .github-corner:hover .octo-arm {
+            animation:octocat-wave 560ms ease-in-out
+        }
+        @keyframes octocat-wave {
+            0%,100%{transform:rotate(0)}
+            20%,60%{transform:rotate(-25deg)}
+            40%,80%{transform:rotate(10deg)}
+        }
+        @media (max-width:500px) {
+            .github-corner:hover
+            .octo-arm{animation:none}
+            .github-corner .octo-arm{
+                animation:octocat-wave 560ms ease-in-out
+            }
+        }
+        .container-main {
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">VS Code API</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">VS Code API</a>
+				</li>
+				<li>
+					<a href="../modules/vscode.html">vscode</a>
+				</li>
+				<li>
+					<a href="vscode.TreeDragAndDropController.html">TreeDragAndDropController</a>
+				</li>
+			</ul>
+			<h1>Interface TreeDragAndDropController&lt;T&gt;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Provides support for drag and drop in <code>TreeView</code>.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">TreeDragAndDropController</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7962287588031867" data-ad-slot="2542544532"></ins>
+				<script> (adsbygoogle = window.adsbygoogle || []).push({});</script>
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties（2）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeDragAndDropController.html#dropMimeTypes" class="tsd-kind-icon">drop<wbr>Mime<wbr>Types</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeDragAndDropController.html#dragMimeTypes" class="tsd-kind-icon">drag<wbr>Mime<wbr>Types</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods（2）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TreeDragAndDropController.html#handleDrag" class="tsd-kind-icon">handle<wbr>Drag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TreeDragAndDropController.html#handleDrop" class="tsd-kind-icon">handle<wbr>Drop</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties（2）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="dropMimeTypes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> drop<wbr>Mime<wbr>Types</h3>
+					<div class="tsd-signature tsd-kind-icon">drop<wbr>Mime<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/40c95c2/vscode.d.ts#L10549">vscode.d.ts:10549</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The mime types that the <a href="vscode.TreeDragAndDropController.html#handleDrop"><code>handleDrop</code></a> method of this <code>DragAndDropController</code> supports.
+							This could be well-defined, existing, mime types, and also mime types defined by the extension.</p>
+						</div>
+						<p>To support drops from trees, you will need to add the mime type of that tree.
+							This includes drops from within the same tree.
+						The mime type of a tree is recommended to be of the format <code>application/vnd.code.tree.&lt;treeidlowercase&gt;</code>.</p>
+						<p>Use the special <code>files</code> mime type to support all types of dropped files <a href="vscode.DataTransferFile.html">files</a>, regardless of the file&#39;s actual mime type.</p>
+						<p>To learn the mime type of a dragged item:</p>
+						<ol>
+							<li>Set up your <code>DragAndDropController</code></li>
+							<li>Use the Developer: Set Log Level... command to set the level to &quot;Debug&quot;</li>
+							<li>Open the developer tools and drag the item with unknown mime type over your tree. The mime types will be logged to the developer console</li>
+						</ol>
+						<p>Note that mime types that cannot be sent to the extension will be omitted.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="dragMimeTypes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> drag<wbr>Mime<wbr>Types</h3>
+					<div class="tsd-signature tsd-kind-icon">drag<wbr>Mime<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/40c95c2/vscode.d.ts#L10557">vscode.d.ts:10557</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The mime types that the <a href="vscode.TreeDragAndDropController.html#handleDrag"><code>handleDrag</code></a> method of this <code>TreeDragAndDropController</code> may add to the tree data transfer.
+							This could be well-defined, existing, mime types, and also mime types defined by the extension.</p>
+						</div>
+						<p>The recommended mime type of the tree (<code>application/vnd.code.tree.&lt;treeidlowercase&gt;</code>) will be automatically added.</p>
+					</div>
+				</section>
+				<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid"
+				data-ad-client="ca-pub-7962287588031867" data-ad-slot="2542544532"></ins>
+				<script> (adsbygoogle = window.adsbygoogle || []).push({});</script>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods（2）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="handleDrag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> handle<wbr>Drag</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Drag<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, dataTransfer<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/40c95c2/vscode.d.ts#L10575">vscode.d.ts:10575</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>When the user starts dragging items from this <code>DragAndDropController</code>, <code>handleDrag</code> will be called.
+									Extensions can use <code>handleDrag</code> to add their <a href="../classes/vscode.DataTransferItem.html"><code>DataTransferItem</code></a> items to the drag and drop.</p>
+								</div>
+								<p>When the items are dropped on <strong>another tree item</strong> in <strong>the same tree</strong>, your <code>DataTransferItem</code> objects
+									will be preserved. Use the recommended mime type for the tree (<code>application/vnd.code.tree.&lt;treeidlowercase&gt;</code>) to add
+								tree objects in a data transfer. See the documentation for <code>DataTransferItem</code> for how best to take advantage of this.</p>
+								<p>To add a data transfer item that can be dragged into the editor, use the application specific mime type &quot;text/uri-list&quot;.
+									The data for &quot;text/uri-list&quot; should be a string with <code>toString()</code>ed Uris separated by newlines. To specify a cursor position in the file,
+								set the Uri&#39;s fragment to <code>L3,5</code>, where 3 is the line number and 5 is the column number.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The source items for the drag and drop operation.</p>
+									</div>
+								</li>
+								<li>
+									<h5>dataTransfer: <a href="../classes/vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data transfer associated with this drag.</p>
+									</div>
+								</li>
+								<li>
+									<h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A cancellation token indicating that drag has been cancelled.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="handleDrop" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> handle<wbr>Drop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Drop<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span>, dataTransfer<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/40c95c2/vscode.d.ts#L10586">vscode.d.ts:10586</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called when a drag and drop action results in a drop on the tree that this <code>DragAndDropController</code> belongs to.</p>
+								</div>
+								<p>Extensions should fire <a href="vscode.TreeDataProvider.html#onDidChangeTreeData">onDidChangeTreeData</a> for any elements that need to be refreshed.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target tree element that the drop is occurring on. When undefined, the target is the root.</p>
+									</div>
+								</li>
+								<li>
+									<h5>dataTransfer: <a href="../classes/vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data transfer items of the source of the drag.</p>
+									</div>
+								</li>
+								<li>
+									<h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A cancellation token indicating that the drop has been cancelled.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid"
+				data-ad-client="ca-pub-7962287588031867" data-ad-slot="2542544532"></ins>
+				<script> (adsbygoogle = window.adsbygoogle || []).push({});</script>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+					<li class="current tsd-kind-namespace">
+						<a href="../modules/vscode.html">vscode</a>
+						<ul>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.authentication.html">authentication</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.commands.html">commands</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.comments.html">comments</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.debug.html">debug</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.env.html">env</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.extensions.html">extensions</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.l10n.html">l10n</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.languages.html">languages</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.notebooks.html">notebooks</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.scm.html">scm</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.tasks.html">tasks</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.tests.html">tests</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.window.html">window</a>
+							</li>
+							<li class=" tsd-kind-namespace tsd-parent-kind-namespace">
+								<a href="../modules/vscode.workspace.html">workspace</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<div style="width: 200px">
+					<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=qVIkfOBwRQEYQ-KeEJi1mydEksAUHl5sDCkc1TsemHE"></script>
+				</div>
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace tsd-has-type-parameter">
+						<a href="vscode.TreeDragAndDropController.html" class="tsd-kind-icon">Tree<wbr>Drag<wbr>And<wbr>Drop<wbr>Controller</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="vscode.TreeDragAndDropController.html#dropMimeTypes" class="tsd-kind-icon">drop<wbr>Mime<wbr>Types</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="vscode.TreeDragAndDropController.html#dragMimeTypes" class="tsd-kind-icon">drag<wbr>Mime<wbr>Types</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="vscode.TreeDragAndDropController.html#handleDrag" class="tsd-kind-icon">handle<wbr>Drag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="vscode.TreeDragAndDropController.html#handleDrop" class="tsd-kind-icon">handle<wbr>Drop</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated by <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

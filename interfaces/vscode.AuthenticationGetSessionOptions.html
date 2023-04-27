@@ -158,16 +158,22 @@
 					<div class="tsd-signature tsd-kind-icon">clear<wbr>Session<wbr>Preference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/b33e5d9/vscode.d.ts#L15664">vscode.d.ts:15664</a></li>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/8c97906/vscode.d.ts#L15671">vscode.d.ts:15671</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Whether the existing user session preference should be cleared.</p>
+							<p>Whether the existing session preference should be cleared.</p>
 						</div>
 						<p>For authentication providers that support being signed into multiple accounts at once, the user will be
 							prompted to select an account to use when <a href="../modules/vscode.authentication.html#getSession">getSession</a> is called. This preference
 						is remembered until <a href="../modules/vscode.authentication.html#getSession">getSession</a> is called with this flag.</p>
+						<p>Note:
+							The preference is extension specific. So if one extension calls <a href="../modules/vscode.authentication.html#getSession">getSession</a>, it will not
+							affect the session preference for another extension calling <a href="../modules/vscode.authentication.html#getSession">getSession</a>. Additionally,
+							the preference is set for the current workspace and also globally. This means that new workspaces will use the &quot;global&quot;
+							value at first and then when this flag is provided, a new value can be set for that workspace. This also means
+						that pre-existing workspaces will not lose their preference if a new workspace sets this flag.</p>
 						<p>Defaults to false.</p>
 					</div>
 				</section>
@@ -177,7 +183,7 @@
 					<div class="tsd-signature tsd-kind-icon">create<wbr>IfNone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/b33e5d9/vscode.d.ts#L15680">vscode.d.ts:15680</a></li>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/8c97906/vscode.d.ts#L15687">vscode.d.ts:15687</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -199,7 +205,7 @@
 					<div class="tsd-signature tsd-kind-icon">force<wbr>New<wbr>Session<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>detail<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/b33e5d9/vscode.d.ts#L15693">vscode.d.ts:15693</a></li>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/8c97906/vscode.d.ts#L15700">vscode.d.ts:15700</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -219,7 +225,7 @@
 					<div class="tsd-signature tsd-kind-icon">silent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/b33e5d9/vscode.d.ts#L15705">vscode.d.ts:15705</a></li>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/8c97906/vscode.d.ts#L15712">vscode.d.ts:15712</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

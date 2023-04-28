@@ -11,5 +11,3 @@ With the VS Code API, extensions can add new features, modify existing ones, and
 You can find more information about the API in the [documentation](/modules/vscode.html):
 
 > The API list is compiled from [vscode.d.ts](https://github.com/youngjuning/vscode-api/blob/main/vscode.d.ts) file using Typedoc, if [vscode.d.ts source File](https://github.com/microsoft/vscode/blob/main/src/vscode-dts/vscode.d.ts) has been updated, we will synchronize in time, the current corresponding commit is b19d36f.
-
-![vscode api](https://cdn.jsdelivr.net/gh/youngjuning/images@main/1682563365488.png)

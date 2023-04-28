@@ -325,9 +325,9 @@ https://vscode-api.js.org/interfaces/vscode.StatusBarItem.html
 https://vscode-api.js.org/interfaces/vscode.Tab.html
 https://vscode-api.js.org/interfaces/vscode.TabChangeEvent.html
 https://vscode-api.js.org/interfaces/vscode.TabGroup.html
+https://vscode-api.js.org/interfaces/vscode.TabGroupChangeEvent.html
 https://vscode-api.js.org/interfaces/vscode.TabGroups.html
 https://vscode-api.js.org/interfaces/vscode.TaskDefinition.html
-https://vscode-api.js.org/interfaces/vscode.TabGroupChangeEvent.html
 https://vscode-api.js.org/interfaces/vscode.TaskEndEvent.html
 https://vscode-api.js.org/interfaces/vscode.TaskExecution.html
 https://vscode-api.js.org/interfaces/vscode.TaskFilter.html

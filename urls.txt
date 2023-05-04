@@ -399,9 +399,9 @@ https://vscode-api.js.org/interfaces/vscode.WorkspaceConfiguration.html
 https://vscode-api.js.org/interfaces/vscode.WorkspaceEditEntryMetadata.html
 https://vscode-api.js.org/interfaces/vscode.WorkspaceEditMetadata.html
 https://vscode-api.js.org/interfaces/vscode.WorkspaceFolder.html
-https://vscode-api.js.org/interfaces/vscode.WorkspaceFolderPickOptions.html
 https://vscode-api.js.org/interfaces/vscode.WorkspaceFoldersChangeEvent.html
 https://vscode-api.js.org/interfaces/vscode.WorkspaceSymbolProvider.html
+https://vscode-api.js.org/interfaces/vscode.WorkspaceFolderPickOptions.html
 https://vscode-api.js.org/modules/vscode.authentication.html
 https://vscode-api.js.org/modules/vscode.commands.html
 https://vscode-api.js.org/modules/vscode.comments.html

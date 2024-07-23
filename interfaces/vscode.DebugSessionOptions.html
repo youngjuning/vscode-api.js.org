@@ -117,264 +117,191 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Options for <a href="../modules/vscode.debug.html#startDebugging">starting a debug session</a>.</p>
-
-                </div>
-        </div>
-        </section>
-
-
-    <section class="tsd-panel tsd-hierarchy">
-        <h3>Hierarchy</h3>
-        <ul class="tsd-hierarchy">
-        <li>
-                <span class="target">DebugSessionOptions</span>
-
-        </li>
-</ul>
-
-    </section>
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section ">
-                            <h3>Properties（9）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#parentSession" class="tsd-kind-icon">parent<wbr>Session</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#lifecycleManagedByParent" class="tsd-kind-icon">lifecycle<wbr>Managed<wbr>ByParent</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#consoleMode" class="tsd-kind-icon">console<wbr>Mode</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#noDebug" class="tsd-kind-icon">no<wbr>Debug</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#compact" class="tsd-kind-icon">compact</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#suppressSaveBeforeStart" class="tsd-kind-icon">suppress<wbr>Save<wbr>Before<wbr>Start</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#suppressDebugToolbar" class="tsd-kind-icon">suppress<wbr>Debug<wbr>Toolbar</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#suppressDebugStatusbar" class="tsd-kind-icon">suppress<wbr>Debug<wbr>Statusbar</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#suppressDebugView" class="tsd-kind-icon">suppress<wbr>Debug<wbr>View</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group ">
-        <h2>Properties（9）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="parentSession" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> parent<wbr>Session</h3>
-
-        <div class="tsd-signature tsd-kind-icon">parent<wbr>Session<span class="tsd-signature-symbol">:</span> <a href="vscode.DebugSession.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugSession</a></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16130">vscode.d.ts:16130</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>When specified the newly created debug session is registered as a &quot;child&quot; session of this
-&quot;parent&quot; debug session.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="lifecycleManagedByParent" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> lifecycle<wbr>Managed<wbr>ByParent</h3>
-
-        <div class="tsd-signature tsd-kind-icon">lifecycle<wbr>Managed<wbr>ByParent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16137">vscode.d.ts:16137</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Controls whether lifecycle requests like &#39;restart&#39; are sent to the newly created session or its parent session.
-By default (if the property is false or missing), lifecycle requests are sent to the new session.
-This property is ignored if the session has no parent session.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="consoleMode" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> console<wbr>Mode</h3>
-
-        <div class="tsd-signature tsd-kind-icon">console<wbr>Mode<span class="tsd-signature-symbol">:</span> <a href="../enums/vscode.DebugConsoleMode.html" class="tsd-signature-type" data-tsd-kind="Enumeration">DebugConsoleMode</a></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16144">vscode.d.ts:16144</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Controls whether this session should have a separate debug console or share it
-with the parent session. Has no effect for sessions which do not have a parent session.
-Defaults to Separate.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="noDebug" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Debug</h3>
-
-        <div class="tsd-signature tsd-kind-icon">no<wbr>Debug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16150">vscode.d.ts:16150</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Controls whether this session should run without debugging, thus ignoring breakpoints.
-When this property is not specified, the value from the parent session (if there is one) is used.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="compact" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> compact</h3>
-
-        <div class="tsd-signature tsd-kind-icon">compact<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16157">vscode.d.ts:16157</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Controls if the debug session&#39;s parent session is shown in the CALL STACK view even if it has only a single child.
-By default, the debug session will never hide its parent.
-If compact is true, debug sessions with a single child are hidden in the CALL STACK view to make the tree more compact.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="suppressSaveBeforeStart" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> suppress<wbr>Save<wbr>Before<wbr>Start</h3>
-
-        <div class="tsd-signature tsd-kind-icon">suppress<wbr>Save<wbr>Before<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16162">vscode.d.ts:16162</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>When true, a save will not be triggered for open editors when starting a debug session, regardless of the value of the <code>debug.saveBeforeStart</code> setting.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="suppressDebugToolbar" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> suppress<wbr>Debug<wbr>Toolbar</h3>
-
-        <div class="tsd-signature tsd-kind-icon">suppress<wbr>Debug<wbr>Toolbar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16167">vscode.d.ts:16167</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>When true, the debug toolbar will not be shown for this session.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="suppressDebugStatusbar" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> suppress<wbr>Debug<wbr>Statusbar</h3>
-
-        <div class="tsd-signature tsd-kind-icon">suppress<wbr>Debug<wbr>Statusbar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16172">vscode.d.ts:16172</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>When true, the window statusbar color will not be changed for this session.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="suppressDebugView" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> suppress<wbr>Debug<wbr>View</h3>
-
-        <div class="tsd-signature tsd-kind-icon">suppress<wbr>Debug<wbr>View<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16177">vscode.d.ts:16177</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>When true, the debug viewlet will not be automatically revealed for this session.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Options for <a href="../modules/vscode.debug.html#startDebugging">starting a debug session</a>.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">DebugSessionOptions</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties（9）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#parentSession" class="tsd-kind-icon">parent<wbr>Session</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#lifecycleManagedByParent" class="tsd-kind-icon">lifecycle<wbr>Managed<wbr>ByParent</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#consoleMode" class="tsd-kind-icon">console<wbr>Mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#noDebug" class="tsd-kind-icon">no<wbr>Debug</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#compact" class="tsd-kind-icon">compact</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#suppressSaveBeforeStart" class="tsd-kind-icon">suppress<wbr>Save<wbr>Before<wbr>Start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#suppressDebugToolbar" class="tsd-kind-icon">suppress<wbr>Debug<wbr>Toolbar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#suppressDebugStatusbar" class="tsd-kind-icon">suppress<wbr>Debug<wbr>Statusbar</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSessionOptions.html#suppressDebugView" class="tsd-kind-icon">suppress<wbr>Debug<wbr>View</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties（9）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="parentSession" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> parent<wbr>Session</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<wbr>Session<span class="tsd-signature-symbol">:</span> <a href="vscode.DebugSession.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugSession</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16130">vscode.d.ts:16130</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When specified the newly created debug session is registered as a &quot;child&quot; session of this
+							&quot;parent&quot; debug session.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="lifecycleManagedByParent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> lifecycle<wbr>Managed<wbr>ByParent</h3>
+					<div class="tsd-signature tsd-kind-icon">lifecycle<wbr>Managed<wbr>ByParent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16137">vscode.d.ts:16137</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Controls whether lifecycle requests like &#39;restart&#39; are sent to the newly created session or its parent session.
+								By default (if the property is false or missing), lifecycle requests are sent to the new session.
+							This property is ignored if the session has no parent session.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="consoleMode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> console<wbr>Mode</h3>
+					<div class="tsd-signature tsd-kind-icon">console<wbr>Mode<span class="tsd-signature-symbol">:</span> <a href="../enums/vscode.DebugConsoleMode.html" class="tsd-signature-type" data-tsd-kind="Enumeration">DebugConsoleMode</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16144">vscode.d.ts:16144</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Controls whether this session should have a separate debug console or share it
+								with the parent session. Has no effect for sessions which do not have a parent session.
+							Defaults to Separate.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="noDebug" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Debug</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Debug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16150">vscode.d.ts:16150</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Controls whether this session should run without debugging, thus ignoring breakpoints.
+							When this property is not specified, the value from the parent session (if there is one) is used.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="compact" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> compact</h3>
+					<div class="tsd-signature tsd-kind-icon">compact<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16157">vscode.d.ts:16157</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Controls if the debug session&#39;s parent session is shown in the CALL STACK view even if it has only a single child.
+								By default, the debug session will never hide its parent.
+							If compact is true, debug sessions with a single child are hidden in the CALL STACK view to make the tree more compact.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="suppressSaveBeforeStart" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> suppress<wbr>Save<wbr>Before<wbr>Start</h3>
+					<div class="tsd-signature tsd-kind-icon">suppress<wbr>Save<wbr>Before<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16162">vscode.d.ts:16162</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When true, a save will not be triggered for open editors when starting a debug session, regardless of the value of the <code>debug.saveBeforeStart</code> setting.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="suppressDebugToolbar" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> suppress<wbr>Debug<wbr>Toolbar</h3>
+					<div class="tsd-signature tsd-kind-icon">suppress<wbr>Debug<wbr>Toolbar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16167">vscode.d.ts:16167</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When true, the debug toolbar will not be shown for this session.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="suppressDebugStatusbar" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> suppress<wbr>Debug<wbr>Statusbar</h3>
+					<div class="tsd-signature tsd-kind-icon">suppress<wbr>Debug<wbr>Statusbar<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16172">vscode.d.ts:16172</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When true, the window statusbar color will not be changed for this session.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="suppressDebugView" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> suppress<wbr>Debug<wbr>View</h3>
+					<div class="tsd-signature tsd-kind-icon">suppress<wbr>Debug<wbr>View<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16177">vscode.d.ts:16177</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When true, the debug viewlet will not be automatically revealed for this session.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

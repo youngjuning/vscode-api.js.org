@@ -117,215 +117,159 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Provider for readonly custom editors that use a custom document model.</p>
-
-                </div>
-                <p>Custom editors use <a href="vscode.CustomDocument.html"><code>CustomDocument</code></a> as their document model instead of a <a href="vscode.TextDocument.html"><code>TextDocument</code></a>.</p>
-<p>You should use this type of custom editor when dealing with binary files or more complex scenarios. For simple
-text based documents, use <a href="vscode.CustomTextEditorProvider.html"><code>CustomTextEditorProvider</code></a> instead.</p>
-
-        </div>
-        </section>
-
-    <section class="tsd-panel tsd-type-parameters">
-        <h3>Type parameters</h3>
-        <ul class="tsd-type-parameters">
-        <li>
-            <h4>T<span class="tsd-signature-symbol">: </span><a href="vscode.CustomDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomDocument</a> = <a href="vscode.CustomDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomDocument</a></h4>
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Type of the custom document returned by this provider.</p>
-
-                </div>
-        </div>
-        </li>
-</ul>
-
-    </section>
-
-    <section class="tsd-panel tsd-hierarchy">
-        <h3>Hierarchy</h3>
-        <ul class="tsd-hierarchy">
-        <li>
-                <span class="target">CustomReadonlyEditorProvider</span>
-
-                    <ul class="tsd-hierarchy">
-        <li>
-                <a href="vscode.CustomEditorProvider.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditorProvider</a>
-
-        </li>
-</ul>
-        </li>
-</ul>
-
-    </section>
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section ">
-                            <h3>Methods（2）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.CustomReadonlyEditorProvider.html#openCustomDocument" class="tsd-kind-icon">open<wbr>Custom<wbr>Document</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.CustomReadonlyEditorProvider.html#resolveCustomEditor" class="tsd-kind-icon">resolve<wbr>Custom<wbr>Editor</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group ">
-        <h2>Methods（2）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="openCustomDocument" class="tsd-anchor"></a>
-        <h3>open<wbr>Custom<wbr>Document</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">open<wbr>Custom<wbr>Document<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, openContext<span class="tsd-signature-symbol">: </span><a href="vscode.CustomDocumentOpenContext.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomDocumentOpenContext</a>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L9807">vscode.d.ts:9807</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Create a new document for a given resource.</p>
-
-                </div>
-                <p><code>openCustomDocument</code> is called when the first time an editor for a given resource is opened. The opened
-document is then passed to <code>resolveCustomEditor</code> so that the editor can be shown to the user.</p>
-<p>Already opened <code>CustomDocument</code> are re-used if the user opened additional editors. When all editors for a
-given resource are closed, the <code>CustomDocument</code> is disposed of. Opening an editor at this point will
-trigger another call to <code>openCustomDocument</code>.</p>
-
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Uri of the document to open.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>openContext: <a href="vscode.CustomDocumentOpenContext.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomDocumentOpenContext</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Additional information about the opening custom document.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>A cancellation token that indicates the result is no longer needed.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-        <p>The custom document.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="resolveCustomEditor" class="tsd-anchor"></a>
-        <h3>resolve<wbr>Custom<wbr>Editor</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">resolve<wbr>Custom<wbr>Editor<span class="tsd-signature-symbol">(</span>document<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, webviewPanel<span class="tsd-signature-symbol">: </span><a href="vscode.WebviewPanel.html" class="tsd-signature-type" data-tsd-kind="Interface">WebviewPanel</a>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L9826">vscode.d.ts:9826</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Resolve a custom editor for a given resource.</p>
-
-                </div>
-                <p>This is called whenever the user opens a new editor for this <code>CustomEditorProvider</code>.</p>
-
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>document: <span class="tsd-signature-type">T</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Document for the resource being resolved.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>webviewPanel: <a href="vscode.WebviewPanel.html" class="tsd-signature-type" data-tsd-kind="Interface">WebviewPanel</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The webview panel used to display the editor UI for this resource.</p>
-<p>During resolve, the provider must fill in the initial html for the content webview panel and hook up all
-the event listeners on it that it is interested in. The provider can also hold onto the <code>WebviewPanel</code> to
-use later for example in a command. See <a href="vscode.WebviewPanel.html"><code>WebviewPanel</code></a> for additional details.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>A cancellation token that indicates the result is no longer needed.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-        <p>Optional thenable indicating that the custom editor has been resolved.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Provider for readonly custom editors that use a custom document model.</p>
+					</div>
+					<p>Custom editors use <a href="vscode.CustomDocument.html"><code>CustomDocument</code></a> as their document model instead of a <a href="vscode.TextDocument.html"><code>TextDocument</code></a>.</p>
+					<p>You should use this type of custom editor when dealing with binary files or more complex scenarios. For simple
+					text based documents, use <a href="vscode.CustomTextEditorProvider.html"><code>CustomTextEditorProvider</code></a> instead.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="vscode.CustomDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomDocument</a> = <a href="vscode.CustomDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomDocument</a></h4>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Type of the custom document returned by this provider.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">CustomReadonlyEditorProvider</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="vscode.CustomEditorProvider.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomEditorProvider</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Methods（2）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.CustomReadonlyEditorProvider.html#openCustomDocument" class="tsd-kind-icon">open<wbr>Custom<wbr>Document</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.CustomReadonlyEditorProvider.html#resolveCustomEditor" class="tsd-kind-icon">resolve<wbr>Custom<wbr>Editor</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods（2）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="openCustomDocument" class="tsd-anchor"></a>
+					<h3>open<wbr>Custom<wbr>Document</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">open<wbr>Custom<wbr>Document<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, openContext<span class="tsd-signature-symbol">: </span><a href="vscode.CustomDocumentOpenContext.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomDocumentOpenContext</a>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L9807">vscode.d.ts:9807</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new document for a given resource.</p>
+								</div>
+								<p><code>openCustomDocument</code> is called when the first time an editor for a given resource is opened. The opened
+								document is then passed to <code>resolveCustomEditor</code> so that the editor can be shown to the user.</p>
+								<p>Already opened <code>CustomDocument</code> are re-used if the user opened additional editors. When all editors for a
+									given resource are closed, the <code>CustomDocument</code> is disposed of. Opening an editor at this point will
+								trigger another call to <code>openCustomDocument</code>.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Uri of the document to open.</p>
+									</div>
+								</li>
+								<li>
+									<h5>openContext: <a href="vscode.CustomDocumentOpenContext.html" class="tsd-signature-type" data-tsd-kind="Interface">CustomDocumentOpenContext</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Additional information about the opening custom document.</p>
+									</div>
+								</li>
+								<li>
+									<h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A cancellation token that indicates the result is no longer needed.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The custom document.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="resolveCustomEditor" class="tsd-anchor"></a>
+					<h3>resolve<wbr>Custom<wbr>Editor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Custom<wbr>Editor<span class="tsd-signature-symbol">(</span>document<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, webviewPanel<span class="tsd-signature-symbol">: </span><a href="vscode.WebviewPanel.html" class="tsd-signature-type" data-tsd-kind="Interface">WebviewPanel</a>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L9826">vscode.d.ts:9826</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resolve a custom editor for a given resource.</p>
+								</div>
+								<p>This is called whenever the user opens a new editor for this <code>CustomEditorProvider</code>.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>document: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Document for the resource being resolved.</p>
+									</div>
+								</li>
+								<li>
+									<h5>webviewPanel: <a href="vscode.WebviewPanel.html" class="tsd-signature-type" data-tsd-kind="Interface">WebviewPanel</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The webview panel used to display the editor UI for this resource.</p>
+										<p>During resolve, the provider must fill in the initial html for the content webview panel and hook up all
+											the event listeners on it that it is interested in. The provider can also hold onto the <code>WebviewPanel</code> to
+										use later for example in a command. See <a href="vscode.WebviewPanel.html"><code>WebviewPanel</code></a> for additional details.</p>
+									</div>
+								</li>
+								<li>
+									<h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A cancellation token that indicates the result is no longer needed.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Optional thenable indicating that the custom editor has been resolved.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

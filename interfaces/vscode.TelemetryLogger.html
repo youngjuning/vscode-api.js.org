@@ -117,328 +117,239 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>A telemetry logger which can be used by extensions to log usage and error telementry.</p>
-
-                </div>
-                <p>A logger wraps around an <a href="vscode.TelemetrySender.html">sender</a> but it guarantees that</p>
-<ul>
-<li>user settings to disable or tweak telemetry are respected, and that</li>
-<li>potential sensitive data is removed</li>
-</ul>
-<p>It also enables an &quot;echo UI&quot; that prints whatever data is send and it allows the editor
-to forward unhandled errors to the respective extensions.</p>
-<p>To get an instance of a <code>TelemetryLogger</code>, use
-<a href="../modules/vscode.env.html#createTelemetryLogger"><code>createTelemetryLogger</code></a>.</p>
-
-        </div>
-        </section>
-
-
-    <section class="tsd-panel tsd-hierarchy">
-        <h3>Hierarchy</h3>
-        <ul class="tsd-hierarchy">
-        <li>
-                <span class="target">TelemetryLogger</span>
-
-        </li>
-</ul>
-
-    </section>
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section ">
-                            <h3>Properties（3）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#onDidChangeEnableStates" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Enable<wbr>States</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#isUsageEnabled" class="tsd-kind-icon">is<wbr>Usage<wbr>Enabled</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#isErrorsEnabled" class="tsd-kind-icon">is<wbr>Errors<wbr>Enabled</a></li>
-                            </ul>
-                    </section>
-                    <section class="tsd-index-section ">
-                            <h3>Methods（3）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#logUsage" class="tsd-kind-icon">log<wbr>Usage</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#logError" class="tsd-kind-icon">log<wbr>Error</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#dispose" class="tsd-kind-icon">dispose</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group ">
-        <h2>Properties（3）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="onDidChangeEnableStates" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>Enable<wbr>States</h3>
-
-        <div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Enable<wbr>States<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="vscode.TelemetryLogger.html" class="tsd-signature-type" data-tsd-kind="Interface">TelemetryLogger</a><span class="tsd-signature-symbol">&gt;</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L18020">vscode.d.ts:18020</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>An <a href="vscode.Event.html">Event</a> which fires when the enablement state of usage or error telemetry changes.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="isUsageEnabled" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> is<wbr>Usage<wbr>Enabled</h3>
-
-        <div class="tsd-signature tsd-kind-icon">is<wbr>Usage<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L18025">vscode.d.ts:18025</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Whether or not usage telemetry is enabled for this logger.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="isErrorsEnabled" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> is<wbr>Errors<wbr>Enabled</h3>
-
-        <div class="tsd-signature tsd-kind-icon">is<wbr>Errors<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L18030">vscode.d.ts:18030</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Whether or not error telemetry is enabled for this logger.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-    </section>
-                <section class="tsd-panel-group tsd-member-group ">
-        <h2>Methods（3）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="logUsage" class="tsd-anchor"></a>
-        <h3>log<wbr>Usage</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">log<wbr>Usage<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L18040">vscode.d.ts:18040</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Log a usage event.</p>
-
-                </div>
-                <p>After completing cleaning, telemetry setting checks, and data mix-in calls <code>TelemetrySender.sendEventData</code> to log the event.
-Automatically supports echoing to extension telemetry output channel.</p>
-
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>eventName: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The event name to log</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The data to log</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="logError" class="tsd-anchor"></a>
-        <h3>log<wbr>Error</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">log<wbr>Error<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-        <li class="tsd-signature tsd-kind-icon">log<wbr>Error<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L18050">vscode.d.ts:18050</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Log an error event.</p>
-
-                </div>
-                <p>After completing cleaning, telemetry setting checks, and data mix-in calls <code>TelemetrySender.sendEventData</code> to log the event. Differs from <code>logUsage</code> in that it will log the event if the telemetry setting is Error+.
-Automatically supports echoing to extension telemetry output channel.</p>
-
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>eventName: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The event name to log</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The data to log</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-
-
-        </li>
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L18061">vscode.d.ts:18061</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Log an error event.</p>
-
-                </div>
-                <p>Calls <code>TelemetrySender.sendErrorData</code>. Does cleaning, telemetry checks, and data mix-in.
-Automatically supports echoing to extension telemetry output channel.
-Will also automatically log any exceptions thrown within the extension host process.</p>
-
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>error: <span class="tsd-signature-type">Error</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The error object which contains the stack trace cleaned of PII</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Additional data to log alongside the stack trace</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="dispose" class="tsd-anchor"></a>
-        <h3>dispose</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L18066">vscode.d.ts:18066</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Dispose this object and free resources.</p>
-
-                </div>
-        </div>
-
-
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A telemetry logger which can be used by extensions to log usage and error telementry.</p>
+					</div>
+					<p>A logger wraps around an <a href="vscode.TelemetrySender.html">sender</a> but it guarantees that</p>
+					<ul>
+						<li>user settings to disable or tweak telemetry are respected, and that</li>
+						<li>potential sensitive data is removed</li>
+					</ul>
+					<p>It also enables an &quot;echo UI&quot; that prints whatever data is send and it allows the editor
+					to forward unhandled errors to the respective extensions.</p>
+					<p>To get an instance of a <code>TelemetryLogger</code>, use
+					<a href="../modules/vscode.env.html#createTelemetryLogger"><code>createTelemetryLogger</code></a>.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">TelemetryLogger</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties（3）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#onDidChangeEnableStates" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Enable<wbr>States</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#isUsageEnabled" class="tsd-kind-icon">is<wbr>Usage<wbr>Enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#isErrorsEnabled" class="tsd-kind-icon">is<wbr>Errors<wbr>Enabled</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods（3）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#logUsage" class="tsd-kind-icon">log<wbr>Usage</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#logError" class="tsd-kind-icon">log<wbr>Error</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TelemetryLogger.html#dispose" class="tsd-kind-icon">dispose</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties（3）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onDidChangeEnableStates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>Enable<wbr>States</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Enable<wbr>States<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="vscode.TelemetryLogger.html" class="tsd-signature-type" data-tsd-kind="Interface">TelemetryLogger</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L18020">vscode.d.ts:18020</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An <a href="vscode.Event.html">Event</a> which fires when the enablement state of usage or error telemetry changes.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isUsageEnabled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> is<wbr>Usage<wbr>Enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Usage<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L18025">vscode.d.ts:18025</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether or not usage telemetry is enabled for this logger.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isErrorsEnabled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> is<wbr>Errors<wbr>Enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Errors<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L18030">vscode.d.ts:18030</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether or not error telemetry is enabled for this logger.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods（3）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="logUsage" class="tsd-anchor"></a>
+					<h3>log<wbr>Usage</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">log<wbr>Usage<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L18040">vscode.d.ts:18040</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Log a usage event.</p>
+								</div>
+								<p>After completing cleaning, telemetry setting checks, and data mix-in calls <code>TelemetrySender.sendEventData</code> to log the event.
+								Automatically supports echoing to extension telemetry output channel.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event name to log</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data to log</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="logError" class="tsd-anchor"></a>
+					<h3>log<wbr>Error</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">log<wbr>Error<span class="tsd-signature-symbol">(</span>eventName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">log<wbr>Error<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L18050">vscode.d.ts:18050</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Log an error event.</p>
+								</div>
+								<p>After completing cleaning, telemetry setting checks, and data mix-in calls <code>TelemetrySender.sendEventData</code> to log the event. Differs from <code>logUsage</code> in that it will log the event if the telemetry setting is Error+.
+								Automatically supports echoing to extension telemetry output channel.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>eventName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event name to log</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data to log</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L18061">vscode.d.ts:18061</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Log an error event.</p>
+								</div>
+								<p>Calls <code>TelemetrySender.sendErrorData</code>. Does cleaning, telemetry checks, and data mix-in.
+									Automatically supports echoing to extension telemetry output channel.
+								Will also automatically log any exceptions thrown within the extension host process.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>error: <span class="tsd-signature-type">Error</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The error object which contains the stack trace cleaned of PII</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Additional data to log alongside the stack trace</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L18066">vscode.d.ts:18066</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispose this object and free resources.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

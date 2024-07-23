@@ -117,372 +117,269 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The language configuration interfaces defines the contract between extensions
-and various editor features, like automatic bracket insertion, automatic indentation etc.</p>
-
-                </div>
-        </div>
-        </section>
-
-
-    <section class="tsd-panel tsd-hierarchy">
-        <h3>Hierarchy</h3>
-        <ul class="tsd-hierarchy">
-        <li>
-                <span class="target">LanguageConfiguration</span>
-
-        </li>
-</ul>
-
-    </section>
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section ">
-                            <h3>Properties（8）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#comments" class="tsd-kind-icon">comments</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#brackets" class="tsd-kind-icon">brackets</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#wordPattern" class="tsd-kind-icon">word<wbr>Pattern</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#indentationRules" class="tsd-kind-icon">indentation<wbr>Rules</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#onEnterRules" class="tsd-kind-icon">on<wbr>Enter<wbr>Rules</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#autoClosingPairs" class="tsd-kind-icon">auto<wbr>Closing<wbr>Pairs</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#__electricCharacterSupport" class="tsd-kind-icon">__electric<wbr>Character<wbr>Support</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#__characterPairSupport" class="tsd-kind-icon">__character<wbr>Pair<wbr>Support</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group ">
-        <h2>Properties（8）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="comments" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> comments</h3>
-
-        <div class="tsd-signature tsd-kind-icon">comments<span class="tsd-signature-symbol">:</span> <a href="vscode.CommentRule.html" class="tsd-signature-type" data-tsd-kind="Interface">CommentRule</a></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L6271">vscode.d.ts:6271</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The language&#39;s comment settings.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="brackets" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> brackets</h3>
-
-        <div class="tsd-signature tsd-kind-icon">brackets<span class="tsd-signature-symbol">:</span> <a href="../modules/vscode.html#CharacterPair" class="tsd-signature-type" data-tsd-kind="Type alias">CharacterPair</a><span class="tsd-signature-symbol">[]</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L6276">vscode.d.ts:6276</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The language&#39;s brackets.
-This configuration implicitly affects pressing Enter around these brackets.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="wordPattern" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> word<wbr>Pattern</h3>
-
-        <div class="tsd-signature tsd-kind-icon">word<wbr>Pattern<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L6284">vscode.d.ts:6284</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The language&#39;s word definition.
-If the language supports Unicode identifiers (e.g. JavaScript), it is preferable
-to provide a word definition that uses exclusion of known separators.
-e.g.: A regex that matches anything except known separators (and dot is allowed to occur in a floating point number):
-  /(-?\d<em>.\d\w</em>)|([^`~!@#%^&amp;*()-=+[{]}\|;:&#39;&quot;,.&lt;&gt;/?\s]+)/g</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="indentationRules" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> indentation<wbr>Rules</h3>
-
-        <div class="tsd-signature tsd-kind-icon">indentation<wbr>Rules<span class="tsd-signature-symbol">:</span> <a href="vscode.IndentationRule.html" class="tsd-signature-type" data-tsd-kind="Interface">IndentationRule</a></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L6288">vscode.d.ts:6288</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The language&#39;s indentation settings.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="onEnterRules" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Enter<wbr>Rules</h3>
-
-        <div class="tsd-signature tsd-kind-icon">on<wbr>Enter<wbr>Rules<span class="tsd-signature-symbol">:</span> <a href="vscode.OnEnterRule.html" class="tsd-signature-type" data-tsd-kind="Interface">OnEnterRule</a><span class="tsd-signature-symbol">[]</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L6292">vscode.d.ts:6292</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The language&#39;s rules to be evaluated when pressing Enter.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="autoClosingPairs" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> auto<wbr>Closing<wbr>Pairs</h3>
-
-        <div class="tsd-signature tsd-kind-icon">auto<wbr>Closing<wbr>Pairs<span class="tsd-signature-symbol">:</span> <a href="vscode.AutoClosingPair.html" class="tsd-signature-type" data-tsd-kind="Interface">AutoClosingPair</a><span class="tsd-signature-symbol">[]</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L6296">vscode.d.ts:6296</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The language&#39;s auto closing pairs.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="__electricCharacterSupport" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> __electric<wbr>Character<wbr>Support</h3>
-
-        <div class="tsd-signature tsd-kind-icon">__electric<wbr>Character<wbr>Support<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>brackets<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>docComment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lineStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>close<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L6303">vscode.d.ts:6303</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p><strong>Deprecated</strong> Do not use.</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>deprecated</dt>
-                        <dd><p>Will be replaced by a better API soon.</p>
-</dd>
-                </dl>
-        </div>
-
-
-    <div class="tsd-type-declaration">
-        <h4>Type declaration</h4>
-            <ul class="tsd-parameters">
- 
-            <li class="tsd-parameter">
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> brackets<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>This property is deprecated and will be <strong>ignored</strong> from
-the editor.</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>deprecated</dt>
-                        <dd></dd>
-                </dl>
-        </div>
-
-
-            </li>
-        
- 
-            <li class="tsd-parameter">
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> doc<wbr>Comment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lineStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>close<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>This property is deprecated and not fully supported anymore by
-the editor (scope and lineStart are ignored).
-Use the autoClosingPairs property in the language configuration file instead.</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>deprecated</dt>
-                        <dd></dd>
-                </dl>
-        </div>
-
-
-                        <ul class="tsd-parameters">
- 
-            <li class="tsd-parameter">
-                <h5>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <dl class="tsd-comment-tags">
-                        <dt>deprecated</dt>
-                        <dd></dd>
-                </dl>
-        </div>
-
-
-            </li>
-        
- 
-            <li class="tsd-parameter">
-                <h5>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <dl class="tsd-comment-tags">
-                        <dt>deprecated</dt>
-                        <dd></dd>
-                </dl>
-        </div>
-
-
-            </li>
-        
- 
-            <li class="tsd-parameter">
-                <h5>line<wbr>Start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <dl class="tsd-comment-tags">
-                        <dt>deprecated</dt>
-                        <dd></dd>
-                </dl>
-        </div>
-
-
-            </li>
-        
- 
-            <li class="tsd-parameter">
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> close<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <dl class="tsd-comment-tags">
-                        <dt>deprecated</dt>
-                        <dd></dd>
-                </dl>
-        </div>
-
-
-            </li>
-        
-</ul>
-            </li>
-        
-</ul>
-    </div>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="__characterPairSupport" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> __character<wbr>Pair<wbr>Support</h3>
-
-        <div class="tsd-signature tsd-kind-icon">__character<wbr>Pair<wbr>Support<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>autoClosingPairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>close<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>notIn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L6341">vscode.d.ts:6341</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p><strong>Deprecated</strong> Do not use.</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>deprecated</dt>
-                        <dd><ul>
-<li>Use the autoClosingPairs property in the language configuration file instead.</li>
-</ul>
-</dd>
-                </dl>
-        </div>
-
-
-    <div class="tsd-type-declaration">
-        <h4>Type declaration</h4>
-            <ul class="tsd-parameters">
- 
-            <li class="tsd-parameter">
-                <h5>auto<wbr>Closing<wbr>Pairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>close<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>notIn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <dl class="tsd-comment-tags">
-                        <dt>deprecated</dt>
-                        <dd></dd>
-                </dl>
-        </div>
-
-
-            </li>
-        
-</ul>
-    </div>
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The language configuration interfaces defines the contract between extensions
+						and various editor features, like automatic bracket insertion, automatic indentation etc.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">LanguageConfiguration</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties（8）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#comments" class="tsd-kind-icon">comments</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#brackets" class="tsd-kind-icon">brackets</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#wordPattern" class="tsd-kind-icon">word<wbr>Pattern</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#indentationRules" class="tsd-kind-icon">indentation<wbr>Rules</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#onEnterRules" class="tsd-kind-icon">on<wbr>Enter<wbr>Rules</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#autoClosingPairs" class="tsd-kind-icon">auto<wbr>Closing<wbr>Pairs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#__electricCharacterSupport" class="tsd-kind-icon">__electric<wbr>Character<wbr>Support</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageConfiguration.html#__characterPairSupport" class="tsd-kind-icon">__character<wbr>Pair<wbr>Support</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties（8）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="comments" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> comments</h3>
+					<div class="tsd-signature tsd-kind-icon">comments<span class="tsd-signature-symbol">:</span> <a href="vscode.CommentRule.html" class="tsd-signature-type" data-tsd-kind="Interface">CommentRule</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L6271">vscode.d.ts:6271</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The language&#39;s comment settings.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="brackets" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> brackets</h3>
+					<div class="tsd-signature tsd-kind-icon">brackets<span class="tsd-signature-symbol">:</span> <a href="../modules/vscode.html#CharacterPair" class="tsd-signature-type" data-tsd-kind="Type alias">CharacterPair</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L6276">vscode.d.ts:6276</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The language&#39;s brackets.
+							This configuration implicitly affects pressing Enter around these brackets.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="wordPattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> word<wbr>Pattern</h3>
+					<div class="tsd-signature tsd-kind-icon">word<wbr>Pattern<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L6284">vscode.d.ts:6284</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The language&#39;s word definition.
+								If the language supports Unicode identifiers (e.g. JavaScript), it is preferable
+								to provide a word definition that uses exclusion of known separators.
+								e.g.: A regex that matches anything except known separators (and dot is allowed to occur in a floating point number):
+							/(-?\d<em>.\d\w</em>)|([^`~!@#%^&amp;*()-=+[{]}\|;:&#39;&quot;,.&lt;&gt;/?\s]+)/g</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="indentationRules" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> indentation<wbr>Rules</h3>
+					<div class="tsd-signature tsd-kind-icon">indentation<wbr>Rules<span class="tsd-signature-symbol">:</span> <a href="vscode.IndentationRule.html" class="tsd-signature-type" data-tsd-kind="Interface">IndentationRule</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L6288">vscode.d.ts:6288</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The language&#39;s indentation settings.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onEnterRules" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> on<wbr>Enter<wbr>Rules</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Enter<wbr>Rules<span class="tsd-signature-symbol">:</span> <a href="vscode.OnEnterRule.html" class="tsd-signature-type" data-tsd-kind="Interface">OnEnterRule</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L6292">vscode.d.ts:6292</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The language&#39;s rules to be evaluated when pressing Enter.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="autoClosingPairs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> auto<wbr>Closing<wbr>Pairs</h3>
+					<div class="tsd-signature tsd-kind-icon">auto<wbr>Closing<wbr>Pairs<span class="tsd-signature-symbol">:</span> <a href="vscode.AutoClosingPair.html" class="tsd-signature-type" data-tsd-kind="Interface">AutoClosingPair</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L6296">vscode.d.ts:6296</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The language&#39;s auto closing pairs.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="__electricCharacterSupport" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> __electric<wbr>Character<wbr>Support</h3>
+					<div class="tsd-signature tsd-kind-icon">__electric<wbr>Character<wbr>Support<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>brackets<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>docComment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lineStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>close<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L6303">vscode.d.ts:6303</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p><strong>Deprecated</strong> Do not use.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>Will be replaced by a better API soon.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> brackets<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>This property is deprecated and will be <strong>ignored</strong> from
+										the editor.</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>deprecated</dt>
+										<dd></dd>
+									</dl>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> doc<wbr>Comment<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>lineStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>close<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>This property is deprecated and not fully supported anymore by
+											the editor (scope and lineStart are ignored).
+										Use the autoClosingPairs property in the language configuration file instead.</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>deprecated</dt>
+										<dd></dd>
+									</dl>
+								</div>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>scope<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<dl class="tsd-comment-tags">
+												<dt>deprecated</dt>
+												<dd></dd>
+											</dl>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<dl class="tsd-comment-tags">
+												<dt>deprecated</dt>
+												<dd></dd>
+											</dl>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>line<wbr>Start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<dl class="tsd-comment-tags">
+												<dt>deprecated</dt>
+												<dd></dd>
+											</dl>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> close<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<dl class="tsd-comment-tags">
+												<dt>deprecated</dt>
+												<dd></dd>
+											</dl>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="__characterPairSupport" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> __character<wbr>Pair<wbr>Support</h3>
+					<div class="tsd-signature tsd-kind-icon">__character<wbr>Pair<wbr>Support<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>autoClosingPairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>close<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>notIn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L6341">vscode.d.ts:6341</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p><strong>Deprecated</strong> Do not use.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><ul>
+									<li>Use the autoClosingPairs property in the language configuration file instead.</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>auto<wbr>Closing<wbr>Pairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>open<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>close<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>notIn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<dl class="tsd-comment-tags">
+										<dt>deprecated</dt>
+										<dd></dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

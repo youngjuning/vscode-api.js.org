@@ -117,787 +117,579 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The filesystem provider defines what the editor needs to read, write, discover,
-and to manage files and folders. It allows extensions to serve files from remote places,
-like ftp-servers, and to seamlessly integrate those into the editor.</p>
-
-                </div>
-                <ul>
-<li><em>Note 1:</em> The filesystem provider API works with <a href="../classes/vscode.Uri.html">uris</a> and assumes hierarchical
-paths, e.g. <code>foo:/my/path</code> is a child of <code>foo:/my/</code> and a parent of <code>foo:/my/path/deeper</code>.</li>
-<li><em>Note 2:</em> There is an activation event <code>onFileSystem:&lt;scheme&gt;</code> that fires when a file
-or folder is being accessed.</li>
-<li><em>Note 3:</em> The word &#39;file&#39; is often used to denote all <a href="../enums/vscode.FileType.html">kinds</a> of files, e.g.
-folders, symbolic links, and regular files.</li>
-</ul>
-
-        </div>
-        </section>
-
-
-    <section class="tsd-panel tsd-hierarchy">
-        <h3>Hierarchy</h3>
-        <ul class="tsd-hierarchy">
-        <li>
-                <span class="target">FileSystemProvider</span>
-
-        </li>
-</ul>
-
-    </section>
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section ">
-                            <h3>Properties（1）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#onDidChangeFile" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>File</a></li>
-                            </ul>
-                    </section>
-                    <section class="tsd-index-section ">
-                            <h3>Methods（9）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#watch" class="tsd-kind-icon">watch</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#stat" class="tsd-kind-icon">stat</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#readDirectory" class="tsd-kind-icon">read<wbr>Directory</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#createDirectory" class="tsd-kind-icon">create<wbr>Directory</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#readFile" class="tsd-kind-icon">read<wbr>File</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#writeFile" class="tsd-kind-icon">write<wbr>File</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#delete" class="tsd-kind-icon">delete</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#rename" class="tsd-kind-icon">rename</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#copy" class="tsd-kind-icon">copy</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group ">
-        <h2>Properties（1）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="onDidChangeFile" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>File</h3>
-
-        <div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>File<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="vscode.FileChangeEvent.html" class="tsd-signature-type" data-tsd-kind="Interface">FileChangeEvent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L8879">vscode.d.ts:8879</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>An event to signal that a resource has been created, changed, or deleted. This
-event should fire for resources that are being <a href="vscode.FileSystemProvider.html#watch">watched</a>
-by clients of this provider.</p>
-
-                </div>
-                <p><em>Note:</em> It is important that the metadata of the file that changed provides an
-updated <code>mtime</code> that advanced from the previous value in the <a href="vscode.FileStat.html">stat</a> and a
-correct <code>size</code> value. Otherwise there may be optimizations in place that will not show
-the change in an editor for example.</p>
-
-        </div>
-
-
-    
-
-</section>
-    </section>
-                <section class="tsd-panel-group tsd-member-group ">
-        <h2>Methods（9）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="watch" class="tsd-anchor"></a>
-        <h3>watch</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">watch<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>excludes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L8902">vscode.d.ts:8902</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Subscribes to file change events in the file or folder denoted by <code>uri</code>. For folders,
-the option <code>recursive</code> indicates whether subfolders, sub-subfolders, etc. should
-be watched for file changes as well. With <code>recursive: false</code>, only changes to the
-files that are direct children of the folder should trigger an event.</p>
-
-                </div>
-                <p>The <code>excludes</code> array is used to indicate paths that should be excluded from file
-watching. It is typically derived from the <code>files.watcherExclude</code> setting that
-is configurable by the user. Each entry can be be:</p>
-<ul>
-<li>the absolute path to exclude</li>
-<li>a relative path to exclude (for example <code>build/output</code>)</li>
-<li>a simple glob pattern (for example <code>**​/build</code>, <code>output/**</code>)</li>
-</ul>
-<p>It is the file system provider&#39;s job to call <a href="vscode.FileSystemProvider.html#onDidChangeFile"><code>onDidChangeFile</code></a>
-for every change given these rules. No event should be emitted for files that match any of the provided
-excludes.</p>
-
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The uri of the file or folder to be watched.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>options: <span class="tsd-signature-symbol">{ </span>recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>excludes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Configures the watch.</p>
-
-        </div>
-
-                        <ul class="tsd-parameters">
- 
-            <li class="tsd-parameter">
-                <h5><span class="tsd-flag ts-flagReadonly">Readonly</span> recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>When enabled also watch subfolders.</p>
-
-                </div>
-        </div>
-
-
-            </li>
-        
- 
-            <li class="tsd-parameter">
-                <h5><span class="tsd-flag ts-flagReadonly">Readonly</span> excludes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>A list of paths and pattern to exclude from watching.</p>
-
-                </div>
-        </div>
-
-
-            </li>
-        
-</ul>
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
-
-        <p>A disposable that tells the provider to stop watching the <code>uri</code>.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="stat" class="tsd-anchor"></a>
-        <h3>stat</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">stat<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.FileStat.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><a href="vscode.FileStat.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L8924">vscode.d.ts:8924</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Retrieve metadata about a file.</p>
-
-                </div>
-                <p>Note that the metadata for symbolic links should be the metadata of the file they refer to.
-Still, the <a href="../enums/vscode.FileType.html#SymbolicLink">SymbolicLink</a>-type must be used in addition to the actual type, e.g.
-<code>FileType.SymbolicLink | FileType.Directory</code>.</p>
-
-                <dl class="tsd-comment-tags">
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>uri</code> doesn&#39;t exist.</p>
-</dd>
-                </dl>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The uri of the file to retrieve metadata about.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="vscode.FileStat.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><a href="vscode.FileStat.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol">&gt;</span></h4>
-
-        <p>The file metadata about the file.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="readDirectory" class="tsd-anchor"></a>
-        <h3>read<wbr>Directory</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">read<wbr>Directory<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/vscode.FileType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/vscode.FileType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L8933">vscode.d.ts:8933</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Retrieve all entries of a <a href="../enums/vscode.FileType.html#Directory">directory</a>.</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>uri</code> doesn&#39;t exist.</p>
-</dd>
-                </dl>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The uri of the folder.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/vscode.FileType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/vscode.FileType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-        <p>An array of name/type-tuples or a thenable that resolves to such.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="createDirectory" class="tsd-anchor"></a>
-        <h3>create<wbr>Directory</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">create<wbr>Directory<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L8943">vscode.d.ts:8943</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Create a new directory (Note, that new files are created via <code>write</code>-calls).</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when the parent of <code>uri</code> doesn&#39;t exist, e.g. no mkdirp-logic required.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileExists"><code>FileExists</code></a> when <code>uri</code> already exists.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#NoPermissions"><code>NoPermissions</code></a> when permissions aren&#39;t sufficient.</p>
-</dd>
-                </dl>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The uri of the new folder.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="readFile" class="tsd-anchor"></a>
-        <h3>read<wbr>File</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">read<wbr>File<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L8952">vscode.d.ts:8952</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Read the entire contents of a file.</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>uri</code> doesn&#39;t exist.</p>
-</dd>
-                </dl>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The uri of the file.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-        <p>An array of bytes or a thenable that resolves to such.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="writeFile" class="tsd-anchor"></a>
-        <h3>write<wbr>File</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">write<wbr>File<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>create<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L8965">vscode.d.ts:8965</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Write data to a file, replacing its entire contents.</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>uri</code> doesn&#39;t exist and <code>create</code> is not set.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when the parent of <code>uri</code> doesn&#39;t exist and <code>create</code> is set, e.g. no mkdirp-logic required.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileExists"><code>FileExists</code></a> when <code>uri</code> already exists, <code>create</code> is set but <code>overwrite</code> is not set.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#NoPermissions"><code>NoPermissions</code></a> when permissions aren&#39;t sufficient.</p>
-</dd>
-                </dl>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The uri of the file.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>content: <span class="tsd-signature-type">Uint8Array</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The new content of the file.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>options: <span class="tsd-signature-symbol">{ </span>create<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Defines if missing files should or must be created.</p>
-
-        </div>
-
-                        <ul class="tsd-parameters">
- 
-            <li class="tsd-parameter">
-                <h5><span class="tsd-flag ts-flagReadonly">Readonly</span> create<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Create the file if it does not exist already.</p>
-
-                </div>
-        </div>
-
-
-            </li>
-        
- 
-            <li class="tsd-parameter">
-                <h5><span class="tsd-flag ts-flagReadonly">Readonly</span> overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Overwrite the file if it does exist.</p>
-
-                </div>
-        </div>
-
-
-            </li>
-        
-</ul>
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="delete" class="tsd-anchor"></a>
-        <h3>delete</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L8984">vscode.d.ts:8984</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Delete a file.</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>uri</code> doesn&#39;t exist.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#NoPermissions"><code>NoPermissions</code></a> when permissions aren&#39;t sufficient.</p>
-</dd>
-                </dl>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The resource that is to be deleted.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>options: <span class="tsd-signature-symbol">{ </span>recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Defines if deletion of folders is recursive.</p>
-
-        </div>
-
-                        <ul class="tsd-parameters">
- 
-            <li class="tsd-parameter">
-                <h5><span class="tsd-flag ts-flagReadonly">Readonly</span> recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Delete the content recursively if a folder is denoted.</p>
-
-                </div>
-        </div>
-
-
-            </li>
-        
-</ul>
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="rename" class="tsd-anchor"></a>
-        <h3>rename</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">rename<span class="tsd-signature-symbol">(</span>oldUri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, newUri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L9002">vscode.d.ts:9002</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Rename a file or folder.</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>oldUri</code> doesn&#39;t exist.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when parent of <code>newUri</code> doesn&#39;t exist, e.g. no mkdirp-logic required.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileExists"><code>FileExists</code></a> when <code>newUri</code> exists and when the <code>overwrite</code> option is not <code>true</code>.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#NoPermissions"><code>NoPermissions</code></a> when permissions aren&#39;t sufficient.</p>
-</dd>
-                </dl>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>oldUri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The existing file.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>newUri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The new location.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>options: <span class="tsd-signature-symbol">{ </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Defines if existing files should be overwritten.</p>
-
-        </div>
-
-                        <ul class="tsd-parameters">
- 
-            <li class="tsd-parameter">
-                <h5><span class="tsd-flag ts-flagReadonly">Readonly</span> overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Overwrite the file if it does exist.</p>
-
-                </div>
-        </div>
-
-
-            </li>
-        
-</ul>
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="copy" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> copy</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, destination<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L9021">vscode.d.ts:9021</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Copy files or folders. Implementing this function is optional but it will speedup
-the copy operation.</p>
-
-                </div>
-                <dl class="tsd-comment-tags">
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>source</code> doesn&#39;t exist.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when parent of <code>destination</code> doesn&#39;t exist, e.g. no mkdirp-logic required.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#FileExists"><code>FileExists</code></a> when <code>destination</code> exists and when the <code>overwrite</code> option is not <code>true</code>.</p>
-</dd>
-                        <dt>throws</dt>
-                        <dd><p><a href="../classes/vscode.FileSystemError.html#NoPermissions"><code>NoPermissions</code></a> when permissions aren&#39;t sufficient.</p>
-</dd>
-                </dl>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>source: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The existing file.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>destination: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The destination location.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>options: <span class="tsd-signature-symbol">{ </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Defines if existing files should be overwritten.</p>
-
-        </div>
-
-                        <ul class="tsd-parameters">
- 
-            <li class="tsd-parameter">
-                <h5><span class="tsd-flag ts-flagReadonly">Readonly</span> overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Overwrite the file if it does exist.</p>
-
-                </div>
-        </div>
-
-
-            </li>
-        
-</ul>
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The filesystem provider defines what the editor needs to read, write, discover,
+							and to manage files and folders. It allows extensions to serve files from remote places,
+						like ftp-servers, and to seamlessly integrate those into the editor.</p>
+					</div>
+					<ul>
+						<li><em>Note 1:</em> The filesystem provider API works with <a href="../classes/vscode.Uri.html">uris</a> and assumes hierarchical
+						paths, e.g. <code>foo:/my/path</code> is a child of <code>foo:/my/</code> and a parent of <code>foo:/my/path/deeper</code>.</li>
+						<li><em>Note 2:</em> There is an activation event <code>onFileSystem:&lt;scheme&gt;</code> that fires when a file
+						or folder is being accessed.</li>
+						<li><em>Note 3:</em> The word &#39;file&#39; is often used to denote all <a href="../enums/vscode.FileType.html">kinds</a> of files, e.g.
+						folders, symbolic links, and regular files.</li>
+					</ul>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">FileSystemProvider</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties（1）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#onDidChangeFile" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>File</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods（9）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#watch" class="tsd-kind-icon">watch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#stat" class="tsd-kind-icon">stat</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#readDirectory" class="tsd-kind-icon">read<wbr>Directory</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#createDirectory" class="tsd-kind-icon">create<wbr>Directory</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#readFile" class="tsd-kind-icon">read<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#writeFile" class="tsd-kind-icon">write<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#delete" class="tsd-kind-icon">delete</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#rename" class="tsd-kind-icon">rename</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.FileSystemProvider.html#copy" class="tsd-kind-icon">copy</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties（1）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onDidChangeFile" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change<wbr>File</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>File<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="vscode.FileChangeEvent.html" class="tsd-signature-type" data-tsd-kind="Interface">FileChangeEvent</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L8879">vscode.d.ts:8879</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An event to signal that a resource has been created, changed, or deleted. This
+								event should fire for resources that are being <a href="vscode.FileSystemProvider.html#watch">watched</a>
+							by clients of this provider.</p>
+						</div>
+						<p><em>Note:</em> It is important that the metadata of the file that changed provides an
+							updated <code>mtime</code> that advanced from the previous value in the <a href="vscode.FileStat.html">stat</a> and a
+							correct <code>size</code> value. Otherwise there may be optimizations in place that will not show
+						the change in an editor for example.</p>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods（9）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="watch" class="tsd-anchor"></a>
+					<h3>watch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">watch<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>excludes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L8902">vscode.d.ts:8902</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Subscribes to file change events in the file or folder denoted by <code>uri</code>. For folders,
+										the option <code>recursive</code> indicates whether subfolders, sub-subfolders, etc. should
+										be watched for file changes as well. With <code>recursive: false</code>, only changes to the
+									files that are direct children of the folder should trigger an event.</p>
+								</div>
+								<p>The <code>excludes</code> array is used to indicate paths that should be excluded from file
+									watching. It is typically derived from the <code>files.watcherExclude</code> setting that
+								is configurable by the user. Each entry can be be:</p>
+								<ul>
+									<li>the absolute path to exclude</li>
+									<li>a relative path to exclude (for example <code>build/output</code>)</li>
+									<li>a simple glob pattern (for example <code>**​/build</code>, <code>output/**</code>)</li>
+								</ul>
+								<p>It is the file system provider&#39;s job to call <a href="vscode.FileSystemProvider.html#onDidChangeFile"><code>onDidChangeFile</code></a>
+									for every change given these rules. No event should be emitted for files that match any of the provided
+								excludes.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The uri of the file or folder to be watched.</p>
+									</div>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>excludes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Configures the watch.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<div class="lead">
+													<p>When enabled also watch subfolders.</p>
+												</div>
+											</div>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> excludes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<div class="lead">
+													<p>A list of paths and pattern to exclude from watching.</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+							<p>A disposable that tells the provider to stop watching the <code>uri</code>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="stat" class="tsd-anchor"></a>
+					<h3>stat</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">stat<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.FileStat.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><a href="vscode.FileStat.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L8924">vscode.d.ts:8924</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieve metadata about a file.</p>
+								</div>
+								<p>Note that the metadata for symbolic links should be the metadata of the file they refer to.
+									Still, the <a href="../enums/vscode.FileType.html#SymbolicLink">SymbolicLink</a>-type must be used in addition to the actual type, e.g.
+								<code>FileType.SymbolicLink | FileType.Directory</code>.</p>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>uri</code> doesn&#39;t exist.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The uri of the file to retrieve metadata about.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="vscode.FileStat.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><a href="vscode.FileStat.html" class="tsd-signature-type" data-tsd-kind="Interface">FileStat</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The file metadata about the file.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="readDirectory" class="tsd-anchor"></a>
+					<h3>read<wbr>Directory</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>Directory<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/vscode.FileType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/vscode.FileType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L8933">vscode.d.ts:8933</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieve all entries of a <a href="../enums/vscode.FileType.html#Directory">directory</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>uri</code> doesn&#39;t exist.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The uri of the folder.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/vscode.FileType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../enums/vscode.FileType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileType</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of name/type-tuples or a thenable that resolves to such.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="createDirectory" class="tsd-anchor"></a>
+					<h3>create<wbr>Directory</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Directory<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L8943">vscode.d.ts:8943</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new directory (Note, that new files are created via <code>write</code>-calls).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when the parent of <code>uri</code> doesn&#39;t exist, e.g. no mkdirp-logic required.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileExists"><code>FileExists</code></a> when <code>uri</code> already exists.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#NoPermissions"><code>NoPermissions</code></a> when permissions aren&#39;t sufficient.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The uri of the new folder.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="readFile" class="tsd-anchor"></a>
+					<h3>read<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">read<wbr>File<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L8952">vscode.d.ts:8952</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Read the entire contents of a file.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>uri</code> doesn&#39;t exist.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The uri of the file.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of bytes or a thenable that resolves to such.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="writeFile" class="tsd-anchor"></a>
+					<h3>write<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">write<wbr>File<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>create<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L8965">vscode.d.ts:8965</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Write data to a file, replacing its entire contents.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>uri</code> doesn&#39;t exist and <code>create</code> is not set.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when the parent of <code>uri</code> doesn&#39;t exist and <code>create</code> is set, e.g. no mkdirp-logic required.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileExists"><code>FileExists</code></a> when <code>uri</code> already exists, <code>create</code> is set but <code>overwrite</code> is not set.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#NoPermissions"><code>NoPermissions</code></a> when permissions aren&#39;t sufficient.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The uri of the file.</p>
+									</div>
+								</li>
+								<li>
+									<h5>content: <span class="tsd-signature-type">Uint8Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new content of the file.</p>
+									</div>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>create<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Defines if missing files should or must be created.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> create<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<div class="lead">
+													<p>Create the file if it does not exist already.</p>
+												</div>
+											</div>
+										</li>
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<div class="lead">
+													<p>Overwrite the file if it does exist.</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="delete" class="tsd-anchor"></a>
+					<h3>delete</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L8984">vscode.d.ts:8984</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Delete a file.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>uri</code> doesn&#39;t exist.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#NoPermissions"><code>NoPermissions</code></a> when permissions aren&#39;t sufficient.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The resource that is to be deleted.</p>
+									</div>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Defines if deletion of folders is recursive.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<div class="lead">
+													<p>Delete the content recursively if a folder is denoted.</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="rename" class="tsd-anchor"></a>
+					<h3>rename</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">rename<span class="tsd-signature-symbol">(</span>oldUri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, newUri<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L9002">vscode.d.ts:9002</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Rename a file or folder.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>oldUri</code> doesn&#39;t exist.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when parent of <code>newUri</code> doesn&#39;t exist, e.g. no mkdirp-logic required.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileExists"><code>FileExists</code></a> when <code>newUri</code> exists and when the <code>overwrite</code> option is not <code>true</code>.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#NoPermissions"><code>NoPermissions</code></a> when permissions aren&#39;t sufficient.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>oldUri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The existing file.</p>
+									</div>
+								</li>
+								<li>
+									<h5>newUri: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new location.</p>
+									</div>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Defines if existing files should be overwritten.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<div class="lead">
+													<p>Overwrite the file if it does exist.</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="copy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> copy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, destination<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L9021">vscode.d.ts:9021</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Copy files or folders. Implementing this function is optional but it will speedup
+									the copy operation.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when <code>source</code> doesn&#39;t exist.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileNotFound"><code>FileNotFound</code></a> when parent of <code>destination</code> doesn&#39;t exist, e.g. no mkdirp-logic required.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#FileExists"><code>FileExists</code></a> when <code>destination</code> exists and when the <code>overwrite</code> option is not <code>true</code>.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p><a href="../classes/vscode.FileSystemError.html#NoPermissions"><code>NoPermissions</code></a> when permissions aren&#39;t sufficient.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The existing file.</p>
+									</div>
+								</li>
+								<li>
+									<h5>destination: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The destination location.</p>
+									</div>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-symbol">{ </span>overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Defines if existing files should be overwritten.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5><span class="tsd-flag ts-flagReadonly">Readonly</span> overwrite<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+											<div class="tsd-comment tsd-typography">
+												<div class="lead">
+													<p>Overwrite the file if it does exist.</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

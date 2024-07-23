@@ -117,17 +117,16 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Namespace for dealing with installed extensions. Extensions are represented
-by an <a href="../interfaces/vscode.Extension.html">Extension</a>-interface which enables reflection on them.</p>
-
-                </div>
-                <p>Extension writers can provide APIs to other extensions by returning their API public
-surface from the <code>activate</code>-call.</p>
-<pre><code class="language-javascript"><span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">activate</span><span style="color: #000000">(</span><span style="color: #001080">context</span><span style="color: #000000">: </span><span style="color: #267F99">vscode</span><span style="color: #000000">.</span><span style="color: #267F99">ExtensionContext</span><span style="color: #000000">) {</span>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Namespace for dealing with installed extensions. Extensions are represented
+						by an <a href="../interfaces/vscode.Extension.html">Extension</a>-interface which enables reflection on them.</p>
+					</div>
+					<p>Extension writers can provide APIs to other extensions by returning their API public
+					surface from the <code>activate</code>-call.</p>
+					<pre><code class="language-javascript"><span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">activate</span><span style="color: #000000">(</span><span style="color: #001080">context</span><span style="color: #000000">: </span><span style="color: #267F99">vscode</span><span style="color: #000000">.</span><span style="color: #267F99">ExtensionContext</span><span style="color: #000000">) {</span>
 <span style="color: #000000">    </span><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000"> = {</span>
 <span style="color: #000000">        </span><span style="color: #795E26">sum</span><span style="color: #000000">(</span><span style="color: #001080">a</span><span style="color: #000000">, </span><span style="color: #001080">b</span><span style="color: #000000">) {</span>
 <span style="color: #000000">            </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">a</span><span style="color: #000000"> + </span><span style="color: #001080">b</span><span style="color: #000000">;</span>
@@ -140,203 +139,150 @@ surface from the <code>activate</code>-call.</p>
 <span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">;</span>
 <span style="color: #000000">}</span>
 </code></pre>
-<p>When depending on the API of another extension add an <code>extensionDependencies</code>-entry
-to <code>package.json</code>, and use the <a href="vscode.extensions.html#getExtension">getExtension</a>-function
-and the <a href="../interfaces/vscode.Extension.html#exports">exports</a>-property, like below:</p>
-<pre><code class="language-javascript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">mathExt</span><span style="color: #000000"> = </span><span style="color: #001080">extensions</span><span style="color: #000000">.</span><span style="color: #795E26">getExtension</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;genius.math&#039;</span><span style="color: #000000">);</span>
+					<p>When depending on the API of another extension add an <code>extensionDependencies</code>-entry
+						to <code>package.json</code>, and use the <a href="vscode.extensions.html#getExtension">getExtension</a>-function
+					and the <a href="../interfaces/vscode.Extension.html#exports">exports</a>-property, like below:</p>
+					<pre><code class="language-javascript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">mathExt</span><span style="color: #000000"> = </span><span style="color: #001080">extensions</span><span style="color: #000000">.</span><span style="color: #795E26">getExtension</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;genius.math&#039;</span><span style="color: #000000">);</span>
 <span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">importedApi</span><span style="color: #000000"> = </span><span style="color: #001080">mathExt</span><span style="color: #000000">.</span><span style="color: #001080">exports</span><span style="color: #000000">;</span>
 
 <span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">importedApi</span><span style="color: #000000">.</span><span style="color: #795E26">mul</span><span style="color: #000000">(</span><span style="color: #098658">42</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">));</span>
 </code></pre>
-
-        </div>
-        </section>
-
-
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section ">
-                            <h3>Functions（2）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="vscode.extensions.html#getExtension" class="tsd-kind-icon">get<wbr>Extension</a></li>
-                                    <li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.extensions.html#onDidChange" class="tsd-kind-icon">on<wbr>Did<wbr>Change</a></li>
-                            </ul>
-                    </section>
-                    <section class="tsd-index-section ">
-                            <h3>Variables（1）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="vscode.extensions.html#all" class="tsd-kind-icon">all</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group ">
-        <h2>Functions（2）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
-    <a name="getExtension" class="tsd-anchor"></a>
-        <h3>get<wbr>Extension</h3>
-
-        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
-        <li class="tsd-signature tsd-kind-icon">get<wbr>Extension&lt;T&gt;<span class="tsd-signature-symbol">(</span>extensionId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.Extension.html" class="tsd-signature-type" data-tsd-kind="Interface">Extension</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16370">vscode.d.ts:16370</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Get an extension by its full identifier in the form of: <code>publisher.name</code>.</p>
-
-                </div>
-        </div>
-
-    <h4 class="tsd-type-parameters-title">Type parameters</h4>
-    <ul class="tsd-type-parameters">
-        <li>
-            <h4>T = <span class="tsd-signature-type">any</span></h4>
-                    </li>
-</ul>
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>extensionId: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>An extension identifier.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="../interfaces/vscode.Extension.html" class="tsd-signature-type" data-tsd-kind="Interface">Extension</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
-
-        <p>An extension or <code>undefined</code>.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-    <a name="onDidChange" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagConst">Const</span> on<wbr>Did<wbr>Change</h3>
-
-        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-        <li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span>, thisArgs<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, disposables<span class="tsd-signature-symbol">?: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16381">vscode.d.ts:16381</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>An event which fires when <code>extensions.all</code> changes. This can happen when extensions are
-installed, uninstalled, enabled or disabled.</p>
-
-                </div>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>listener: <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
-
-                
-                        <ul class="tsd-parameters">
-        <li class="tsd-parameter-signature">
-            <ul class="tsd-signatures tsd-kind-type-literal">
-                    <li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-            </ul>
-
-            <ul class="tsd-descriptions">
-                    <li class="tsd-description">
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>e: <span class="tsd-signature-type">void</span></h5>
-
-                
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-
-
-</li>
-            </ul>
-        </li>
-</ul>
-            </li>
-            <li>
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArgs: <span class="tsd-signature-type">any</span></h5>
-
-                
-            </li>
-            <li>
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> disposables: <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a><span class="tsd-signature-symbol">[]</span></h5>
-
-                
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-    </section>
-                <section class="tsd-panel-group tsd-member-group ">
-        <h2>Variables（1）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
-    <a name="all" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagConst">Const</span> all</h3>
-
-        <div class="tsd-signature tsd-kind-icon">all<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="../interfaces/vscode.Extension.html" class="tsd-signature-type" data-tsd-kind="Interface">Extension</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L16375">vscode.d.ts:16375</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>All extensions currently known to the system.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Functions（2）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="vscode.extensions.html#getExtension" class="tsd-kind-icon">get<wbr>Extension</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.extensions.html#onDidChange" class="tsd-kind-icon">on<wbr>Did<wbr>Change</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables（1）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="vscode.extensions.html#all" class="tsd-kind-icon">all</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions（2）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
+					<a name="getExtension" class="tsd-anchor"></a>
+					<h3>get<wbr>Extension</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Extension&lt;T&gt;<span class="tsd-signature-symbol">(</span>extensionId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.Extension.html" class="tsd-signature-type" data-tsd-kind="Interface">Extension</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16370">vscode.d.ts:16370</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get an extension by its full identifier in the form of: <code>publisher.name</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T = <span class="tsd-signature-type">any</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>extensionId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An extension identifier.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/vscode.Extension.html" class="tsd-signature-type" data-tsd-kind="Interface">Extension</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<p>An extension or <code>undefined</code>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="onDidChange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> on<wbr>Did<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span>, thisArgs<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, disposables<span class="tsd-signature-symbol">?: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16381">vscode.d.ts:16381</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>An event which fires when <code>extensions.all</code> changes. This can happen when extensions are
+									installed, uninstalled, enabled or disabled.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>listener: <span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>e: <span class="tsd-signature-type">void</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArgs: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> disposables: <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables（1）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
+					<a name="all" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> all</h3>
+					<div class="tsd-signature tsd-kind-icon">all<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="../interfaces/vscode.Extension.html" class="tsd-signature-type" data-tsd-kind="Interface">Extension</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L16375">vscode.d.ts:16375</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>All extensions currently known to the system.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

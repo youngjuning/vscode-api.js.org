@@ -117,141 +117,103 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>An event describing a transactional <a href="vscode.NotebookDocument.html">notebook</a> change.</p>
-
-                </div>
-        </div>
-        </section>
-
-
-    <section class="tsd-panel tsd-hierarchy">
-        <h3>Hierarchy</h3>
-        <ul class="tsd-hierarchy">
-        <li>
-                <span class="target">NotebookDocumentChangeEvent</span>
-
-        </li>
-</ul>
-
-    </section>
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section ">
-                            <h3>Properties（4）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.NotebookDocumentChangeEvent.html#notebook" class="tsd-kind-icon">notebook</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.NotebookDocumentChangeEvent.html#metadata" class="tsd-kind-icon">metadata</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.NotebookDocumentChangeEvent.html#contentChanges" class="tsd-kind-icon">content<wbr>Changes</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.NotebookDocumentChangeEvent.html#cellChanges" class="tsd-kind-icon">cell<wbr>Changes</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group ">
-        <h2>Properties（4）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="notebook" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> notebook</h3>
-
-        <div class="tsd-signature tsd-kind-icon">notebook<span class="tsd-signature-symbol">:</span> <a href="vscode.NotebookDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocument</a></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L14598">vscode.d.ts:14598</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The affected notebook.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="metadata" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> metadata</h3>
-
-        <div class="tsd-signature tsd-kind-icon">metadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L14603">vscode.d.ts:14603</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The new metadata of the notebook or <code>undefined</code> when it did not change.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="contentChanges" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> content<wbr>Changes</h3>
-
-        <div class="tsd-signature tsd-kind-icon">content<wbr>Changes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="vscode.NotebookDocumentContentChange.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocumentContentChange</a><span class="tsd-signature-symbol">[]</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L14608">vscode.d.ts:14608</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>An array of content changes describing added or removed <a href="vscode.NotebookCell.html">cells</a>.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="cellChanges" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> cell<wbr>Changes</h3>
-
-        <div class="tsd-signature tsd-kind-icon">cell<wbr>Changes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="vscode.NotebookDocumentCellChange.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocumentCellChange</a><span class="tsd-signature-symbol">[]</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L14613">vscode.d.ts:14613</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>An array of <a href="vscode.NotebookDocumentCellChange.html">cell changes</a>.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>An event describing a transactional <a href="vscode.NotebookDocument.html">notebook</a> change.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">NotebookDocumentChangeEvent</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties（4）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.NotebookDocumentChangeEvent.html#notebook" class="tsd-kind-icon">notebook</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.NotebookDocumentChangeEvent.html#metadata" class="tsd-kind-icon">metadata</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.NotebookDocumentChangeEvent.html#contentChanges" class="tsd-kind-icon">content<wbr>Changes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.NotebookDocumentChangeEvent.html#cellChanges" class="tsd-kind-icon">cell<wbr>Changes</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties（4）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="notebook" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> notebook</h3>
+					<div class="tsd-signature tsd-kind-icon">notebook<span class="tsd-signature-symbol">:</span> <a href="vscode.NotebookDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocument</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L14598">vscode.d.ts:14598</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The affected notebook.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="metadata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> metadata</h3>
+					<div class="tsd-signature tsd-kind-icon">metadata<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L14603">vscode.d.ts:14603</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The new metadata of the notebook or <code>undefined</code> when it did not change.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="contentChanges" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> content<wbr>Changes</h3>
+					<div class="tsd-signature tsd-kind-icon">content<wbr>Changes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="vscode.NotebookDocumentContentChange.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocumentContentChange</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L14608">vscode.d.ts:14608</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An array of content changes describing added or removed <a href="vscode.NotebookCell.html">cells</a>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="cellChanges" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> cell<wbr>Changes</h3>
+					<div class="tsd-signature tsd-kind-icon">cell<wbr>Changes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="vscode.NotebookDocumentCellChange.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocumentCellChange</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L14613">vscode.d.ts:14613</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An array of <a href="vscode.NotebookDocumentCellChange.html">cell changes</a>.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

@@ -117,161 +117,120 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>A provider that enables detection and handling of links within terminals.</p>
-
-                </div>
-        </div>
-        </section>
-
-    <section class="tsd-panel tsd-type-parameters">
-        <h3>Type parameters</h3>
-        <ul class="tsd-type-parameters">
-        <li>
-            <h4>T<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.TerminalLink.html" class="tsd-signature-type" data-tsd-kind="Class">TerminalLink</a> = <a href="../classes/vscode.TerminalLink.html" class="tsd-signature-type" data-tsd-kind="Class">TerminalLink</a></h4>
-                    </li>
-</ul>
-
-    </section>
-
-    <section class="tsd-panel tsd-hierarchy">
-        <h3>Hierarchy</h3>
-        <ul class="tsd-hierarchy">
-        <li>
-                <span class="target">TerminalLinkProvider</span>
-
-        </li>
-</ul>
-
-    </section>
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section ">
-                            <h3>Methods（2）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TerminalLinkProvider.html#provideTerminalLinks" class="tsd-kind-icon">provide<wbr>Terminal<wbr>Links</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TerminalLinkProvider.html#handleTerminalLink" class="tsd-kind-icon">handle<wbr>Terminal<wbr>Link</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group ">
-        <h2>Methods（2）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="provideTerminalLinks" class="tsd-anchor"></a>
-        <h3>provide<wbr>Terminal<wbr>Links</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">provide<wbr>Terminal<wbr>Links<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="vscode.TerminalLinkContext.html" class="tsd-signature-type" data-tsd-kind="Interface">TerminalLinkContext</a>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L7452">vscode.d.ts:7452</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Provide terminal links for the given context. Note that this can be called multiple times
-even before previous calls resolve, make sure to not share global objects (eg. <code>RegExp</code>)
-that could have problems when asynchronous usage may overlap.</p>
-
-                </div>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>context: <a href="vscode.TerminalLinkContext.html" class="tsd-signature-type" data-tsd-kind="Interface">TerminalLinkContext</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Information about what links are being provided for.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>A cancellation token.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-        <p>A list of terminal links for the given line.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-    <a name="handleTerminalLink" class="tsd-anchor"></a>
-        <h3>handle<wbr>Terminal<wbr>Link</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-        <li class="tsd-signature tsd-kind-icon">handle<wbr>Terminal<wbr>Link<span class="tsd-signature-symbol">(</span>link<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L7458">vscode.d.ts:7458</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Handle an activated terminal link.</p>
-
-                </div>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>link: <span class="tsd-signature-type">T</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The link to handle.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A provider that enables detection and handling of links within terminals.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.TerminalLink.html" class="tsd-signature-type" data-tsd-kind="Class">TerminalLink</a> = <a href="../classes/vscode.TerminalLink.html" class="tsd-signature-type" data-tsd-kind="Class">TerminalLink</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">TerminalLinkProvider</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Methods（2）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TerminalLinkProvider.html#provideTerminalLinks" class="tsd-kind-icon">provide<wbr>Terminal<wbr>Links</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.TerminalLinkProvider.html#handleTerminalLink" class="tsd-kind-icon">handle<wbr>Terminal<wbr>Link</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods（2）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="provideTerminalLinks" class="tsd-anchor"></a>
+					<h3>provide<wbr>Terminal<wbr>Links</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">provide<wbr>Terminal<wbr>Links<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="vscode.TerminalLinkContext.html" class="tsd-signature-type" data-tsd-kind="Interface">TerminalLinkContext</a>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L7452">vscode.d.ts:7452</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Provide terminal links for the given context. Note that this can be called multiple times
+										even before previous calls resolve, make sure to not share global objects (eg. <code>RegExp</code>)
+									that could have problems when asynchronous usage may overlap.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <a href="vscode.TerminalLinkContext.html" class="tsd-signature-type" data-tsd-kind="Interface">TerminalLinkContext</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Information about what links are being provided for.</p>
+									</div>
+								</li>
+								<li>
+									<h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A cancellation token.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A list of terminal links for the given line.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="handleTerminalLink" class="tsd-anchor"></a>
+					<h3>handle<wbr>Terminal<wbr>Link</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Terminal<wbr>Link<span class="tsd-signature-symbol">(</span>link<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L7458">vscode.d.ts:7458</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handle an activated terminal link.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>link: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The link to handle.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

@@ -117,242 +117,178 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>A file system watcher notifies about changes to files and folders
-on disk or from other <a href="vscode.FileSystemProvider.html">FileSystemProviders</a>.</p>
-
-                </div>
-                <p>To get an instance of a <code>FileSystemWatcher</code> use
-<a href="../modules/vscode.workspace.html#createFileSystemWatcher">createFileSystemWatcher</a>.</p>
-
-        </div>
-        </section>
-
-
-    <section class="tsd-panel tsd-hierarchy">
-        <h3>Hierarchy</h3>
-        <ul class="tsd-hierarchy">
-        <li>
-                <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a>
-
-                    <ul class="tsd-hierarchy">
-        <li>
-                <span class="target">FileSystemWatcher</span>
-
-        </li>
-</ul>
-        </li>
-</ul>
-
-    </section>
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section tsd-is-inherited">
-                            <h3>Methods（1）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.FileSystemWatcher.html#dispose" class="tsd-kind-icon">dispose</a></li>
-                            </ul>
-                    </section>
-                    <section class="tsd-index-section ">
-                            <h3>Properties（6）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#ignoreCreateEvents" class="tsd-kind-icon">ignore<wbr>Create<wbr>Events</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#ignoreChangeEvents" class="tsd-kind-icon">ignore<wbr>Change<wbr>Events</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#ignoreDeleteEvents" class="tsd-kind-icon">ignore<wbr>Delete<wbr>Events</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#onDidCreate" class="tsd-kind-icon">on<wbr>Did<wbr>Create</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#onDidChange" class="tsd-kind-icon">on<wbr>Did<wbr>Change</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#onDidDelete" class="tsd-kind-icon">on<wbr>Did<wbr>Delete</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group tsd-is-inherited">
-        <h2>Methods（1）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-    <a name="dispose" class="tsd-anchor"></a>
-        <h3>dispose</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-        <li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <p>Inherited from <a href="../classes/vscode.Disposable.html">Disposable</a>.<a href="../classes/vscode.Disposable.html#dispose">dispose</a></p>
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L1699">vscode.d.ts:1699</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Dispose this object.</p>
-
-                </div>
-        </div>
-
-
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-    </section>
-                <section class="tsd-panel-group tsd-member-group ">
-        <h2>Properties（6）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="ignoreCreateEvents" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> ignore<wbr>Create<wbr>Events</h3>
-
-        <div class="tsd-signature tsd-kind-icon">ignore<wbr>Create<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L1767">vscode.d.ts:1767</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>true if this file system watcher has been created such that
-it ignores creation file system events.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="ignoreChangeEvents" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> ignore<wbr>Change<wbr>Events</h3>
-
-        <div class="tsd-signature tsd-kind-icon">ignore<wbr>Change<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L1773">vscode.d.ts:1773</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>true if this file system watcher has been created such that
-it ignores change file system events.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="ignoreDeleteEvents" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> ignore<wbr>Delete<wbr>Events</h3>
-
-        <div class="tsd-signature tsd-kind-icon">ignore<wbr>Delete<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L1779">vscode.d.ts:1779</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>true if this file system watcher has been created such that
-it ignores delete file system events.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="onDidCreate" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Create</h3>
-
-        <div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Create<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">&gt;</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L1784">vscode.d.ts:1784</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>An event which fires on file/folder creation.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="onDidChange" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change</h3>
-
-        <div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">&gt;</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L1789">vscode.d.ts:1789</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>An event which fires on file/folder change.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-    <a name="onDidDelete" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Delete</h3>
-
-        <div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Delete<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">&gt;</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L1794">vscode.d.ts:1794</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>An event which fires on file/folder deletion.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A file system watcher notifies about changes to files and folders
+						on disk or from other <a href="vscode.FileSystemProvider.html">FileSystemProviders</a>.</p>
+					</div>
+					<p>To get an instance of a <code>FileSystemWatcher</code> use
+					<a href="../modules/vscode.workspace.html#createFileSystemWatcher">createFileSystemWatcher</a>.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">FileSystemWatcher</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Methods（1）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.FileSystemWatcher.html#dispose" class="tsd-kind-icon">dispose</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties（6）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#ignoreCreateEvents" class="tsd-kind-icon">ignore<wbr>Create<wbr>Events</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#ignoreChangeEvents" class="tsd-kind-icon">ignore<wbr>Change<wbr>Events</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#ignoreDeleteEvents" class="tsd-kind-icon">ignore<wbr>Delete<wbr>Events</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#onDidCreate" class="tsd-kind-icon">on<wbr>Did<wbr>Create</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#onDidChange" class="tsd-kind-icon">on<wbr>Did<wbr>Change</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.FileSystemWatcher.html#onDidDelete" class="tsd-kind-icon">on<wbr>Did<wbr>Delete</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Methods（1）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="../classes/vscode.Disposable.html">Disposable</a>.<a href="../classes/vscode.Disposable.html#dispose">dispose</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L1699">vscode.d.ts:1699</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispose this object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties（6）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ignoreCreateEvents" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> ignore<wbr>Create<wbr>Events</h3>
+					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Create<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L1767">vscode.d.ts:1767</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>true if this file system watcher has been created such that
+							it ignores creation file system events.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ignoreChangeEvents" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> ignore<wbr>Change<wbr>Events</h3>
+					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Change<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L1773">vscode.d.ts:1773</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>true if this file system watcher has been created such that
+							it ignores change file system events.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ignoreDeleteEvents" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> ignore<wbr>Delete<wbr>Events</h3>
+					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Delete<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L1779">vscode.d.ts:1779</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>true if this file system watcher has been created such that
+							it ignores delete file system events.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onDidCreate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Create</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Create<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L1784">vscode.d.ts:1784</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An event which fires on file/folder creation.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onDidChange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Change</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L1789">vscode.d.ts:1789</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An event which fires on file/folder change.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onDidDelete" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Delete</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Delete<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L1794">vscode.d.ts:1794</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An event which fires on file/folder deletion.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

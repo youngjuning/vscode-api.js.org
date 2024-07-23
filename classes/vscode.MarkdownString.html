@@ -117,406 +117,299 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Human-readable text that supports formatting via the <a href="https://commonmark.org">markdown syntax</a>.</p>
-
-                </div>
-                <p>Rendering of <a href="vscode.ThemeIcon.html">theme icons</a> via the <code>$(&lt;name&gt;)</code>-syntax is supported
-when the <a href="vscode.MarkdownString.html#supportThemeIcons"><code>supportThemeIcons</code></a> is set to <code>true</code>.</p>
-<p>Rendering of embedded html is supported when <a href="vscode.MarkdownString.html#supportHtml"><code>supportHtml</code></a> is set to <code>true</code>.</p>
-
-        </div>
-        </section>
-
-
-    <section class="tsd-panel tsd-hierarchy">
-        <h3>Hierarchy</h3>
-        <ul class="tsd-hierarchy">
-        <li>
-                <span class="target">MarkdownString</span>
-
-        </li>
-</ul>
-
-    </section>
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section ">
-                            <h3>Constructors（1）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.MarkdownString.html#constructor" class="tsd-kind-icon">constructor</a></li>
-                            </ul>
-                    </section>
-                    <section class="tsd-index-section ">
-                            <h3>Properties（5）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.MarkdownString.html#value" class="tsd-kind-icon">value</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.MarkdownString.html#isTrusted" class="tsd-kind-icon">is<wbr>Trusted</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.MarkdownString.html#supportThemeIcons" class="tsd-kind-icon">support<wbr>Theme<wbr>Icons</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.MarkdownString.html#supportHtml" class="tsd-kind-icon">support<wbr>Html</a></li>
-                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.MarkdownString.html#baseUri" class="tsd-kind-icon">base<wbr>Uri</a></li>
-                            </ul>
-                    </section>
-                    <section class="tsd-index-section ">
-                            <h3>Methods（3）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.MarkdownString.html#appendText" class="tsd-kind-icon">append<wbr>Text</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.MarkdownString.html#appendMarkdown" class="tsd-kind-icon">append<wbr>Markdown</a></li>
-                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.MarkdownString.html#appendCodeblock" class="tsd-kind-icon">append<wbr>Codeblock</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group ">
-        <h2>Constructors（1）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-    <a name="constructor" class="tsd-anchor"></a>
-        <h3>constructor</h3>
-
-        <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-        <li class="tsd-signature tsd-kind-icon">new <wbr>Markdown<wbr>String<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, supportThemeIcons<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L3000">vscode.d.ts:3000</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Creates a new markdown string with the given value.</p>
-
-                </div>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Optional, initial value.</p>
-
-                </div>
-        </div>
-
-            </li>
-            <li>
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> supportThemeIcons: <span class="tsd-signature-type">boolean</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Optional, Specifies whether <a href="vscode.ThemeIcon.html">ThemeIcons</a> are supported within the <a href="vscode.MarkdownString.html"><code>MarkdownString</code></a>.</p>
-
-                </div>
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-    </section>
-                <section class="tsd-panel-group tsd-member-group ">
-        <h2>Properties（5）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-    <a name="value" class="tsd-anchor"></a>
-        <h3>value</h3>
-
-        <div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L2941">vscode.d.ts:2941</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>The markdown string.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-    <a name="isTrusted" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Trusted</h3>
-
-        <div class="tsd-signature tsd-kind-icon">is<wbr>Trusted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>enabledCommands<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L2949">vscode.d.ts:2949</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Indicates that this markdown string is from a trusted source. Only <em>trusted</em>
-markdown supports links that execute commands, e.g. <code>[Run it](command:myCommandId)</code>.</p>
-
-                </div>
-                <p>Defaults to <code>false</code> (commands are disabled).</p>
-
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-    <a name="supportThemeIcons" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> support<wbr>Theme<wbr>Icons</h3>
-
-        <div class="tsd-signature tsd-kind-icon">support<wbr>Theme<wbr>Icons<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L2959">vscode.d.ts:2959</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Indicates that this markdown string can contain <a href="vscode.ThemeIcon.html">ThemeIcons</a>, e.g. <code>$(zap)</code>.</p>
-
-                </div>
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-    <a name="supportHtml" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> support<wbr>Html</h3>
-
-        <div class="tsd-signature tsd-kind-icon">support<wbr>Html<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L2971">vscode.d.ts:2971</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Indicates that this markdown string can contain raw html tags. Defaults to <code>false</code>.</p>
-
-                </div>
-                <p>When <code>supportHtml</code> is false, the markdown renderer will strip out any raw html tags
-that appear in the markdown text. This means you can only use markdown syntax for rendering.</p>
-<p>When <code>supportHtml</code> is true, the markdown render will also allow a safe subset of html tags
-and attributes to be rendered. See <a href="https://github.com/microsoft/vscode/blob/6d2920473c6f13759c978dd89104c4270a83422d/src/vs/base/browser/markdownRenderer.ts#L296">https://github.com/microsoft/vscode/blob/6d2920473c6f13759c978dd89104c4270a83422d/src/vs/base/browser/markdownRenderer.ts#L296</a>
-for a list of all supported tags and attributes.</p>
-
-        </div>
-
-
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-    <a name="baseUri" class="tsd-anchor"></a>
-        <h3><span class="tsd-flag ts-flagOptional">Optional</span> base<wbr>Uri</h3>
-
-        <div class="tsd-signature tsd-kind-icon">base<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></div>
-
-<aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L2992">vscode.d.ts:2992</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Uri that relative paths are resolved relative to.</p>
-
-                </div>
-                <p>If the <code>baseUri</code> ends with <code>/</code>, it is considered a directory and relative paths in the markdown are resolved relative to that directory:</p>
-<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">md</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">vscode</span><span style="color: #000000">.</span><span style="color: #795E26">MarkdownString</span><span style="color: #000000">(</span><span style="color: #A31515">`[link](./file.js)`</span><span style="color: #000000">);</span>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Human-readable text that supports formatting via the <a href="https://commonmark.org">markdown syntax</a>.</p>
+					</div>
+					<p>Rendering of <a href="vscode.ThemeIcon.html">theme icons</a> via the <code>$(&lt;name&gt;)</code>-syntax is supported
+					when the <a href="vscode.MarkdownString.html#supportThemeIcons"><code>supportThemeIcons</code></a> is set to <code>true</code>.</p>
+					<p>Rendering of embedded html is supported when <a href="vscode.MarkdownString.html#supportHtml"><code>supportHtml</code></a> is set to <code>true</code>.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">MarkdownString</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors（1）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.MarkdownString.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties（5）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.MarkdownString.html#value" class="tsd-kind-icon">value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.MarkdownString.html#isTrusted" class="tsd-kind-icon">is<wbr>Trusted</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.MarkdownString.html#supportThemeIcons" class="tsd-kind-icon">support<wbr>Theme<wbr>Icons</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.MarkdownString.html#supportHtml" class="tsd-kind-icon">support<wbr>Html</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.MarkdownString.html#baseUri" class="tsd-kind-icon">base<wbr>Uri</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods（3）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.MarkdownString.html#appendText" class="tsd-kind-icon">append<wbr>Text</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.MarkdownString.html#appendMarkdown" class="tsd-kind-icon">append<wbr>Markdown</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.MarkdownString.html#appendCodeblock" class="tsd-kind-icon">append<wbr>Codeblock</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors（1）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Markdown<wbr>String<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, supportThemeIcons<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L3000">vscode.d.ts:3000</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new markdown string with the given value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Optional, initial value.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> supportThemeIcons: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Optional, Specifies whether <a href="vscode.ThemeIcon.html">ThemeIcons</a> are supported within the <a href="vscode.MarkdownString.html"><code>MarkdownString</code></a>.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties（5）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L2941">vscode.d.ts:2941</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The markdown string.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="isTrusted" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Trusted</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Trusted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>enabledCommands<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L2949">vscode.d.ts:2949</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates that this markdown string is from a trusted source. Only <em>trusted</em>
+							markdown supports links that execute commands, e.g. <code>[Run it](command:myCommandId)</code>.</p>
+						</div>
+						<p>Defaults to <code>false</code> (commands are disabled).</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="supportThemeIcons" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> support<wbr>Theme<wbr>Icons</h3>
+					<div class="tsd-signature tsd-kind-icon">support<wbr>Theme<wbr>Icons<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L2959">vscode.d.ts:2959</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates that this markdown string can contain <a href="vscode.ThemeIcon.html">ThemeIcons</a>, e.g. <code>$(zap)</code>.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="supportHtml" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> support<wbr>Html</h3>
+					<div class="tsd-signature tsd-kind-icon">support<wbr>Html<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L2971">vscode.d.ts:2971</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates that this markdown string can contain raw html tags. Defaults to <code>false</code>.</p>
+						</div>
+						<p>When <code>supportHtml</code> is false, the markdown renderer will strip out any raw html tags
+						that appear in the markdown text. This means you can only use markdown syntax for rendering.</p>
+						<p>When <code>supportHtml</code> is true, the markdown render will also allow a safe subset of html tags
+							and attributes to be rendered. See <a href="https://github.com/microsoft/vscode/blob/6d2920473c6f13759c978dd89104c4270a83422d/src/vs/base/browser/markdownRenderer.ts#L296">https://github.com/microsoft/vscode/blob/6d2920473c6f13759c978dd89104c4270a83422d/src/vs/base/browser/markdownRenderer.ts#L296</a>
+						for a list of all supported tags and attributes.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="baseUri" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> base<wbr>Uri</h3>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L2992">vscode.d.ts:2992</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Uri that relative paths are resolved relative to.</p>
+						</div>
+						<p>If the <code>baseUri</code> ends with <code>/</code>, it is considered a directory and relative paths in the markdown are resolved relative to that directory:</p>
+						<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">md</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">vscode</span><span style="color: #000000">.</span><span style="color: #795E26">MarkdownString</span><span style="color: #000000">(</span><span style="color: #A31515">`[link](./file.js)`</span><span style="color: #000000">);</span>
 <span style="color: #001080">md</span><span style="color: #000000">.</span><span style="color: #001080">baseUri</span><span style="color: #000000"> = </span><span style="color: #001080">vscode</span><span style="color: #000000">.</span><span style="color: #001080">Uri</span><span style="color: #000000">.</span><span style="color: #795E26">file</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;/path/to/dir/&#039;</span><span style="color: #000000">);</span>
 <span style="color: #008000">// Here &#039;link&#039; in the rendered markdown resolves to &#039;/path/to/dir/file.js&#039;</span>
 </code></pre>
-<p>If the <code>baseUri</code> is a file, relative paths in the markdown are resolved relative to the parent dir of that file:</p>
-<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">md</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">vscode</span><span style="color: #000000">.</span><span style="color: #795E26">MarkdownString</span><span style="color: #000000">(</span><span style="color: #A31515">`[link](./file.js)`</span><span style="color: #000000">);</span>
+						<p>If the <code>baseUri</code> is a file, relative paths in the markdown are resolved relative to the parent dir of that file:</p>
+						<pre><code class="language-ts"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">md</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #001080">vscode</span><span style="color: #000000">.</span><span style="color: #795E26">MarkdownString</span><span style="color: #000000">(</span><span style="color: #A31515">`[link](./file.js)`</span><span style="color: #000000">);</span>
 <span style="color: #001080">md</span><span style="color: #000000">.</span><span style="color: #001080">baseUri</span><span style="color: #000000"> = </span><span style="color: #001080">vscode</span><span style="color: #000000">.</span><span style="color: #001080">Uri</span><span style="color: #000000">.</span><span style="color: #795E26">file</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;/path/to/otherFile.js&#039;</span><span style="color: #000000">);</span>
 <span style="color: #008000">// Here &#039;link&#039; in the rendered markdown resolves to &#039;/path/to/file.js&#039;</span>
 </code></pre>
-
-        </div>
-
-
-    
-
-</section>
-    </section>
-                <section class="tsd-panel-group tsd-member-group ">
-        <h2>Methods（3）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-    <a name="appendText" class="tsd-anchor"></a>
-        <h3>append<wbr>Text</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-        <li class="tsd-signature tsd-kind-icon">append<wbr>Text<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L3006">vscode.d.ts:3006</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Appends and escapes the given string to this markdown string.</p>
-
-                </div>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>value: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Plain text.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-    <a name="appendMarkdown" class="tsd-anchor"></a>
-        <h3>append<wbr>Markdown</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-        <li class="tsd-signature tsd-kind-icon">append<wbr>Markdown<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L3012">vscode.d.ts:3012</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Appends the given string &#39;as is&#39; to this markdown string. When <a href="vscode.MarkdownString.html#supportThemeIcons"><code>supportThemeIcons</code></a> is <code>true</code>, <a href="vscode.ThemeIcon.html">ThemeIcons</a> in the <code>value</code> will be iconified.</p>
-
-                </div>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>value: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Markdown string.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-    <a name="appendCodeblock" class="tsd-anchor"></a>
-        <h3>append<wbr>Codeblock</h3>
-
-        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-        <li class="tsd-signature tsd-kind-icon">append<wbr>Codeblock<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, language<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L3019">vscode.d.ts:3019</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Appends the given string as codeblock using the provided language.</p>
-
-                </div>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>value: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>A code snippet.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> language: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>An optional <a href="../modules/vscode.languages.html#getLanguages">language identifier</a>.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h4>
-
-
-        </li>
-</ul>
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods（3）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="appendText" class="tsd-anchor"></a>
+					<h3>append<wbr>Text</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">append<wbr>Text<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L3006">vscode.d.ts:3006</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Appends and escapes the given string to this markdown string.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Plain text.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="appendMarkdown" class="tsd-anchor"></a>
+					<h3>append<wbr>Markdown</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">append<wbr>Markdown<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L3012">vscode.d.ts:3012</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Appends the given string &#39;as is&#39; to this markdown string. When <a href="vscode.MarkdownString.html#supportThemeIcons"><code>supportThemeIcons</code></a> is <code>true</code>, <a href="vscode.ThemeIcon.html">ThemeIcons</a> in the <code>value</code> will be iconified.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Markdown string.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="appendCodeblock" class="tsd-anchor"></a>
+					<h3>append<wbr>Codeblock</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">append<wbr>Codeblock<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, language<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L3019">vscode.d.ts:3019</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Appends the given string as codeblock using the provided language.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A code snippet.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> language: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An optional <a href="../modules/vscode.languages.html#getLanguages">language identifier</a>.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

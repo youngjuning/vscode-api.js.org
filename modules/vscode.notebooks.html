@@ -117,265 +117,189 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
-                    <section class="tsd-panel tsd-comment">
-                    <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Namespace for notebooks.</p>
-
-                </div>
-                <p>The notebooks functionality is composed of three loosely coupled components:</p>
-<ol>
-<li><a href="../interfaces/vscode.NotebookSerializer.html">NotebookSerializer</a> enable the editor to open, show, and save notebooks</li>
-<li><a href="../interfaces/vscode.NotebookController.html">NotebookController</a> own the execution of notebooks, e.g they create output from code cells.</li>
-<li>NotebookRenderer present notebook output in the editor. They run in a separate context.</li>
-</ol>
-
-        </div>
-        </section>
-
-
-
-
-
-
-
-        <section class="tsd-panel-group tsd-index-group">
-        <h2>Index</h2>
-        <section class="tsd-panel tsd-index-panel">
-            <div class="tsd-index-content">
-                    <section class="tsd-index-section ">
-                            <h3>Functions（3）</h3>
-                            <ul class="tsd-index-list">
-                                    <li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.notebooks.html#createNotebookController" class="tsd-kind-icon">create<wbr>Notebook<wbr>Controller</a></li>
-                                    <li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.notebooks.html#registerNotebookCellStatusBarItemProvider" class="tsd-kind-icon">register<wbr>Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Item<wbr>Provider</a></li>
-                                    <li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.notebooks.html#createRendererMessaging" class="tsd-kind-icon">create<wbr>Renderer<wbr>Messaging</a></li>
-                            </ul>
-                    </section>
-            </div>
-        </section>
-    </section>
-                    <section class="tsd-panel-group tsd-member-group ">
-        <h2>Functions（3）</h2>
-                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-    <a name="createNotebookController" class="tsd-anchor"></a>
-        <h3>create<wbr>Notebook<wbr>Controller</h3>
-
-        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-        <li class="tsd-signature tsd-kind-icon">create<wbr>Notebook<wbr>Controller<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, notebookType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, handler<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>cells<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookCell.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCell</a><span class="tsd-signature-symbol">[]</span>, notebook<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocument</a>, controller<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L15349">vscode.d.ts:15349</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Creates a new notebook controller.</p>
-
-                </div>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>id: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>Identifier of the controller. Must be unique per extension.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>notebookType: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>A notebook type for which this controller is for.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>label: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The label of the controller.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5><span class="tsd-flag ts-flagOptional">Optional</span> handler: <span class="tsd-signature-symbol">(</span>cells<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookCell.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCell</a><span class="tsd-signature-symbol">[]</span>, notebook<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocument</a>, controller<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The execute-handler of the controller.</p>
-
-        </div>
-
-                        <ul class="tsd-parameters">
-        <li class="tsd-parameter-signature">
-            <ul class="tsd-signatures tsd-kind-type-literal">
-                    <li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>cells<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookCell.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCell</a><span class="tsd-signature-symbol">[]</span>, notebook<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocument</a>, controller<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-            </ul>
-
-            <ul class="tsd-descriptions">
-                    <li class="tsd-description">
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>cells: <a href="../interfaces/vscode.NotebookCell.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCell</a><span class="tsd-signature-symbol">[]</span></h5>
-
-                
-            </li>
-            <li>
-                <h5>notebook: <a href="../interfaces/vscode.NotebookDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocument</a></h5>
-
-                
-            </li>
-            <li>
-                <h5>controller: <a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a></h5>
-
-                
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-
-
-</li>
-            </ul>
-        </li>
-</ul>
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a></h4>
-
-        <p>A new notebook controller.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-    <a name="registerNotebookCellStatusBarItemProvider" class="tsd-anchor"></a>
-        <h3>register<wbr>Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Item<wbr>Provider</h3>
-
-        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-        <li class="tsd-signature tsd-kind-icon">register<wbr>Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Item<wbr>Provider<span class="tsd-signature-symbol">(</span>notebookType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, provider<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookCellStatusBarItemProvider.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCellStatusBarItemProvider</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L15358">vscode.d.ts:15358</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Register a <a href="../interfaces/vscode.NotebookCellStatusBarItemProvider.html">cell statusbar item provider</a> for the given notebook type.</p>
-
-                </div>
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>notebookType: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The notebook type to register for.</p>
-
-        </div>
-
-            </li>
-            <li>
-                <h5>provider: <a href="../interfaces/vscode.NotebookCellStatusBarItemProvider.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCellStatusBarItemProvider</a></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>A cell status bar provider.</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
-
-        <p>A <a href="../classes/vscode.Disposable.html">Disposable</a> that unregisters this provider when being disposed.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-    <a name="createRendererMessaging" class="tsd-anchor"></a>
-        <h3>create<wbr>Renderer<wbr>Messaging</h3>
-
-        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-        <li class="tsd-signature tsd-kind-icon">create<wbr>Renderer<wbr>Messaging<span class="tsd-signature-symbol">(</span>rendererId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookRendererMessaging.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookRendererMessaging</a></li>
-</ul>
-
-<ul class="tsd-descriptions">
-        <li class="tsd-description">
-                <aside class="tsd-sources">
-        <ul>
-                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/51fd0b8/vscode.d.ts#L15370">vscode.d.ts:15370</a></li>
-        </ul>
-</aside>
-        <div class="tsd-comment tsd-typography">
-                <div class="lead">
-                    <p>Creates a new messaging instance used to communicate with a specific renderer.</p>
-
-                </div>
-                <ul>
-<li><em>Note 1:</em> Extensions can only create renderer that they have defined in their <code>package.json</code>-file</li>
-<li><em>Note 2:</em> A renderer only has access to messaging if <code>requiresMessaging</code> is set to <code>always</code> or <code>optional</code> in
-its <code>notebookRenderer</code> contribution.</li>
-</ul>
-
-        </div>
-
-
-    <h4 class="tsd-parameters-title">Parameters</h4>
-    <ul class="tsd-parameters">
-            <li>
-                <h5>rendererId: <span class="tsd-signature-type">string</span></h5>
-
-                        <div class="tsd-comment tsd-typography">
-                <p>The renderer ID to communicate with</p>
-
-        </div>
-
-            </li>
-    </ul>
-
-    <h4 class="tsd-returns-title">Returns <a href="../interfaces/vscode.NotebookRendererMessaging.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookRendererMessaging</a></h4>
-
-        <p>A new notebook renderer messaging object.</p>
-
-
-        </li>
-</ul>
-    
-
-</section>
-    </section>
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Namespace for notebooks.</p>
+					</div>
+					<p>The notebooks functionality is composed of three loosely coupled components:</p>
+					<ol>
+						<li><a href="../interfaces/vscode.NotebookSerializer.html">NotebookSerializer</a> enable the editor to open, show, and save notebooks</li>
+						<li><a href="../interfaces/vscode.NotebookController.html">NotebookController</a> own the execution of notebooks, e.g they create output from code cells.</li>
+						<li>NotebookRenderer present notebook output in the editor. They run in a separate context.</li>
+					</ol>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Functions（3）</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.notebooks.html#createNotebookController" class="tsd-kind-icon">create<wbr>Notebook<wbr>Controller</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.notebooks.html#registerNotebookCellStatusBarItemProvider" class="tsd-kind-icon">register<wbr>Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Item<wbr>Provider</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.notebooks.html#createRendererMessaging" class="tsd-kind-icon">create<wbr>Renderer<wbr>Messaging</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions（3）</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="createNotebookController" class="tsd-anchor"></a>
+					<h3>create<wbr>Notebook<wbr>Controller</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Notebook<wbr>Controller<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, notebookType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, handler<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>cells<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookCell.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCell</a><span class="tsd-signature-symbol">[]</span>, notebook<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocument</a>, controller<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L15349">vscode.d.ts:15349</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new notebook controller.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Identifier of the controller. Must be unique per extension.</p>
+									</div>
+								</li>
+								<li>
+									<h5>notebookType: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A notebook type for which this controller is for.</p>
+									</div>
+								</li>
+								<li>
+									<h5>label: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The label of the controller.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> handler: <span class="tsd-signature-symbol">(</span>cells<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookCell.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCell</a><span class="tsd-signature-symbol">[]</span>, notebook<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocument</a>, controller<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The execute-handler of the controller.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>cells<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookCell.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCell</a><span class="tsd-signature-symbol">[]</span>, notebook<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocument</a>, controller<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>cells: <a href="../interfaces/vscode.NotebookCell.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCell</a><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+														<li>
+															<h5>notebook: <a href="../interfaces/vscode.NotebookDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookDocument</a></h5>
+														</li>
+														<li>
+															<h5>controller: <a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/vscode.NotebookController.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookController</a></h4>
+							<p>A new notebook controller.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="registerNotebookCellStatusBarItemProvider" class="tsd-anchor"></a>
+					<h3>register<wbr>Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Item<wbr>Provider</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Notebook<wbr>Cell<wbr>Status<wbr>Bar<wbr>Item<wbr>Provider<span class="tsd-signature-symbol">(</span>notebookType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, provider<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookCellStatusBarItemProvider.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCellStatusBarItemProvider</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L15358">vscode.d.ts:15358</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Register a <a href="../interfaces/vscode.NotebookCellStatusBarItemProvider.html">cell statusbar item provider</a> for the given notebook type.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>notebookType: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The notebook type to register for.</p>
+									</div>
+								</li>
+								<li>
+									<h5>provider: <a href="../interfaces/vscode.NotebookCellStatusBarItemProvider.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookCellStatusBarItemProvider</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A cell status bar provider.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+							<p>A <a href="../classes/vscode.Disposable.html">Disposable</a> that unregisters this provider when being disposed.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+					<a name="createRendererMessaging" class="tsd-anchor"></a>
+					<h3>create<wbr>Renderer<wbr>Messaging</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Renderer<wbr>Messaging<span class="tsd-signature-symbol">(</span>rendererId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.NotebookRendererMessaging.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookRendererMessaging</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/90c634d/vscode.d.ts#L15370">vscode.d.ts:15370</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new messaging instance used to communicate with a specific renderer.</p>
+								</div>
+								<ul>
+									<li><em>Note 1:</em> Extensions can only create renderer that they have defined in their <code>package.json</code>-file</li>
+									<li><em>Note 2:</em> A renderer only has access to messaging if <code>requiresMessaging</code> is set to <code>always</code> or <code>optional</code> in
+									its <code>notebookRenderer</code> contribution.</li>
+								</ul>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rendererId: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The renderer ID to communicate with</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/vscode.NotebookRendererMessaging.html" class="tsd-signature-type" data-tsd-kind="Interface">NotebookRendererMessaging</a></h4>
+							<p>A new notebook renderer messaging object.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

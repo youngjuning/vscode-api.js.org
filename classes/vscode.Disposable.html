@@ -117,165 +117,223 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Represents a type which can release resources, such
-						as event listening or a timer.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">Disposable</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="../interfaces/vscode.FileSystemWatcher.html" class="tsd-signature-type" data-tsd-kind="Interface">FileSystemWatcher</a>
-							</li>
-							<li>
-								<a href="../interfaces/vscode.TreeView.html" class="tsd-signature-type" data-tsd-kind="Interface">TreeView</a>
-							</li>
-							<li>
-								<a href="../interfaces/vscode.DebugAdapter.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugAdapter</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Methods（2）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vscode.Disposable.html#from" class="tsd-kind-icon">from</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Disposable.html#dispose" class="tsd-kind-icon">dispose</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Constructors（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.Disposable.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（2）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="from" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> from</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>disposableLikes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>dispose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L1679">vscode.d.ts:1679</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Combine many disposable-likes into one. You can use this method when having objects with
-									a dispose function which aren&#39;t instances of <code>Disposable</code>.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>disposableLikes: <span class="tsd-signature-symbol">{ </span>dispose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Objects that have at least a <code>dispose</code>-function member. Note that asynchronous
-										dispose-functions aren&#39;t awaited.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
-							<p>Returns a new disposable which, upon dispose, will
-							dispose all provided disposables.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="dispose" class="tsd-anchor"></a>
-					<h3>dispose</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L1699">vscode.d.ts:1699</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Dispose this object.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Disposable<span class="tsd-signature-symbol">(</span>callOnDispose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L1694">vscode.d.ts:1694</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new disposable that calls the provided function
-									on dispose.</p>
-								</div>
-								<p><em>Note</em> that an asynchronous function is not awaited.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callOnDispose: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Function that disposes something.</p>
-										</div>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Represents a type which can release resources, such
+as event listening or a timer.</p>
+
+                </div>
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">Disposable</span>
+
+                    <ul class="tsd-hierarchy">
+        <li>
+                <a href="../interfaces/vscode.FileSystemWatcher.html" class="tsd-signature-type" data-tsd-kind="Interface">FileSystemWatcher</a>
+
+        </li>
+        <li>
+                <a href="../interfaces/vscode.TreeView.html" class="tsd-signature-type" data-tsd-kind="Interface">TreeView</a>
+
+        </li>
+        <li>
+                <a href="../interfaces/vscode.DebugAdapter.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugAdapter</a>
+
+        </li>
+</ul>
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Methods（2）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vscode.Disposable.html#from" class="tsd-kind-icon">from</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Disposable.html#dispose" class="tsd-kind-icon">dispose</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Constructors（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.Disposable.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（2）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="from" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagStatic">Static</span> from</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+        <li class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>disposableLikes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>dispose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L1679">vscode.d.ts:1679</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Combine many disposable-likes into one. You can use this method when having objects with
+a dispose function which aren&#39;t instances of <code>Disposable</code>.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>disposableLikes: <span class="tsd-signature-symbol">{ </span>dispose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Objects that have at least a <code>dispose</code>-function member. Note that asynchronous
+dispose-functions aren&#39;t awaited.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+
+        <p>Returns a new disposable which, upon dispose, will
+dispose all provided disposables.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="dispose" class="tsd-anchor"></a>
+        <h3>dispose</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L1699">vscode.d.ts:1699</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Dispose this object.</p>
+
+                </div>
+        </div>
+
+
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Constructors（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+    <a name="constructor" class="tsd-anchor"></a>
+        <h3>constructor</h3>
+
+        <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">new <wbr>Disposable<span class="tsd-signature-symbol">(</span>callOnDispose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L1694">vscode.d.ts:1694</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Creates a new disposable that calls the provided function
+on dispose.</p>
+
+                </div>
+                <p><em>Note</em> that an asynchronous function is not awaited.</p>
+
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>callOnDispose: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Function that disposes something.</p>
+
+                </div>
+        </div>
+
+                        <ul class="tsd-parameters">
+        <li class="tsd-parameter-signature">
+            <ul class="tsd-signatures tsd-kind-type-literal">
+                    <li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+            </ul>
+
+            <ul class="tsd-descriptions">
+                    <li class="tsd-description">
+
+
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+
+
+</li>
+            </ul>
+        </li>
+</ul>
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

@@ -117,303 +117,414 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A snippet string is a template which allows to insert text
-						and to control the editor cursor when insertion happens.</p>
-					</div>
-					<p>A snippet can define tab stops and placeholders with <code>$1</code>, <code>$2</code>
-						and <code>${3:foo}</code>. <code>$0</code> defines the final tab stop, it defaults to
-						the end of the snippet. Variables are defined with <code>$name</code> and
-						<code>${name:default value}</code>. Also see
-					<a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets">the full snippet syntax</a>.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">SnippetString</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.SnippetString.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Properties（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.SnippetString.html#value" class="tsd-kind-icon">value</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods（5）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.SnippetString.html#appendText" class="tsd-kind-icon">append<wbr>Text</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.SnippetString.html#appendTabstop" class="tsd-kind-icon">append<wbr>Tabstop</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.SnippetString.html#appendPlaceholder" class="tsd-kind-icon">append<wbr>Placeholder</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.SnippetString.html#appendChoice" class="tsd-kind-icon">append<wbr>Choice</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.SnippetString.html#appendVariable" class="tsd-kind-icon">append<wbr>Variable</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Snippet<wbr>String<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L4081">vscode.d.ts:4081</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a new snippet string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>A snippet string.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="value" class="tsd-anchor"></a>
-					<h3>value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L4074">vscode.d.ts:4074</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The snippet string.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（5）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="appendText" class="tsd-anchor"></a>
-					<h3>append<wbr>Text</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">append<wbr>Text<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L4090">vscode.d.ts:4090</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Builder-function that appends the given string to
-									the <a href="vscode.SnippetString.html#value"><code>value</code></a> of this snippet string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>string: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A value to append &#39;as given&#39;. The string will be escaped.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
-							<p>This snippet string.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="appendTabstop" class="tsd-anchor"></a>
-					<h3>append<wbr>Tabstop</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">append<wbr>Tabstop<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L4100">vscode.d.ts:4100</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Builder-function that appends a tabstop (<code>$1</code>, <code>$2</code> etc) to
-									the <a href="vscode.SnippetString.html#value"><code>value</code></a> of this snippet string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> number: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The number of this tabstop, defaults to an auto-increment
-										value starting at 1.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
-							<p>This snippet string.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="appendPlaceholder" class="tsd-anchor"></a>
-					<h3>append<wbr>Placeholder</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">append<wbr>Placeholder<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snippet<span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span>, number<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L4112">vscode.d.ts:4112</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Builder-function that appends a placeholder (<code>${1:value}</code>) to
-									the <a href="vscode.SnippetString.html#value"><code>value</code></a> of this snippet string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snippet<span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The value of this placeholder - either a string or a function
-										with which a nested snippet can be created.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> number: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The number of this tabstop, defaults to an auto-increment
-										value starting at 1.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
-							<p>This snippet string.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="appendChoice" class="tsd-anchor"></a>
-					<h3>append<wbr>Choice</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">append<wbr>Choice<span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, number<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L4123">vscode.d.ts:4123</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Builder-function that appends a choice (<code>${1|a,b,c|}</code>) to
-									the <a href="vscode.SnippetString.html#value"><code>value</code></a> of this snippet string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>values: <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The values for choices - the array of strings</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> number: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The number of this tabstop, defaults to an auto-increment
-										value starting at 1.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
-							<p>This snippet string.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="appendVariable" class="tsd-anchor"></a>
-					<h3>append<wbr>Variable</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">append<wbr>Variable<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snippet<span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L4134">vscode.d.ts:4134</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Builder-function that appends a variable (<code>${VAR}</code>) to
-									the <a href="vscode.SnippetString.html#value"><code>value</code></a> of this snippet string.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>name: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The name of the variable - excluding the <code>$</code>.</p>
-									</div>
-								</li>
-								<li>
-									<h5>defaultValue: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snippet<span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The default value which is used when the variable name cannot
-										be resolved - either a string or a function with which a nested snippet can be created.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
-							<p>This snippet string.</p>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A snippet string is a template which allows to insert text
+and to control the editor cursor when insertion happens.</p>
+
+                </div>
+                <p>A snippet can define tab stops and placeholders with <code>$1</code>, <code>$2</code>
+and <code>${3:foo}</code>. <code>$0</code> defines the final tab stop, it defaults to
+the end of the snippet. Variables are defined with <code>$name</code> and
+<code>${name:default value}</code>. Also see
+<a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets">the full snippet syntax</a>.</p>
+
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">SnippetString</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Constructors（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.SnippetString.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Properties（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.SnippetString.html#value" class="tsd-kind-icon">value</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Methods（5）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.SnippetString.html#appendText" class="tsd-kind-icon">append<wbr>Text</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.SnippetString.html#appendTabstop" class="tsd-kind-icon">append<wbr>Tabstop</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.SnippetString.html#appendPlaceholder" class="tsd-kind-icon">append<wbr>Placeholder</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.SnippetString.html#appendChoice" class="tsd-kind-icon">append<wbr>Choice</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.SnippetString.html#appendVariable" class="tsd-kind-icon">append<wbr>Variable</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Constructors（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+    <a name="constructor" class="tsd-anchor"></a>
+        <h3>constructor</h3>
+
+        <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">new <wbr>Snippet<wbr>String<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L4081">vscode.d.ts:4081</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Create a new snippet string.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A snippet string.</p>
+
+                </div>
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="value" class="tsd-anchor"></a>
+        <h3>value</h3>
+
+        <div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L4074">vscode.d.ts:4074</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The snippet string.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（5）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="appendText" class="tsd-anchor"></a>
+        <h3>append<wbr>Text</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">append<wbr>Text<span class="tsd-signature-symbol">(</span>string<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L4090">vscode.d.ts:4090</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Builder-function that appends the given string to
+the <a href="vscode.SnippetString.html#value"><code>value</code></a> of this snippet string.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>string: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A value to append &#39;as given&#39;. The string will be escaped.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
+
+        <p>This snippet string.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="appendTabstop" class="tsd-anchor"></a>
+        <h3>append<wbr>Tabstop</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">append<wbr>Tabstop<span class="tsd-signature-symbol">(</span>number<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L4100">vscode.d.ts:4100</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Builder-function that appends a tabstop (<code>$1</code>, <code>$2</code> etc) to
+the <a href="vscode.SnippetString.html#value"><code>value</code></a> of this snippet string.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> number: <span class="tsd-signature-type">number</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The number of this tabstop, defaults to an auto-increment
+value starting at 1.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
+
+        <p>This snippet string.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="appendPlaceholder" class="tsd-anchor"></a>
+        <h3>append<wbr>Placeholder</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">append<wbr>Placeholder<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snippet<span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span>, number<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L4112">vscode.d.ts:4112</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Builder-function that appends a placeholder (<code>${1:value}</code>) to
+the <a href="vscode.SnippetString.html#value"><code>value</code></a> of this snippet string.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>value: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snippet<span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The value of this placeholder - either a string or a function
+with which a nested snippet can be created.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> number: <span class="tsd-signature-type">number</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The number of this tabstop, defaults to an auto-increment
+value starting at 1.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
+
+        <p>This snippet string.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="appendChoice" class="tsd-anchor"></a>
+        <h3>append<wbr>Choice</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">append<wbr>Choice<span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, number<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L4123">vscode.d.ts:4123</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Builder-function that appends a choice (<code>${1|a,b,c|}</code>) to
+the <a href="vscode.SnippetString.html#value"><code>value</code></a> of this snippet string.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>values: <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The values for choices - the array of strings</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> number: <span class="tsd-signature-type">number</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The number of this tabstop, defaults to an auto-increment
+value starting at 1.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
+
+        <p>This snippet string.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="appendVariable" class="tsd-anchor"></a>
+        <h3>append<wbr>Variable</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">append<wbr>Variable<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snippet<span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L4134">vscode.d.ts:4134</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Builder-function that appends a variable (<code>${VAR}</code>) to
+the <a href="vscode.SnippetString.html#value"><code>value</code></a> of this snippet string.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>name: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The name of the variable - excluding the <code>$</code>.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>defaultValue: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>snippet<span class="tsd-signature-symbol">: </span><a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The default value which is used when the variable name cannot
+be resolved - either a string or a function with which a nested snippet can be created.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.SnippetString.html" class="tsd-signature-type" data-tsd-kind="Class">SnippetString</a></h4>
+
+        <p>This snippet string.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

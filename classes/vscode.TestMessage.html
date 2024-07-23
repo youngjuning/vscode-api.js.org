@@ -117,218 +117,291 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Message associated with the test state. Can be linked to a specific
-						source range -- useful for assertion failures, for example.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">TestMessage</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Methods（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vscode.TestMessage.html#diff" class="tsd-kind-icon">diff</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Constructors（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.TestMessage.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Properties（5）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.TestMessage.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.TestMessage.html#expectedOutput" class="tsd-kind-icon">expected<wbr>Output</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.TestMessage.html#actualOutput" class="tsd-kind-icon">actual<wbr>Output</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.TestMessage.html#location" class="tsd-kind-icon">location</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.TestMessage.html#contextValue" class="tsd-kind-icon">context<wbr>Value</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="diff" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> diff</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">diff<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a>, expected<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, actual<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.TestMessage.html" class="tsd-signature-type" data-tsd-kind="Class">TestMessage</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17686">vscode.d.ts:17686</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new TestMessage that will present as a diff in the editor.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>message: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Message to display to the user.</p>
-									</div>
-								</li>
-								<li>
-									<h5>expected: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Expected output.</p>
-									</div>
-								</li>
-								<li>
-									<h5>actual: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Actual output.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.TestMessage.html" class="tsd-signature-type" data-tsd-kind="Class">TestMessage</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Test<wbr>Message<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.TestMessage.html" class="tsd-signature-type" data-tsd-kind="Class">TestMessage</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17692">vscode.d.ts:17692</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new TestMessage instance.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>message: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The message to show to the user.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.TestMessage.html" class="tsd-signature-type" data-tsd-kind="Class">TestMessage</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（5）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17632">vscode.d.ts:17632</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Human-readable message text to display.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="expectedOutput" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> expected<wbr>Output</h3>
-					<div class="tsd-signature tsd-kind-icon">expected<wbr>Output<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17637">vscode.d.ts:17637</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Expected test output. If given with <a href="vscode.TestMessage.html#actualOutput">actualOutput</a>, a diff view will be shown.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="actualOutput" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> actual<wbr>Output</h3>
-					<div class="tsd-signature tsd-kind-icon">actual<wbr>Output<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17642">vscode.d.ts:17642</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Actual test output. If given with <a href="vscode.TestMessage.html#expectedOutput">expectedOutput</a>, a diff view will be shown.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="location" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> location</h3>
-					<div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <a href="vscode.Location.html" class="tsd-signature-type" data-tsd-kind="Class">Location</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17647">vscode.d.ts:17647</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Associated file location.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="contextValue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> context<wbr>Value</h3>
-					<div class="tsd-signature tsd-kind-icon">context<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17678">vscode.d.ts:17678</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Context value of the test item. This can be used to contribute message-
-								specific actions to the test peek view. The value set here can be found
-							in the <code>testMessage</code> property of the following <code>menus</code> contribution points:</p>
-						</div>
-						<ul>
-							<li><code>testing/message/context</code> - context menu for the message in the results tree</li>
-							<li><code>testing/message/content</code> - a prominent button overlaying editor content where
-							the message is displayed.</li>
-						</ul>
-						<p>For example:</p>
-						<pre><code class="language-json"><span style="color: #A31515">&quot;contributes&quot;</span><span style="color: #000000">: {</span>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Message associated with the test state. Can be linked to a specific
+source range -- useful for assertion failures, for example.</p>
+
+                </div>
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">TestMessage</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Methods（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="vscode.TestMessage.html#diff" class="tsd-kind-icon">diff</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Constructors（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.TestMessage.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Properties（5）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.TestMessage.html#message" class="tsd-kind-icon">message</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.TestMessage.html#expectedOutput" class="tsd-kind-icon">expected<wbr>Output</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.TestMessage.html#actualOutput" class="tsd-kind-icon">actual<wbr>Output</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.TestMessage.html#location" class="tsd-kind-icon">location</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.TestMessage.html#contextValue" class="tsd-kind-icon">context<wbr>Value</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+    <a name="diff" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagStatic">Static</span> diff</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+        <li class="tsd-signature tsd-kind-icon">diff<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a>, expected<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, actual<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.TestMessage.html" class="tsd-signature-type" data-tsd-kind="Class">TestMessage</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17686">vscode.d.ts:17686</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Creates a new TestMessage that will present as a diff in the editor.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>message: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Message to display to the user.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>expected: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Expected output.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>actual: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Actual output.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.TestMessage.html" class="tsd-signature-type" data-tsd-kind="Class">TestMessage</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Constructors（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+    <a name="constructor" class="tsd-anchor"></a>
+        <h3>constructor</h3>
+
+        <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">new <wbr>Test<wbr>Message<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.TestMessage.html" class="tsd-signature-type" data-tsd-kind="Class">TestMessage</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17692">vscode.d.ts:17692</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Creates a new TestMessage instance.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>message: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The message to show to the user.</p>
+
+                </div>
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.TestMessage.html" class="tsd-signature-type" data-tsd-kind="Class">TestMessage</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（5）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="message" class="tsd-anchor"></a>
+        <h3>message</h3>
+
+        <div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17632">vscode.d.ts:17632</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Human-readable message text to display.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="expectedOutput" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> expected<wbr>Output</h3>
+
+        <div class="tsd-signature tsd-kind-icon">expected<wbr>Output<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17637">vscode.d.ts:17637</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Expected test output. If given with <a href="vscode.TestMessage.html#actualOutput">actualOutput</a>, a diff view will be shown.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="actualOutput" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> actual<wbr>Output</h3>
+
+        <div class="tsd-signature tsd-kind-icon">actual<wbr>Output<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17642">vscode.d.ts:17642</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Actual test output. If given with <a href="vscode.TestMessage.html#expectedOutput">expectedOutput</a>, a diff view will be shown.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="location" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> location</h3>
+
+        <div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <a href="vscode.Location.html" class="tsd-signature-type" data-tsd-kind="Class">Location</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17647">vscode.d.ts:17647</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Associated file location.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="contextValue" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> context<wbr>Value</h3>
+
+        <div class="tsd-signature tsd-kind-icon">context<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17678">vscode.d.ts:17678</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Context value of the test item. This can be used to contribute message-
+specific actions to the test peek view. The value set here can be found
+in the <code>testMessage</code> property of the following <code>menus</code> contribution points:</p>
+
+                </div>
+                <ul>
+<li><code>testing/message/context</code> - context menu for the message in the results tree</li>
+<li><code>testing/message/content</code> - a prominent button overlaying editor content where
+ the message is displayed.</li>
+</ul>
+<p>For example:</p>
+<pre><code class="language-json"><span style="color: #A31515">&quot;contributes&quot;</span><span style="color: #000000">: {</span>
 <span style="color: #000000">  </span><span style="color: #0451A5">&quot;menus&quot;</span><span style="color: #000000">: {</span>
 <span style="color: #000000">    </span><span style="color: #0451A5">&quot;testing/message/content&quot;</span><span style="color: #000000">: [</span>
 <span style="color: #000000">      {</span>
@@ -339,16 +412,22 @@
 <span style="color: #000000">  }</span>
 <span style="color: #000000">}</span>
 </code></pre>
-						<p>The command will be called with an object containing:</p>
-						<ul>
-							<li><code>test</code>: the <a href="../interfaces/vscode.TestItem.html">TestItem</a> the message is associated with, <em>if</em> it
-							is still present in the <a href="../interfaces/vscode.TestController.html#items">TestController.items</a> collection.</li>
-							<li><code>message</code>: the <a href="vscode.TestMessage.html">TestMessage</a> instance.</li>
-						</ul>
-					</div>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<p>The command will be called with an object containing:</p>
+<ul>
+<li><code>test</code>: the <a href="../interfaces/vscode.TestItem.html">TestItem</a> the message is associated with, <em>if</em> it
+ is still present in the <a href="../interfaces/vscode.TestController.html#items">TestController.items</a> collection.</li>
+<li><code>message</code>: the <a href="vscode.TestMessage.html">TestMessage</a> instance.</li>
+</ul>
+
+        </div>
+
+
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

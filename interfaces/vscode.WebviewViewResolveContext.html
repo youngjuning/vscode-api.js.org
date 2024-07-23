@@ -117,73 +117,88 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Additional information the webview view being resolved.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>T = <span class="tsd-signature-type">unknown</span></h4>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Type of the webview&#39;s state.</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">WebviewViewResolveContext</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.WebviewViewResolveContext.html#state" class="tsd-kind-icon">state</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="state" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> state</h3>
-					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L9597">vscode.d.ts:9597</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Persisted state from the webview content.</p>
-						</div>
-						<p>To save resources, the editor normally deallocates webview documents (the iframe content) that are not visible.
-							For example, when the user collapse a view or switches to another top level activity in the sidebar, the
-							<code>WebviewView</code> itself is kept alive but the webview&#39;s underlying document is deallocated. It is recreated when
-						the view becomes visible again.</p>
-						<p>You can prevent this behavior by setting <code>retainContextWhenHidden</code> in the <code>WebviewOptions</code>. However this
-							increases resource usage and should be avoided wherever possible. Instead, you can use persisted state to
-						save off a webview&#39;s state so that it can be quickly recreated as needed.</p>
-						<p>To save off a persisted state, inside the webview call <code>acquireVsCodeApi().setState()</code> with
-						any json serializable object. To restore the state again, call <code>getState()</code>. For example:</p>
-						<pre><code class="language-js"><span style="color: #008000">// Within the webview</span>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Additional information the webview view being resolved.</p>
+
+                </div>
+        </div>
+        </section>
+
+    <section class="tsd-panel tsd-type-parameters">
+        <h3>Type parameters</h3>
+        <ul class="tsd-type-parameters">
+        <li>
+            <h4>T = <span class="tsd-signature-type">unknown</span></h4>
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Type of the webview&#39;s state.</p>
+
+                </div>
+        </div>
+        </li>
+</ul>
+
+    </section>
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">WebviewViewResolveContext</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Properties（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.WebviewViewResolveContext.html#state" class="tsd-kind-icon">state</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="state" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> state</h3>
+
+        <div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L9597">vscode.d.ts:9597</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Persisted state from the webview content.</p>
+
+                </div>
+                <p>To save resources, the editor normally deallocates webview documents (the iframe content) that are not visible.
+For example, when the user collapse a view or switches to another top level activity in the sidebar, the
+<code>WebviewView</code> itself is kept alive but the webview&#39;s underlying document is deallocated. It is recreated when
+the view becomes visible again.</p>
+<p>You can prevent this behavior by setting <code>retainContextWhenHidden</code> in the <code>WebviewOptions</code>. However this
+increases resource usage and should be avoided wherever possible. Instead, you can use persisted state to
+save off a webview&#39;s state so that it can be quickly recreated as needed.</p>
+<p>To save off a persisted state, inside the webview call <code>acquireVsCodeApi().setState()</code> with
+any json serializable object. To restore the state again, call <code>getState()</code>. For example:</p>
+<pre><code class="language-js"><span style="color: #008000">// Within the webview</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">vscode</span><span style="color: #000000"> = </span><span style="color: #795E26">acquireVsCodeApi</span><span style="color: #000000">();</span>
 
 <span style="color: #008000">// Get existing state</span>
@@ -192,12 +207,18 @@
 <span style="color: #008000">// Update state</span>
 <span style="color: #795E26">setState</span><span style="color: #000000">({ </span><span style="color: #001080">value:</span><span style="color: #000000"> </span><span style="color: #001080">oldState</span><span style="color: #000000">.</span><span style="color: #001080">value</span><span style="color: #000000"> + </span><span style="color: #098658">1</span><span style="color: #000000"> })</span>
 </code></pre>
-						<p>The editor ensures that the persisted state is saved correctly when a webview is hidden and across
-						editor restarts.</p>
-					</div>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<p>The editor ensures that the persisted state is saved correctly when a webview is hidden and across
+editor restarts.</p>
+
+        </div>
+
+
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

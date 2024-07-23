@@ -117,221 +117,307 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A language status item is the preferred way to present language status reports for the active text editors,
-						such as selected linter or notifying about a configuration problem.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">LanguageStatusItem</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties（9）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#selector" class="tsd-kind-icon">selector</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#severity" class="tsd-kind-icon">severity</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#text" class="tsd-kind-icon">text</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#detail" class="tsd-kind-icon">detail</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#busy" class="tsd-kind-icon">busy</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#accessibilityInformation" class="tsd-kind-icon">accessibility<wbr>Information</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#dispose" class="tsd-kind-icon">dispose</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（9）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6899">vscode.d.ts:6899</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The identifier of this item.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6904">vscode.d.ts:6904</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The short name of this item, like &#39;Java Language Status&#39;, etc.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="selector" class="tsd-anchor"></a>
-					<h3>selector</h3>
-					<div class="tsd-signature tsd-kind-icon">selector<span class="tsd-signature-symbol">:</span> <a href="../modules/vscode.html#DocumentSelector" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentSelector</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6910">vscode.d.ts:6910</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A <a href="../modules/vscode.html#DocumentSelector">selector</a> that defines for what editors
-							this item shows.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="severity" class="tsd-anchor"></a>
-					<h3>severity</h3>
-					<div class="tsd-signature tsd-kind-icon">severity<span class="tsd-signature-symbol">:</span> <a href="../enums/vscode.LanguageStatusSeverity.html" class="tsd-signature-type" data-tsd-kind="Enumeration">LanguageStatusSeverity</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6919">vscode.d.ts:6919</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The severity of this item.</p>
-						</div>
-						<p>Defaults to <a href="../enums/vscode.LanguageStatusSeverity.html#Information">information</a>. You can use this property to
-							signal to users that there is a problem that needs attention, like a missing executable or an
-						invalid configuration.</p>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="text" class="tsd-anchor"></a>
-					<h3>text</h3>
-					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6929">vscode.d.ts:6929</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The text to show for the entry. You can embed icons in the text by leveraging the syntax:</p>
-						</div>
-						<p><code>My text $(icon-name) contains icons like $(icon-name) this one.</code></p>
-						<p>Where the icon-name is taken from the ThemeIcon <a href="https://code.visualstudio.com/api/references/icons-in-labels#icon-listing">icon set</a>, e.g.
-						<code>light-bulb</code>, <code>thumbsup</code>, <code>zap</code> etc.</p>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="detail" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> detail</h3>
-					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6934">vscode.d.ts:6934</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Optional, human-readable details for this item.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="busy" class="tsd-anchor"></a>
-					<h3>busy</h3>
-					<div class="tsd-signature tsd-kind-icon">busy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6939">vscode.d.ts:6939</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Controls whether the item is shown as &quot;busy&quot;. Defaults to <code>false</code>.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="command" class="tsd-anchor"></a>
-					<h3>command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.Command.html" class="tsd-signature-type" data-tsd-kind="Interface">Command</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6944">vscode.d.ts:6944</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A <a href="vscode.Command.html"><code>command</code></a> for this item.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="accessibilityInformation" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> accessibility<wbr>Information</h3>
-					<div class="tsd-signature tsd-kind-icon">accessibility<wbr>Information<span class="tsd-signature-symbol">:</span> <a href="vscode.AccessibilityInformation.html" class="tsd-signature-type" data-tsd-kind="Interface">AccessibilityInformation</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6949">vscode.d.ts:6949</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Accessibility information used when a screen reader interacts with this item</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="dispose" class="tsd-anchor"></a>
-					<h3>dispose</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6954">vscode.d.ts:6954</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Dispose and free associated resources.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A language status item is the preferred way to present language status reports for the active text editors,
+such as selected linter or notifying about a configuration problem.</p>
+
+                </div>
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">LanguageStatusItem</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Properties（9）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#id" class="tsd-kind-icon">id</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#name" class="tsd-kind-icon">name</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#selector" class="tsd-kind-icon">selector</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#severity" class="tsd-kind-icon">severity</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#text" class="tsd-kind-icon">text</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#detail" class="tsd-kind-icon">detail</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#busy" class="tsd-kind-icon">busy</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#command" class="tsd-kind-icon">command</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#accessibilityInformation" class="tsd-kind-icon">accessibility<wbr>Information</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Methods（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.LanguageStatusItem.html#dispose" class="tsd-kind-icon">dispose</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（9）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="id" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
+
+        <div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6899">vscode.d.ts:6899</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The identifier of this item.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="name" class="tsd-anchor"></a>
+        <h3>name</h3>
+
+        <div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6904">vscode.d.ts:6904</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The short name of this item, like &#39;Java Language Status&#39;, etc.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="selector" class="tsd-anchor"></a>
+        <h3>selector</h3>
+
+        <div class="tsd-signature tsd-kind-icon">selector<span class="tsd-signature-symbol">:</span> <a href="../modules/vscode.html#DocumentSelector" class="tsd-signature-type" data-tsd-kind="Type alias">DocumentSelector</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6910">vscode.d.ts:6910</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A <a href="../modules/vscode.html#DocumentSelector">selector</a> that defines for what editors
+this item shows.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="severity" class="tsd-anchor"></a>
+        <h3>severity</h3>
+
+        <div class="tsd-signature tsd-kind-icon">severity<span class="tsd-signature-symbol">:</span> <a href="../enums/vscode.LanguageStatusSeverity.html" class="tsd-signature-type" data-tsd-kind="Enumeration">LanguageStatusSeverity</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6919">vscode.d.ts:6919</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The severity of this item.</p>
+
+                </div>
+                <p>Defaults to <a href="../enums/vscode.LanguageStatusSeverity.html#Information">information</a>. You can use this property to
+signal to users that there is a problem that needs attention, like a missing executable or an
+invalid configuration.</p>
+
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="text" class="tsd-anchor"></a>
+        <h3>text</h3>
+
+        <div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6929">vscode.d.ts:6929</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The text to show for the entry. You can embed icons in the text by leveraging the syntax:</p>
+
+                </div>
+                <p><code>My text $(icon-name) contains icons like $(icon-name) this one.</code></p>
+<p>Where the icon-name is taken from the ThemeIcon <a href="https://code.visualstudio.com/api/references/icons-in-labels#icon-listing">icon set</a>, e.g.
+<code>light-bulb</code>, <code>thumbsup</code>, <code>zap</code> etc.</p>
+
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="detail" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> detail</h3>
+
+        <div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6934">vscode.d.ts:6934</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Optional, human-readable details for this item.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="busy" class="tsd-anchor"></a>
+        <h3>busy</h3>
+
+        <div class="tsd-signature tsd-kind-icon">busy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6939">vscode.d.ts:6939</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Controls whether the item is shown as &quot;busy&quot;. Defaults to <code>false</code>.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="command" class="tsd-anchor"></a>
+        <h3>command</h3>
+
+        <div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.Command.html" class="tsd-signature-type" data-tsd-kind="Interface">Command</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6944">vscode.d.ts:6944</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A <a href="vscode.Command.html"><code>command</code></a> for this item.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="accessibilityInformation" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> accessibility<wbr>Information</h3>
+
+        <div class="tsd-signature tsd-kind-icon">accessibility<wbr>Information<span class="tsd-signature-symbol">:</span> <a href="vscode.AccessibilityInformation.html" class="tsd-signature-type" data-tsd-kind="Interface">AccessibilityInformation</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6949">vscode.d.ts:6949</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Accessibility information used when a screen reader interacts with this item</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="dispose" class="tsd-anchor"></a>
+        <h3>dispose</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+        <li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6954">vscode.d.ts:6954</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Dispose and free associated resources.</p>
+
+                </div>
+        </div>
+
+
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

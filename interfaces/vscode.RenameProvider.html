@@ -117,141 +117,196 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>The rename provider interface defines the contract between extensions and
-						the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_rename-symbol">rename</a>-feature.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">RenameProvider</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Methods（2）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.RenameProvider.html#provideRenameEdits" class="tsd-kind-icon">provide<wbr>Rename<wbr>Edits</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.RenameProvider.html#prepareRename" class="tsd-kind-icon">prepare<wbr>Rename</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（2）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="provideRenameEdits" class="tsd-anchor"></a>
-					<h3>provide<wbr>Rename<wbr>Edits</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">provide<wbr>Rename<wbr>Edits<span class="tsd-signature-symbol">(</span>document<span class="tsd-signature-symbol">: </span><a href="vscode.TextDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">TextDocument</a>, position<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a>, newName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.WorkspaceEdit.html" class="tsd-signature-type" data-tsd-kind="Class">WorkspaceEdit</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L4154">vscode.d.ts:4154</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Provide an edit that describes changes that have to be made to one
-									or many resources to rename a symbol to a different name.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>document: <a href="vscode.TextDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">TextDocument</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The document in which the command was invoked.</p>
-									</div>
-								</li>
-								<li>
-									<h5>position: <a href="../classes/vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The position at which the command was invoked.</p>
-									</div>
-								</li>
-								<li>
-									<h5>newName: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The new name of the symbol. If the given name is not valid, the provider must return a rejected promise.</p>
-									</div>
-								</li>
-								<li>
-									<h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A cancellation token.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.WorkspaceEdit.html" class="tsd-signature-type" data-tsd-kind="Class">WorkspaceEdit</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A workspace edit or a thenable that resolves to such. The lack of a result can be
-							signaled by returning <code>undefined</code> or <code>null</code>.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="prepareRename" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prepare<wbr>Rename</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">prepare<wbr>Rename<span class="tsd-signature-symbol">(</span>document<span class="tsd-signature-symbol">: </span><a href="vscode.TextDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">TextDocument</a>, position<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>range<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">; </span>placeholder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L4169">vscode.d.ts:4169</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Optional function for resolving and validating a position <em>before</em> running rename. The result can
-										be a range or a range and a placeholder text. The placeholder text should be the identifier of the symbol
-									which is being renamed - when omitted the text in the returned range is used.</p>
-								</div>
-								<p><em>Note:</em> This function should throw an error or return a rejected thenable when the provided location
-								doesn&#39;t allow for a rename.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>document: <a href="vscode.TextDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">TextDocument</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The document in which rename will be invoked.</p>
-									</div>
-								</li>
-								<li>
-									<h5>position: <a href="../classes/vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The position at which rename will be invoked.</p>
-									</div>
-								</li>
-								<li>
-									<h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A cancellation token.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>range<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">; </span>placeholder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>The range or range and placeholder text of the identifier that is to be renamed. The lack of a result can signaled by returning <code>undefined</code> or <code>null</code>.</p>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The rename provider interface defines the contract between extensions and
+the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_rename-symbol">rename</a>-feature.</p>
+
+                </div>
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">RenameProvider</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Methods（2）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.RenameProvider.html#provideRenameEdits" class="tsd-kind-icon">provide<wbr>Rename<wbr>Edits</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.RenameProvider.html#prepareRename" class="tsd-kind-icon">prepare<wbr>Rename</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（2）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="provideRenameEdits" class="tsd-anchor"></a>
+        <h3>provide<wbr>Rename<wbr>Edits</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+        <li class="tsd-signature tsd-kind-icon">provide<wbr>Rename<wbr>Edits<span class="tsd-signature-symbol">(</span>document<span class="tsd-signature-symbol">: </span><a href="vscode.TextDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">TextDocument</a>, position<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a>, newName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.WorkspaceEdit.html" class="tsd-signature-type" data-tsd-kind="Class">WorkspaceEdit</a><span class="tsd-signature-symbol">&gt;</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L4154">vscode.d.ts:4154</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Provide an edit that describes changes that have to be made to one
+or many resources to rename a symbol to a different name.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>document: <a href="vscode.TextDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">TextDocument</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The document in which the command was invoked.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>position: <a href="../classes/vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The position at which the command was invoked.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>newName: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The new name of the symbol. If the given name is not valid, the provider must return a rejected promise.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A cancellation token.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.WorkspaceEdit.html" class="tsd-signature-type" data-tsd-kind="Class">WorkspaceEdit</a><span class="tsd-signature-symbol">&gt;</span></h4>
+
+        <p>A workspace edit or a thenable that resolves to such. The lack of a result can be
+signaled by returning <code>undefined</code> or <code>null</code>.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="prepareRename" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> prepare<wbr>Rename</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+        <li class="tsd-signature tsd-kind-icon">prepare<wbr>Rename<span class="tsd-signature-symbol">(</span>document<span class="tsd-signature-symbol">: </span><a href="vscode.TextDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">TextDocument</a>, position<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a>, token<span class="tsd-signature-symbol">: </span><a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>range<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">; </span>placeholder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L4169">vscode.d.ts:4169</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Optional function for resolving and validating a position <em>before</em> running rename. The result can
+be a range or a range and a placeholder text. The placeholder text should be the identifier of the symbol
+which is being renamed - when omitted the text in the returned range is used.</p>
+
+                </div>
+                <p><em>Note:</em> This function should throw an error or return a rejected thenable when the provided location
+doesn&#39;t allow for a rename.</p>
+
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>document: <a href="vscode.TextDocument.html" class="tsd-signature-type" data-tsd-kind="Interface">TextDocument</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The document in which rename will be invoked.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>position: <a href="../classes/vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The position at which rename will be invoked.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>token: <a href="vscode.CancellationToken.html" class="tsd-signature-type" data-tsd-kind="Interface">CancellationToken</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A cancellation token.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="../modules/vscode.html#ProviderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ProviderResult</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>range<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">; </span>placeholder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
+
+        <p>The range or range and placeholder text of the identifier that is to be renamed. The lack of a result can signaled by returning <code>undefined</code> or <code>null</code>.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

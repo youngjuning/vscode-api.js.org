@@ -117,33 +117,34 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Namespace for dealing with commands. In short, a command is a function with a
-						unique identifier. The function is sometimes also called <em>command handler</em>.</p>
-					</div>
-					<p>Commands can be added to the editor using the <a href="vscode.commands.html#registerCommand">registerCommand</a>
-						and <a href="vscode.commands.html#registerTextEditorCommand">registerTextEditorCommand</a> functions. Commands
-					can be executed <a href="vscode.commands.html#executeCommand">manually</a> or from a UI gesture. Those are:</p>
-					<ul>
-						<li>palette - Use the <code>commands</code>-section in <code>package.json</code> to make a command show in
-						the <a href="https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">command palette</a>.</li>
-						<li>keybinding - Use the <code>keybindings</code>-section in <code>package.json</code> to enable
-							<a href="https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization">keybindings</a>
-						for your extension.</li>
-					</ul>
-					<p>Commands from other extensions and from the editor itself are accessible to an extension. However,
-					when invoking an editor command not all argument types are supported.</p>
-					<p>This is a sample that registers a command handler and adds an entry for that command to the palette. First
-					register a command handler with the identifier <code>extension.sayHello</code>.</p>
-					<pre><code class="language-javascript"><span style="color: #001080">commands</span><span style="color: #000000">.</span><span style="color: #795E26">registerCommand</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;extension.sayHello&#039;</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Namespace for dealing with commands. In short, a command is a function with a
+unique identifier. The function is sometimes also called <em>command handler</em>.</p>
+
+                </div>
+                <p>Commands can be added to the editor using the <a href="vscode.commands.html#registerCommand">registerCommand</a>
+and <a href="vscode.commands.html#registerTextEditorCommand">registerTextEditorCommand</a> functions. Commands
+can be executed <a href="vscode.commands.html#executeCommand">manually</a> or from a UI gesture. Those are:</p>
+<ul>
+<li>palette - Use the <code>commands</code>-section in <code>package.json</code> to make a command show in
+the <a href="https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">command palette</a>.</li>
+<li>keybinding - Use the <code>keybindings</code>-section in <code>package.json</code> to enable
+<a href="https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization">keybindings</a>
+for your extension.</li>
+</ul>
+<p>Commands from other extensions and from the editor itself are accessible to an extension. However,
+when invoking an editor command not all argument types are supported.</p>
+<p>This is a sample that registers a command handler and adds an entry for that command to the palette. First
+register a command handler with the identifier <code>extension.sayHello</code>.</p>
+<pre><code class="language-javascript"><span style="color: #001080">commands</span><span style="color: #000000">.</span><span style="color: #795E26">registerCommand</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;extension.sayHello&#039;</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #001080">window</span><span style="color: #000000">.</span><span style="color: #795E26">showInformationMessage</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Hello World!&#039;</span><span style="color: #000000">);</span>
 <span style="color: #000000">});</span>
 </code></pre>
-					<p>Second, bind the command identifier to a title under which it will show in the palette (<code>package.json</code>).</p>
-					<pre><code class="language-json"><span style="color: #000000">{</span>
+<p>Second, bind the command identifier to a title under which it will show in the palette (<code>package.json</code>).</p>
+<pre><code class="language-json"><span style="color: #000000">{</span>
 <span style="color: #000000">    </span><span style="color: #0451A5">&quot;contributes&quot;</span><span style="color: #000000">: {</span>
 <span style="color: #000000">        </span><span style="color: #0451A5">&quot;commands&quot;</span><span style="color: #000000">: [{</span>
 <span style="color: #000000">            </span><span style="color: #0451A5">&quot;command&quot;</span><span style="color: #000000">: </span><span style="color: #A31515">&quot;extension.sayHello&quot;</span><span style="color: #000000">,</span>
@@ -152,252 +153,355 @@
 <span style="color: #000000">    }</span>
 <span style="color: #000000">}</span>
 </code></pre>
-				</div>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Functions（4）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.commands.html#registerCommand" class="tsd-kind-icon">register<wbr>Command</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.commands.html#registerTextEditorCommand" class="tsd-kind-icon">register<wbr>Text<wbr>Editor<wbr>Command</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="vscode.commands.html#executeCommand" class="tsd-kind-icon">execute<wbr>Command</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.commands.html#getCommands" class="tsd-kind-icon">get<wbr>Commands</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions（4）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-					<a name="registerCommand" class="tsd-anchor"></a>
-					<h3>register<wbr>Command</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L10248">vscode.d.ts:10248</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Registers a command that can be invoked via a keyboard shortcut,
-									a menu item, an action, or directly.</p>
-								</div>
-								<p>Registering a command with an existing command identifier twice
-								will cause an error.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>command: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A unique identifier for the command.</p>
-									</div>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A command handler function.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The <code>this</code> context used when invoking the handler function.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
-							<p>Disposable which unregisters this command on disposal.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-					<a name="registerTextEditorCommand" class="tsd-anchor"></a>
-					<h3>register<wbr>Text<wbr>Editor<wbr>Command</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Text<wbr>Editor<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>textEditor<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditor.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditor</a>, edit<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditorEdit.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditorEdit</a>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L10265">vscode.d.ts:10265</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Registers a text editor command that can be invoked via a keyboard shortcut,
-									a menu item, an action, or directly.</p>
-								</div>
-								<p>Text editor commands are different from ordinary <a href="vscode.commands.html#registerCommand">commands</a> as
-									they only execute when there is an active editor when the command is called. Also, the
-									command handler of an editor command has access to the active editor and to an
-									<a href="../interfaces/vscode.TextEditorEdit.html">edit</a>-builder. Note that the edit-builder is only valid while the
-								callback executes.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>command: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A unique identifier for the command.</p>
-									</div>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>textEditor<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditor.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditor</a>, edit<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditorEdit.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditorEdit</a>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A command handler function with access to an <a href="../interfaces/vscode.TextEditor.html">editor</a> and an <a href="../interfaces/vscode.TextEditorEdit.html">edit</a>.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>textEditor<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditor.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditor</a>, edit<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditorEdit.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditorEdit</a>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>textEditor: <a href="../interfaces/vscode.TextEditor.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditor</a></h5>
-														</li>
-														<li>
-															<h5>edit: <a href="../interfaces/vscode.TextEditorEdit.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditorEdit</a></h5>
-														</li>
-														<li>
-															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The <code>this</code> context used when invoking the handler function.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
-							<p>Disposable which unregisters this command on disposal.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
-					<a name="executeCommand" class="tsd-anchor"></a>
-					<h3>execute<wbr>Command</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">execute<wbr>Command&lt;T&gt;<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>rest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L10281">vscode.d.ts:10281</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Executes the command denoted by the given command identifier.</p>
-								</div>
-								<ul>
-									<li><em>Note 1:</em> When executing an editor command not all types are allowed to
-										be passed as arguments. Allowed are the primitive types <code>string</code>, <code>boolean</code>,
-									<code>number</code>, <code>undefined</code>, and <code>null</code>, as well as <a href="../classes/vscode.Position.html"><code>Position</code></a>, <a href="../classes/vscode.Range.html"><code>Range</code></a>, <a href="../classes/vscode.Uri.html"><code>Uri</code></a> and <a href="../classes/vscode.Location.html"><code>Location</code></a>.</li>
-									<li><em>Note 2:</em> There are no restrictions when executing commands that have been contributed
-									by extensions.</li>
-								</ul>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T = <span class="tsd-signature-type">unknown</span></h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>command: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Identifier of the command to execute.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>rest: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Parameters passed to the command function.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A thenable that resolves to the returned value of the given command. Returns <code>undefined</code> when
-							the command handler function doesn&#39;t return anything.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-					<a name="getCommands" class="tsd-anchor"></a>
-					<h3>get<wbr>Commands</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Commands<span class="tsd-signature-symbol">(</span>filterInternal<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L10290">vscode.d.ts:10290</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Retrieve the list of all available commands. Commands starting with an underscore are
-									treated as internal commands.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> filterInternal: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Set <code>true</code> to not see internal commands (starting with an underscore)</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Thenable that resolves to a list of command ids.</p>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+        </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Functions（4）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.commands.html#registerCommand" class="tsd-kind-icon">register<wbr>Command</a></li>
+                                    <li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.commands.html#registerTextEditorCommand" class="tsd-kind-icon">register<wbr>Text<wbr>Editor<wbr>Command</a></li>
+                                    <li class="tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter"><a href="vscode.commands.html#executeCommand" class="tsd-kind-icon">execute<wbr>Command</a></li>
+                                    <li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.commands.html#getCommands" class="tsd-kind-icon">get<wbr>Commands</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Functions（4）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+    <a name="registerCommand" class="tsd-anchor"></a>
+        <h3>register<wbr>Command</h3>
+
+        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+        <li class="tsd-signature tsd-kind-icon">register<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L10248">vscode.d.ts:10248</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Registers a command that can be invoked via a keyboard shortcut,
+a menu item, an action, or directly.</p>
+
+                </div>
+                <p>Registering a command with an existing command identifier twice
+will cause an error.</p>
+
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>command: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A unique identifier for the command.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>callback: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A command handler function.</p>
+
+        </div>
+
+                        <ul class="tsd-parameters">
+        <li class="tsd-parameter-signature">
+            <ul class="tsd-signatures tsd-kind-type-literal">
+                    <li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+            </ul>
+
+            <ul class="tsd-descriptions">
+                    <li class="tsd-description">
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+
+                
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+
+
+</li>
+            </ul>
+        </li>
+</ul>
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The <code>this</code> context used when invoking the handler function.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+
+        <p>Disposable which unregisters this command on disposal.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+    <a name="registerTextEditorCommand" class="tsd-anchor"></a>
+        <h3>register<wbr>Text<wbr>Editor<wbr>Command</h3>
+
+        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+        <li class="tsd-signature tsd-kind-icon">register<wbr>Text<wbr>Editor<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>textEditor<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditor.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditor</a>, edit<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditorEdit.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditorEdit</a>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L10265">vscode.d.ts:10265</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Registers a text editor command that can be invoked via a keyboard shortcut,
+a menu item, an action, or directly.</p>
+
+                </div>
+                <p>Text editor commands are different from ordinary <a href="vscode.commands.html#registerCommand">commands</a> as
+they only execute when there is an active editor when the command is called. Also, the
+command handler of an editor command has access to the active editor and to an
+<a href="../interfaces/vscode.TextEditorEdit.html">edit</a>-builder. Note that the edit-builder is only valid while the
+callback executes.</p>
+
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>command: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A unique identifier for the command.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>callback: <span class="tsd-signature-symbol">(</span>textEditor<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditor.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditor</a>, edit<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditorEdit.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditorEdit</a>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A command handler function with access to an <a href="../interfaces/vscode.TextEditor.html">editor</a> and an <a href="../interfaces/vscode.TextEditorEdit.html">edit</a>.</p>
+
+        </div>
+
+                        <ul class="tsd-parameters">
+        <li class="tsd-parameter-signature">
+            <ul class="tsd-signatures tsd-kind-type-literal">
+                    <li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>textEditor<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditor.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditor</a>, edit<span class="tsd-signature-symbol">: </span><a href="../interfaces/vscode.TextEditorEdit.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditorEdit</a>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+            </ul>
+
+            <ul class="tsd-descriptions">
+                    <li class="tsd-description">
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>textEditor: <a href="../interfaces/vscode.TextEditor.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditor</a></h5>
+
+                
+            </li>
+            <li>
+                <h5>edit: <a href="../interfaces/vscode.TextEditorEdit.html" class="tsd-signature-type" data-tsd-kind="Interface">TextEditorEdit</a></h5>
+
+                
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+
+                
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+</li>
+            </ul>
+        </li>
+</ul>
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The <code>this</code> context used when invoking the handler function.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Disposable.html" class="tsd-signature-type" data-tsd-kind="Class">Disposable</a></h4>
+
+        <p>Disposable which unregisters this command on disposal.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
+    <a name="executeCommand" class="tsd-anchor"></a>
+        <h3>execute<wbr>Command</h3>
+
+        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace tsd-has-type-parameter">
+        <li class="tsd-signature tsd-kind-icon">execute<wbr>Command&lt;T&gt;<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>rest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L10281">vscode.d.ts:10281</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Executes the command denoted by the given command identifier.</p>
+
+                </div>
+                <ul>
+<li><em>Note 1:</em> When executing an editor command not all types are allowed to
+be passed as arguments. Allowed are the primitive types <code>string</code>, <code>boolean</code>,
+<code>number</code>, <code>undefined</code>, and <code>null</code>, as well as <a href="../classes/vscode.Position.html"><code>Position</code></a>, <a href="../classes/vscode.Range.html"><code>Range</code></a>, <a href="../classes/vscode.Uri.html"><code>Uri</code></a> and <a href="../classes/vscode.Location.html"><code>Location</code></a>.</li>
+<li><em>Note 2:</em> There are no restrictions when executing commands that have been contributed
+by extensions.</li>
+</ul>
+
+        </div>
+
+    <h4 class="tsd-type-parameters-title">Type parameters</h4>
+    <ul class="tsd-type-parameters">
+        <li>
+            <h4>T = <span class="tsd-signature-type">unknown</span></h4>
+                    </li>
+</ul>
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>command: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Identifier of the command to execute.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>rest: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Parameters passed to the command function.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+
+        <p>A thenable that resolves to the returned value of the given command. Returns <code>undefined</code> when
+the command handler function doesn&#39;t return anything.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+    <a name="getCommands" class="tsd-anchor"></a>
+        <h3>get<wbr>Commands</h3>
+
+        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+        <li class="tsd-signature tsd-kind-icon">get<wbr>Commands<span class="tsd-signature-symbol">(</span>filterInternal<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L10290">vscode.d.ts:10290</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Retrieve the list of all available commands. Commands starting with an underscore are
+treated as internal commands.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> filterInternal: <span class="tsd-signature-type">boolean</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Set <code>true</code> to not see internal commands (starting with an underscore)</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+
+        <p>Thenable that resolves to a list of command ids.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

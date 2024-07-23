@@ -117,151 +117,205 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Encapsulates data transferred during drag and drop operations.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">DataTransferItem</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.DataTransferItem.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods（2）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.DataTransferItem.html#asString" class="tsd-kind-icon">as<wbr>String</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.DataTransferItem.html#asFile" class="tsd-kind-icon">as<wbr>File</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Properties（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.DataTransferItem.html#value" class="tsd-kind-icon">value</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Data<wbr>Transfer<wbr>Item<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11240">vscode.d.ts:11240</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Custom data stored on this item. Can be retrieved using <a href="vscode.DataTransferItem.html#value"><code>DataTransferItem.value</code></a>.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（2）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="asString" class="tsd-anchor"></a>
-					<h3>as<wbr>String</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">as<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11217">vscode.d.ts:11217</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get a string representation of this item.</p>
-								</div>
-								<p>If <a href="vscode.DataTransferItem.html#value"><code>DataTransferItem.value</code></a> is an object, this returns the result of json stringifying <a href="vscode.DataTransferItem.html#value"><code>DataTransferItem.value</code></a> value.</p>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="asFile" class="tsd-anchor"></a>
-					<h3>as<wbr>File</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">as<wbr>File<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/vscode.DataTransferFile.html" class="tsd-signature-type" data-tsd-kind="Interface">DataTransferFile</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11227">vscode.d.ts:11227</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Try getting the <a href="../interfaces/vscode.DataTransferFile.html">file</a> associated with this data transfer item.</p>
-								</div>
-								<p>Note that the file object is only valid for the scope of the drag and drop operation.</p>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/vscode.DataTransferFile.html" class="tsd-signature-type" data-tsd-kind="Interface">DataTransferFile</a></h4>
-							<p>The file for the data transfer or <code>undefined</code> if the item is either not a file or the
-							file data cannot be accessed.</p>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="value" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> value</h3>
-					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11235">vscode.d.ts:11235</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Custom data stored on this item.</p>
-						</div>
-						<p>You can use <code>value</code> to share data across operations. The original object can be retrieved so long as the extension that
-						created the <code>DataTransferItem</code> runs in the same extension host.</p>
-					</div>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Encapsulates data transferred during drag and drop operations.</p>
+
+                </div>
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">DataTransferItem</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Constructors（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.DataTransferItem.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Methods（2）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.DataTransferItem.html#asString" class="tsd-kind-icon">as<wbr>String</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.DataTransferItem.html#asFile" class="tsd-kind-icon">as<wbr>File</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Properties（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.DataTransferItem.html#value" class="tsd-kind-icon">value</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Constructors（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+    <a name="constructor" class="tsd-anchor"></a>
+        <h3>constructor</h3>
+
+        <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">new <wbr>Data<wbr>Transfer<wbr>Item<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11240">vscode.d.ts:11240</a></li>
+        </ul>
+</aside>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>value: <span class="tsd-signature-type">any</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Custom data stored on this item. Can be retrieved using <a href="vscode.DataTransferItem.html#value"><code>DataTransferItem.value</code></a>.</p>
+
+                </div>
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（2）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="asString" class="tsd-anchor"></a>
+        <h3>as<wbr>String</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">as<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11217">vscode.d.ts:11217</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Get a string representation of this item.</p>
+
+                </div>
+                <p>If <a href="vscode.DataTransferItem.html#value"><code>DataTransferItem.value</code></a> is an object, this returns the result of json stringifying <a href="vscode.DataTransferItem.html#value"><code>DataTransferItem.value</code></a> value.</p>
+
+        </div>
+
+
+
+    <h4 class="tsd-returns-title">Returns <a href="../interfaces/Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="asFile" class="tsd-anchor"></a>
+        <h3>as<wbr>File</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">as<wbr>File<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/vscode.DataTransferFile.html" class="tsd-signature-type" data-tsd-kind="Interface">DataTransferFile</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11227">vscode.d.ts:11227</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Try getting the <a href="../interfaces/vscode.DataTransferFile.html">file</a> associated with this data transfer item.</p>
+
+                </div>
+                <p>Note that the file object is only valid for the scope of the drag and drop operation.</p>
+
+        </div>
+
+
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/vscode.DataTransferFile.html" class="tsd-signature-type" data-tsd-kind="Interface">DataTransferFile</a></h4>
+
+        <p>The file for the data transfer or <code>undefined</code> if the item is either not a file or the
+file data cannot be accessed.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="value" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> value</h3>
+
+        <div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11235">vscode.d.ts:11235</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Custom data stored on this item.</p>
+
+                </div>
+                <p>You can use <code>value</code> to share data across operations. The original object can be retrieved so long as the extension that
+created the <code>DataTransferItem</code> runs in the same extension host.</p>
+
+        </div>
+
+
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

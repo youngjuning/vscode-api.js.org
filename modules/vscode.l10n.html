@@ -117,224 +117,306 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Namespace for localization-related functionality in the extension API. To use this properly,
-							you must have <code>l10n</code> defined in your extension manifest and have bundle.l10n.<language>.json files.
-								For more information on how to generate bundle.l10n.<language>.json files, check out the
-						<a href="https://github.com/microsoft/vscode-l10n">vscode-l10n repo</a>.</p>
-					</div>
-					<p>Note: Built-in extensions (for example, Git, TypeScript Language Features, GitHub Authentication)
-						are excluded from the <code>l10n</code> property requirement. In other words, they do not need to specify
-					a <code>l10n</code> in the extension manifest because their translated strings come from Language Packs.</p>
-				</div>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Functions（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.l10n.html#t" class="tsd-kind-icon">t</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Variables（2）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="vscode.l10n.html#bundle" class="tsd-kind-icon">bundle</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="vscode.l10n.html#uri" class="tsd-kind-icon">uri</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
-					<a name="t" class="tsd-anchor"></a>
-					<h3>t</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
-						<li class="tsd-signature tsd-kind-icon">t<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-						<li class="tsd-signature tsd-kind-icon">t<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-						<li class="tsd-signature tsd-kind-icon">t<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>comment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17011">vscode.d.ts:17011</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Marks a string for localization. If a localized bundle is available for the language specified by
-										<a href="vscode.env.html#language">env.language</a> and the bundle has a localized value for this message, then that localized
-									value will be returned (with injected {@link args} values for any templated values).</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p>l10n.t(&#39;Hello {0}!&#39;, &#39;World&#39;);</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>message: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The message to localize. Supports index templating where strings like <code>{0}</code> and <code>{1}</code> are
-										replaced by the item at that index in the {@link args} array.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The arguments to be used in the localized string. The index of the argument is used to
-										match the template placeholder in the localized string.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>localized string with injected arguments.</p>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17027">vscode.d.ts:17027</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Marks a string for localization. If a localized bundle is available for the language specified by
-										<a href="vscode.env.html#language">env.language</a> and the bundle has a localized value for this message, then that localized
-									value will be returned (with injected {@link args} values for any templated values).</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>example</dt>
-									<dd><p>l10n.t(&#39;Hello {name}&#39;, { name: &#39;Erich&#39; });</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>message: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The message to localize. Supports named templating where strings like <code>{foo}</code> and <code>{bar}</code> are
-										replaced by the value in the Record for that key (foo, bar, etc).</p>
-									</div>
-								</li>
-								<li>
-									<h5>args: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The arguments to be used in the localized string. The name of the key in the record is used to
-										match the template placeholder in the localized string.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>localized string with injected arguments.</p>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17036">vscode.d.ts:17036</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Marks a string for localization. If a localized bundle is available for the language specified by
-										<a href="vscode.env.html#language">env.language</a> and the bundle has a localized value for this message, then that localized
-									value will be returned (with injected args values for any templated values).</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>options: <span class="tsd-signature-symbol">{ </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>comment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The options to use when localizing the message.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-											<div class="tsd-comment tsd-typography">
-												<div class="lead">
-													<p>The message to localize. If {@link options.args args} is an array, this message supports index templating where strings like
-														<code>{0}</code> and <code>{1}</code> are replaced by the item at that index in the {@link options.args args} array. If <code>args</code> is a <code>Record&lt;string, any&gt;</code>,
-														this supports named templating where strings like <code>{foo}</code> and <code>{bar}</code> are replaced by the value in
-													the Record for that key (foo, bar, etc).</p>
-												</div>
-											</div>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
-											<div class="tsd-comment tsd-typography">
-												<div class="lead">
-													<p>The arguments to be used in the localized string. As an array, the index of the argument is used to
-														match the template placeholder in the localized string. As a Record, the key is used to match the template
-													placeholder in the localized string.</p>
-												</div>
-											</div>
-										</li>
-										<li class="tsd-parameter">
-											<h5>comment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-											<div class="tsd-comment tsd-typography">
-												<div class="lead">
-													<p>A comment to help translators understand the context of the message.</p>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>localized string with injected arguments.</p>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Variables（2）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
-					<a name="bundle" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> bundle</h3>
-					<div class="tsd-signature tsd-kind-icon">bundle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17060">vscode.d.ts:17060</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The bundle of localized strings that have been loaded for the extension.
-								It&#39;s undefined if no bundle has been loaded. The bundle is typically not loaded if
-							there was no bundle found or when we are running with the default language.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
-					<a name="uri" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> uri</h3>
-					<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L17066">vscode.d.ts:17066</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The URI of the localization bundle that has been loaded for the extension.
-								It&#39;s undefined if no bundle has been loaded. The bundle is typically not loaded if
-							there was no bundle found or when we are running with the default language.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Namespace for localization-related functionality in the extension API. To use this properly,
+you must have <code>l10n</code> defined in your extension manifest and have bundle.l10n.<language>.json files.
+For more information on how to generate bundle.l10n.<language>.json files, check out the
+<a href="https://github.com/microsoft/vscode-l10n">vscode-l10n repo</a>.</p>
+
+                </div>
+                <p>Note: Built-in extensions (for example, Git, TypeScript Language Features, GitHub Authentication)
+are excluded from the <code>l10n</code> property requirement. In other words, they do not need to specify
+a <code>l10n</code> in the extension manifest because their translated strings come from Language Packs.</p>
+
+        </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Functions（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-function tsd-parent-kind-namespace"><a href="vscode.l10n.html#t" class="tsd-kind-icon">t</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Variables（2）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="vscode.l10n.html#bundle" class="tsd-kind-icon">bundle</a></li>
+                                    <li class="tsd-kind-variable tsd-parent-kind-namespace"><a href="vscode.l10n.html#uri" class="tsd-kind-icon">uri</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Functions（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-namespace">
+    <a name="t" class="tsd-anchor"></a>
+        <h3>t</h3>
+
+        <ul class="tsd-signatures tsd-kind-function tsd-parent-kind-namespace">
+        <li class="tsd-signature tsd-kind-icon">t<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+        <li class="tsd-signature tsd-kind-icon">t<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+        <li class="tsd-signature tsd-kind-icon">t<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>comment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17011">vscode.d.ts:17011</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Marks a string for localization. If a localized bundle is available for the language specified by
+<a href="vscode.env.html#language">env.language</a> and the bundle has a localized value for this message, then that localized
+value will be returned (with injected {@link args} values for any templated values).</p>
+
+                </div>
+                <dl class="tsd-comment-tags">
+                        <dt>example</dt>
+                        <dd><p>l10n.t(&#39;Hello {0}!&#39;, &#39;World&#39;);</p>
+</dd>
+                </dl>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>message: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The message to localize. Supports index templating where strings like <code>{0}</code> and <code>{1}</code> are
+replaced by the item at that index in the {@link args} array.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The arguments to be used in the localized string. The index of the argument is used to
+match the template placeholder in the localized string.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+
+        <p>localized string with injected arguments.</p>
+
+
+        </li>
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17027">vscode.d.ts:17027</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Marks a string for localization. If a localized bundle is available for the language specified by
+<a href="vscode.env.html#language">env.language</a> and the bundle has a localized value for this message, then that localized
+value will be returned (with injected {@link args} values for any templated values).</p>
+
+                </div>
+                <dl class="tsd-comment-tags">
+                        <dt>example</dt>
+                        <dd><p>l10n.t(&#39;Hello {name}&#39;, { name: &#39;Erich&#39; });</p>
+</dd>
+                </dl>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>message: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The message to localize. Supports named templating where strings like <code>{foo}</code> and <code>{bar}</code> are
+replaced by the value in the Record for that key (foo, bar, etc).</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>args: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The arguments to be used in the localized string. The name of the key in the record is used to
+match the template placeholder in the localized string.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+
+        <p>localized string with injected arguments.</p>
+
+
+        </li>
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17036">vscode.d.ts:17036</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Marks a string for localization. If a localized bundle is available for the language specified by
+<a href="vscode.env.html#language">env.language</a> and the bundle has a localized value for this message, then that localized
+value will be returned (with injected args values for any templated values).</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>options: <span class="tsd-signature-symbol">{ </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>comment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The options to use when localizing the message.</p>
+
+        </div>
+
+                        <ul class="tsd-parameters">
+ 
+            <li class="tsd-parameter">
+                <h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The message to localize. If {@link options.args args} is an array, this message supports index templating where strings like
+<code>{0}</code> and <code>{1}</code> are replaced by the item at that index in the {@link options.args args} array. If <code>args</code> is a <code>Record&lt;string, any&gt;</code>,
+this supports named templating where strings like <code>{foo}</code> and <code>{bar}</code> are replaced by the value in
+the Record for that key (foo, bar, etc).</p>
+
+                </div>
+        </div>
+
+
+            </li>
+        
+ 
+            <li class="tsd-parameter">
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The arguments to be used in the localized string. As an array, the index of the argument is used to
+match the template placeholder in the localized string. As a Record, the key is used to match the template
+placeholder in the localized string.</p>
+
+                </div>
+        </div>
+
+
+            </li>
+        
+ 
+            <li class="tsd-parameter">
+                <h5>comment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A comment to help translators understand the context of the message.</p>
+
+                </div>
+        </div>
+
+
+            </li>
+        
+</ul>
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+
+        <p>localized string with injected arguments.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Variables（2）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
+    <a name="bundle" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagConst">Const</span> bundle</h3>
+
+        <div class="tsd-signature tsd-kind-icon">bundle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17060">vscode.d.ts:17060</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The bundle of localized strings that have been loaded for the extension.
+It&#39;s undefined if no bundle has been loaded. The bundle is typically not loaded if
+there was no bundle found or when we are running with the default language.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-namespace">
+    <a name="uri" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagConst">Const</span> uri</h3>
+
+        <div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L17066">vscode.d.ts:17066</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The URI of the localization bundle that has been loaded for the extension.
+It&#39;s undefined if no bundle has been loaded. The bundle is typically not loaded if
+there was no bundle found or when we are running with the default language.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

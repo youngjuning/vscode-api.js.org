@@ -117,219 +117,300 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A debug session.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">DebugSession</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties（6）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#type" class="tsd-kind-icon">type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#parentSession" class="tsd-kind-icon">parent<wbr>Session</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#workspaceFolder" class="tsd-kind-icon">workspace<wbr>Folder</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#configuration" class="tsd-kind-icon">configuration</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods（2）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.DebugSession.html#customRequest" class="tsd-kind-icon">custom<wbr>Request</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.DebugSession.html#getDebugProtocolBreakpoint" class="tsd-kind-icon">get<wbr>Debug<wbr>Protocol<wbr>Breakpoint</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（6）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15695">vscode.d.ts:15695</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The unique ID of this debug session.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15700">vscode.d.ts:15700</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The debug session&#39;s type from the <a href="vscode.DebugConfiguration.html">debug configuration</a>.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="parentSession" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> parent<wbr>Session</h3>
-					<div class="tsd-signature tsd-kind-icon">parent<wbr>Session<span class="tsd-signature-symbol">:</span> <a href="vscode.DebugSession.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugSession</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15706">vscode.d.ts:15706</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The parent session of this debug session, if it was created as a child.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>see</dt>
-							<dd><p>DebugSessionOptions.parentSession</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15712">vscode.d.ts:15712</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The debug session&#39;s name is initially taken from the <a href="vscode.DebugConfiguration.html">debug configuration</a>.
-							Any changes will be properly reflected in the UI.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="workspaceFolder" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> workspace<wbr>Folder</h3>
-					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Folder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.WorkspaceFolder.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkspaceFolder</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15717">vscode.d.ts:15717</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The workspace folder of this session or <code>undefined</code> for a folderless setup.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="configuration" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> configuration</h3>
-					<div class="tsd-signature tsd-kind-icon">configuration<span class="tsd-signature-symbol">:</span> <a href="vscode.DebugConfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugConfiguration</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15725">vscode.d.ts:15725</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The &quot;resolved&quot; <a href="vscode.DebugConfiguration.html">debug configuration</a> of this session.
-							&quot;Resolved&quot; means that</p>
-							<ul>
-								<li>all variables have been substituted and</li>
-								<li>platform specific attribute sections have been &quot;flattened&quot; for the matching platform and removed for non-matching platforms.</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（2）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="customRequest" class="tsd-anchor"></a>
-					<h3>custom<wbr>Request</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">custom<wbr>Request<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15730">vscode.d.ts:15730</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Send a custom request to the debug adapter.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>command: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> args: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getDebugProtocolBreakpoint" class="tsd-anchor"></a>
-					<h3>get<wbr>Debug<wbr>Protocol<wbr>Breakpoint</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Debug<wbr>Protocol<wbr>Breakpoint<span class="tsd-signature-symbol">(</span>breakpoint<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Breakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">Breakpoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.DebugProtocolBreakpoint.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugProtocolBreakpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15739">vscode.d.ts:15739</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Maps a breakpoint in the editor to the corresponding Debug Adapter Protocol (DAP) breakpoint that is managed by the debug adapter of the debug session.
-									If no DAP breakpoint exists (either because the editor breakpoint was not yet registered or because the debug adapter is not interested in the breakpoint), the value <code>undefined</code> is returned.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>breakpoint: <a href="../classes/vscode.Breakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">Breakpoint</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A <a href="../classes/vscode.Breakpoint.html">Breakpoint</a> in the editor.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.DebugProtocolBreakpoint.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugProtocolBreakpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A promise that resolves to the Debug Adapter Protocol breakpoint or <code>undefined</code>.</p>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A debug session.</p>
+
+                </div>
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">DebugSession</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Properties（6）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#id" class="tsd-kind-icon">id</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#type" class="tsd-kind-icon">type</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#parentSession" class="tsd-kind-icon">parent<wbr>Session</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#name" class="tsd-kind-icon">name</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#workspaceFolder" class="tsd-kind-icon">workspace<wbr>Folder</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.DebugSession.html#configuration" class="tsd-kind-icon">configuration</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Methods（2）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.DebugSession.html#customRequest" class="tsd-kind-icon">custom<wbr>Request</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.DebugSession.html#getDebugProtocolBreakpoint" class="tsd-kind-icon">get<wbr>Debug<wbr>Protocol<wbr>Breakpoint</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（6）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="id" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> id</h3>
+
+        <div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15695">vscode.d.ts:15695</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The unique ID of this debug session.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="type" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> type</h3>
+
+        <div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15700">vscode.d.ts:15700</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The debug session&#39;s type from the <a href="vscode.DebugConfiguration.html">debug configuration</a>.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="parentSession" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> parent<wbr>Session</h3>
+
+        <div class="tsd-signature tsd-kind-icon">parent<wbr>Session<span class="tsd-signature-symbol">:</span> <a href="vscode.DebugSession.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugSession</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15706">vscode.d.ts:15706</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The parent session of this debug session, if it was created as a child.</p>
+
+                </div>
+                <dl class="tsd-comment-tags">
+                        <dt>see</dt>
+                        <dd><p>DebugSessionOptions.parentSession</p>
+</dd>
+                </dl>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="name" class="tsd-anchor"></a>
+        <h3>name</h3>
+
+        <div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15712">vscode.d.ts:15712</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The debug session&#39;s name is initially taken from the <a href="vscode.DebugConfiguration.html">debug configuration</a>.
+Any changes will be properly reflected in the UI.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="workspaceFolder" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> workspace<wbr>Folder</h3>
+
+        <div class="tsd-signature tsd-kind-icon">workspace<wbr>Folder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.WorkspaceFolder.html" class="tsd-signature-type" data-tsd-kind="Interface">WorkspaceFolder</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15717">vscode.d.ts:15717</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The workspace folder of this session or <code>undefined</code> for a folderless setup.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="configuration" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> configuration</h3>
+
+        <div class="tsd-signature tsd-kind-icon">configuration<span class="tsd-signature-symbol">:</span> <a href="vscode.DebugConfiguration.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugConfiguration</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15725">vscode.d.ts:15725</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The &quot;resolved&quot; <a href="vscode.DebugConfiguration.html">debug configuration</a> of this session.
+&quot;Resolved&quot; means that</p>
+<ul>
+<li>all variables have been substituted and</li>
+<li>platform specific attribute sections have been &quot;flattened&quot; for the matching platform and removed for non-matching platforms.</li>
+</ul>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（2）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="customRequest" class="tsd-anchor"></a>
+        <h3>custom<wbr>Request</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+        <li class="tsd-signature tsd-kind-icon">custom<wbr>Request<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15730">vscode.d.ts:15730</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Send a custom request to the debug adapter.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>command: <span class="tsd-signature-type">string</span></h5>
+
+                
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> args: <span class="tsd-signature-type">any</span></h5>
+
+                
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="getDebugProtocolBreakpoint" class="tsd-anchor"></a>
+        <h3>get<wbr>Debug<wbr>Protocol<wbr>Breakpoint</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+        <li class="tsd-signature tsd-kind-icon">get<wbr>Debug<wbr>Protocol<wbr>Breakpoint<span class="tsd-signature-symbol">(</span>breakpoint<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Breakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">Breakpoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.DebugProtocolBreakpoint.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugProtocolBreakpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15739">vscode.d.ts:15739</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Maps a breakpoint in the editor to the corresponding Debug Adapter Protocol (DAP) breakpoint that is managed by the debug adapter of the debug session.
+If no DAP breakpoint exists (either because the editor breakpoint was not yet registered or because the debug adapter is not interested in the breakpoint), the value <code>undefined</code> is returned.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>breakpoint: <a href="../classes/vscode.Breakpoint.html" class="tsd-signature-type" data-tsd-kind="Class">Breakpoint</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A <a href="../classes/vscode.Breakpoint.html">Breakpoint</a> in the editor.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.DebugProtocolBreakpoint.html" class="tsd-signature-type" data-tsd-kind="Interface">DebugProtocolBreakpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+
+        <p>A promise that resolves to the Debug Adapter Protocol breakpoint or <code>undefined</code>.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

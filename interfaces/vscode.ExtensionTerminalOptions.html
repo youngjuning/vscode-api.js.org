@@ -117,138 +117,191 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Value-object describing what options a virtual process terminal should use.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">ExtensionTerminalOptions</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties（6）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#pty" class="tsd-kind-icon">pty</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#iconPath" class="tsd-kind-icon">icon<wbr>Path</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#color" class="tsd-kind-icon">color</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#location" class="tsd-kind-icon">location</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#isTransient" class="tsd-kind-icon">is<wbr>Transient</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（6）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11795">vscode.d.ts:11795</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A human-readable string which will be used to represent the terminal in the UI.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pty" class="tsd-anchor"></a>
-					<h3>pty</h3>
-					<div class="tsd-signature tsd-kind-icon">pty<span class="tsd-signature-symbol">:</span> <a href="vscode.Pseudoterminal.html" class="tsd-signature-type" data-tsd-kind="Interface">Pseudoterminal</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11801">vscode.d.ts:11801</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>An implementation of <a href="vscode.Pseudoterminal.html">Pseudoterminal</a> that allows an extension to
-							control a terminal.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="iconPath" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> icon<wbr>Path</h3>
-					<div class="tsd-signature tsd-kind-icon">icon<wbr>Path<span class="tsd-signature-symbol">:</span> <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../classes/vscode.ThemeIcon.html" class="tsd-signature-type" data-tsd-kind="Class">ThemeIcon</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>light<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">; </span>dark<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> }</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11806">vscode.d.ts:11806</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The icon path or <a href="../classes/vscode.ThemeIcon.html">ThemeIcon</a> for the terminal.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="color" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> color</h3>
-					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <a href="../classes/vscode.ThemeColor.html" class="tsd-signature-type" data-tsd-kind="Class">ThemeColor</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11822">vscode.d.ts:11822</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The icon <a href="../classes/vscode.ThemeColor.html">ThemeColor</a> for the terminal.
-								The standard <code>terminal.ansi*</code> theme keys are
-							recommended for the best contrast and consistency across themes.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="location" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> location</h3>
-					<div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <a href="vscode.TerminalEditorLocationOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TerminalEditorLocationOptions</a><span class="tsd-signature-symbol"> | </span><a href="vscode.TerminalSplitLocationOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TerminalSplitLocationOptions</a><span class="tsd-signature-symbol"> | </span><a href="../enums/vscode.TerminalLocation.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TerminalLocation</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11827">vscode.d.ts:11827</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The <a href="../enums/vscode.TerminalLocation.html">TerminalLocation</a> or <a href="vscode.TerminalEditorLocationOptions.html">TerminalEditorLocationOptions</a> or <a href="vscode.TerminalSplitLocationOptions.html">TerminalSplitLocationOptions</a> for the terminal.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="isTransient" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Transient</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Transient<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11833">vscode.d.ts:11833</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Opt-out of the default terminal persistence on restart and reload.
-							This will only take effect when <code>terminal.integrated.enablePersistentSessions</code> is enabled.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Value-object describing what options a virtual process terminal should use.</p>
+
+                </div>
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">ExtensionTerminalOptions</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Properties（6）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#name" class="tsd-kind-icon">name</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#pty" class="tsd-kind-icon">pty</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#iconPath" class="tsd-kind-icon">icon<wbr>Path</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#color" class="tsd-kind-icon">color</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#location" class="tsd-kind-icon">location</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.ExtensionTerminalOptions.html#isTransient" class="tsd-kind-icon">is<wbr>Transient</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（6）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="name" class="tsd-anchor"></a>
+        <h3>name</h3>
+
+        <div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11795">vscode.d.ts:11795</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A human-readable string which will be used to represent the terminal in the UI.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="pty" class="tsd-anchor"></a>
+        <h3>pty</h3>
+
+        <div class="tsd-signature tsd-kind-icon">pty<span class="tsd-signature-symbol">:</span> <a href="vscode.Pseudoterminal.html" class="tsd-signature-type" data-tsd-kind="Interface">Pseudoterminal</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11801">vscode.d.ts:11801</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>An implementation of <a href="vscode.Pseudoterminal.html">Pseudoterminal</a> that allows an extension to
+control a terminal.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="iconPath" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> icon<wbr>Path</h3>
+
+        <div class="tsd-signature tsd-kind-icon">icon<wbr>Path<span class="tsd-signature-symbol">:</span> <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> | </span><a href="../classes/vscode.ThemeIcon.html" class="tsd-signature-type" data-tsd-kind="Class">ThemeIcon</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>light<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">; </span>dark<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol"> }</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11806">vscode.d.ts:11806</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The icon path or <a href="../classes/vscode.ThemeIcon.html">ThemeIcon</a> for the terminal.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="color" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> color</h3>
+
+        <div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <a href="../classes/vscode.ThemeColor.html" class="tsd-signature-type" data-tsd-kind="Class">ThemeColor</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11822">vscode.d.ts:11822</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The icon <a href="../classes/vscode.ThemeColor.html">ThemeColor</a> for the terminal.
+The standard <code>terminal.ansi*</code> theme keys are
+recommended for the best contrast and consistency across themes.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="location" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> location</h3>
+
+        <div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <a href="vscode.TerminalEditorLocationOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TerminalEditorLocationOptions</a><span class="tsd-signature-symbol"> | </span><a href="vscode.TerminalSplitLocationOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">TerminalSplitLocationOptions</a><span class="tsd-signature-symbol"> | </span><a href="../enums/vscode.TerminalLocation.html" class="tsd-signature-type" data-tsd-kind="Enumeration">TerminalLocation</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11827">vscode.d.ts:11827</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The <a href="../enums/vscode.TerminalLocation.html">TerminalLocation</a> or <a href="vscode.TerminalEditorLocationOptions.html">TerminalEditorLocationOptions</a> or <a href="vscode.TerminalSplitLocationOptions.html">TerminalSplitLocationOptions</a> for the terminal.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="isTransient" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Transient</h3>
+
+        <div class="tsd-signature tsd-kind-icon">is<wbr>Transient<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11833">vscode.d.ts:11833</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Opt-out of the default terminal persistence on restart and reload.
+This will only take effect when <code>terminal.integrated.enablePersistentSessions</code> is enabled.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

@@ -117,182 +117,230 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Options for creating a <a href="vscode.TreeView.html">TreeView</a></p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>T</h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">TreeViewOptions</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties（5）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeViewOptions.html#treeDataProvider" class="tsd-kind-icon">tree<wbr>Data<wbr>Provider</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeViewOptions.html#showCollapseAll" class="tsd-kind-icon">show<wbr>Collapse<wbr>All</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeViewOptions.html#canSelectMany" class="tsd-kind-icon">can<wbr>Select<wbr>Many</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeViewOptions.html#dragAndDropController" class="tsd-kind-icon">drag<wbr>And<wbr>Drop<wbr>Controller</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeViewOptions.html#manageCheckboxStateManually" class="tsd-kind-icon">manage<wbr>Checkbox<wbr>State<wbr>Manually</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（5）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="treeDataProvider" class="tsd-anchor"></a>
-					<h3>tree<wbr>Data<wbr>Provider</h3>
-					<div class="tsd-signature tsd-kind-icon">tree<wbr>Data<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="vscode.TreeDataProvider.html" class="tsd-signature-type" data-tsd-kind="Interface">TreeDataProvider</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11091">vscode.d.ts:11091</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A data provider that provides tree data.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="showCollapseAll" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> show<wbr>Collapse<wbr>All</h3>
-					<div class="tsd-signature tsd-kind-icon">show<wbr>Collapse<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11096">vscode.d.ts:11096</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether to show collapse all action or not.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="canSelectMany" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> can<wbr>Select<wbr>Many</h3>
-					<div class="tsd-signature tsd-kind-icon">can<wbr>Select<wbr>Many<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11103">vscode.d.ts:11103</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether the tree supports multi-select. When the tree supports multi-select and a command is executed from the tree,
-								the first argument to the command is the tree item that the command was executed on and the second argument is an
-							array containing all selected tree items.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="dragAndDropController" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> drag<wbr>And<wbr>Drop<wbr>Controller</h3>
-					<div class="tsd-signature tsd-kind-icon">drag<wbr>And<wbr>Drop<wbr>Controller<span class="tsd-signature-symbol">:</span> <a href="vscode.TreeDragAndDropController.html" class="tsd-signature-type" data-tsd-kind="Interface">TreeDragAndDropController</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11108">vscode.d.ts:11108</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>An optional interface to implement drag and drop in the tree view.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="manageCheckboxStateManually" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> manage<wbr>Checkbox<wbr>State<wbr>Manually</h3>
-					<div class="tsd-signature tsd-kind-icon">manage<wbr>Checkbox<wbr>State<wbr>Manually<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11146">vscode.d.ts:11146</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>By default, when the children of a tree item have already been fetched, child checkboxes are automatically managed based on the checked state of the parent tree item.
-								If the tree item is collapsed by default (meaning that the children haven&#39;t yet been fetched) then child checkboxes will not be updated.
-							To override this behavior and manage child and parent checkbox state in the extension, set this to <code>true</code>.</p>
-						</div>
-						<p>Examples where <a href="vscode.TreeViewOptions.html#manageCheckboxStateManually">TreeViewOptions.manageCheckboxStateManually</a> is false, the default behavior:</p>
-						<ol>
-							<li><p>A tree item is checked, then its children are fetched. The children will be checked.</p>
-							</li>
-							<li><p>A tree item&#39;s parent is checked. The tree item and all of it&#39;s siblings will be checked.</p>
-							</li>
-						</ol>
-						<ul>
-							<li><input disabled="" type="checkbox"> Parent<ul>
-									<li><input disabled="" type="checkbox"> Child 1</li>
-									<li><input disabled="" type="checkbox"> Child 2
-									When the user checks Parent, the tree will look like this:</li>
-								</ul>
-							</li>
-							<li><input checked="" disabled="" type="checkbox"> Parent<ul>
-									<li><input checked="" disabled="" type="checkbox"> Child 1</li>
-									<li><input checked="" disabled="" type="checkbox"> Child 2</li>
-								</ul>
-							</li>
-						</ul>
-						<ol start="3">
-							<li>A tree item and all of it&#39;s siblings are checked. The parent will be checked.</li>
-						</ol>
-						<ul>
-							<li><input disabled="" type="checkbox"> Parent<ul>
-									<li><input disabled="" type="checkbox"> Child 1</li>
-									<li><input disabled="" type="checkbox"> Child 2
-									When the user checks Child 1 and Child 2, the tree will look like this:</li>
-								</ul>
-							</li>
-							<li><input checked="" disabled="" type="checkbox"> Parent<ul>
-									<li><input checked="" disabled="" type="checkbox"> Child 1</li>
-									<li><input checked="" disabled="" type="checkbox"> Child 2</li>
-								</ul>
-							</li>
-						</ul>
-						<ol start="4">
-							<li>A tree item is unchecked. The parent will be unchecked.</li>
-						</ol>
-						<ul>
-							<li><input checked="" disabled="" type="checkbox"> Parent<ul>
-									<li><input checked="" disabled="" type="checkbox"> Child 1</li>
-									<li><input checked="" disabled="" type="checkbox"> Child 2
-									When the user unchecks Child 1, the tree will look like this:</li>
-								</ul>
-							</li>
-							<li><input disabled="" type="checkbox"> Parent<ul>
-									<li><input disabled="" type="checkbox"> Child 1</li>
-									<li><input checked="" disabled="" type="checkbox"> Child 2</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Options for creating a <a href="vscode.TreeView.html">TreeView</a></p>
+
+                </div>
+        </div>
+        </section>
+
+    <section class="tsd-panel tsd-type-parameters">
+        <h3>Type parameters</h3>
+        <ul class="tsd-type-parameters">
+        <li>
+            <h4>T</h4>
+                    </li>
+</ul>
+
+    </section>
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">TreeViewOptions</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Properties（5）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeViewOptions.html#treeDataProvider" class="tsd-kind-icon">tree<wbr>Data<wbr>Provider</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeViewOptions.html#showCollapseAll" class="tsd-kind-icon">show<wbr>Collapse<wbr>All</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeViewOptions.html#canSelectMany" class="tsd-kind-icon">can<wbr>Select<wbr>Many</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeViewOptions.html#dragAndDropController" class="tsd-kind-icon">drag<wbr>And<wbr>Drop<wbr>Controller</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.TreeViewOptions.html#manageCheckboxStateManually" class="tsd-kind-icon">manage<wbr>Checkbox<wbr>State<wbr>Manually</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（5）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="treeDataProvider" class="tsd-anchor"></a>
+        <h3>tree<wbr>Data<wbr>Provider</h3>
+
+        <div class="tsd-signature tsd-kind-icon">tree<wbr>Data<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="vscode.TreeDataProvider.html" class="tsd-signature-type" data-tsd-kind="Interface">TreeDataProvider</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11091">vscode.d.ts:11091</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A data provider that provides tree data.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="showCollapseAll" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> show<wbr>Collapse<wbr>All</h3>
+
+        <div class="tsd-signature tsd-kind-icon">show<wbr>Collapse<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11096">vscode.d.ts:11096</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Whether to show collapse all action or not.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="canSelectMany" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> can<wbr>Select<wbr>Many</h3>
+
+        <div class="tsd-signature tsd-kind-icon">can<wbr>Select<wbr>Many<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11103">vscode.d.ts:11103</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Whether the tree supports multi-select. When the tree supports multi-select and a command is executed from the tree,
+the first argument to the command is the tree item that the command was executed on and the second argument is an
+array containing all selected tree items.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="dragAndDropController" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> drag<wbr>And<wbr>Drop<wbr>Controller</h3>
+
+        <div class="tsd-signature tsd-kind-icon">drag<wbr>And<wbr>Drop<wbr>Controller<span class="tsd-signature-symbol">:</span> <a href="vscode.TreeDragAndDropController.html" class="tsd-signature-type" data-tsd-kind="Interface">TreeDragAndDropController</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11108">vscode.d.ts:11108</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>An optional interface to implement drag and drop in the tree view.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="manageCheckboxStateManually" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> manage<wbr>Checkbox<wbr>State<wbr>Manually</h3>
+
+        <div class="tsd-signature tsd-kind-icon">manage<wbr>Checkbox<wbr>State<wbr>Manually<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11146">vscode.d.ts:11146</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>By default, when the children of a tree item have already been fetched, child checkboxes are automatically managed based on the checked state of the parent tree item.
+If the tree item is collapsed by default (meaning that the children haven&#39;t yet been fetched) then child checkboxes will not be updated.
+To override this behavior and manage child and parent checkbox state in the extension, set this to <code>true</code>.</p>
+
+                </div>
+                <p>Examples where <a href="vscode.TreeViewOptions.html#manageCheckboxStateManually">TreeViewOptions.manageCheckboxStateManually</a> is false, the default behavior:</p>
+<ol>
+<li><p>A tree item is checked, then its children are fetched. The children will be checked.</p>
+</li>
+<li><p>A tree item&#39;s parent is checked. The tree item and all of it&#39;s siblings will be checked.</p>
+</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"> Parent<ul>
+<li><input disabled="" type="checkbox"> Child 1</li>
+<li><input disabled="" type="checkbox"> Child 2
+When the user checks Parent, the tree will look like this:</li>
+</ul>
+</li>
+<li><input checked="" disabled="" type="checkbox"> Parent<ul>
+<li><input checked="" disabled="" type="checkbox"> Child 1</li>
+<li><input checked="" disabled="" type="checkbox"> Child 2</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>A tree item and all of it&#39;s siblings are checked. The parent will be checked.</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"> Parent<ul>
+<li><input disabled="" type="checkbox"> Child 1</li>
+<li><input disabled="" type="checkbox"> Child 2
+When the user checks Child 1 and Child 2, the tree will look like this:</li>
+</ul>
+</li>
+<li><input checked="" disabled="" type="checkbox"> Parent<ul>
+<li><input checked="" disabled="" type="checkbox"> Child 1</li>
+<li><input checked="" disabled="" type="checkbox"> Child 2</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>A tree item is unchecked. The parent will be unchecked.</li>
+</ol>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Parent<ul>
+<li><input checked="" disabled="" type="checkbox"> Child 1</li>
+<li><input checked="" disabled="" type="checkbox"> Child 2
+When the user unchecks Child 1, the tree will look like this:</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> Parent<ul>
+<li><input disabled="" type="checkbox"> Child 1</li>
+<li><input checked="" disabled="" type="checkbox"> Child 2</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

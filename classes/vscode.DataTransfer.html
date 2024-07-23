@@ -117,208 +117,286 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A map containing a mapping of the mime type of the corresponding transferred data.</p>
-					</div>
-					<p>Drag and drop controllers that implement <a href="../interfaces/vscode.TreeDragAndDropController.html#handleDrag"><code>handleDrag</code></a> can add additional mime types to the
-						data transfer. These additional mime types will only be included in the <code>handleDrop</code> when the the drag was initiated from
-					an element in the same drag and drop controller.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">DataTransfer</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span>mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span>item<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.DataTransfer.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods（3）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.DataTransfer.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.DataTransfer.html#set" class="tsd-kind-icon">set</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.DataTransfer.html#forEach" class="tsd-kind-icon">for<wbr>Each</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Data<wbr>Transfer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（3）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>get</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11261">vscode.d.ts:11261</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Retrieves the data transfer item for a given mime type.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>mimeType: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The mime type to get the data transfer item for, such as <code>text/plain</code> or <code>image/png</code>.
-										Mimes type look ups are case-insensitive.</p>
-										<p>Special mime types:</p>
-										<ul>
-											<li><code>text/uri-list</code> — A string with <code>toString()</code>ed Uris separated by <code>\r\n</code>. To specify a cursor position in the file,
-											set the Uri&#39;s fragment to <code>L3,5</code>, where 3 is the line number and 5 is the column number.</li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="set" class="tsd-anchor"></a>
-					<h3>set</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11269">vscode.d.ts:11269</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets a mime type to data transfer item mapping.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>mimeType: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The mime type to set the data for. Mimes types stored in lower case, with case-insensitive looks up.</p>
-									</div>
-								</li>
-								<li>
-									<h5>value: <a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The data transfer item for the given mime type.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="forEach" class="tsd-anchor"></a>
-					<h3>for<wbr>Each</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">for<wbr>Each<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a>, mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dataTransfer<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L11277">vscode.d.ts:11277</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Allows iteration through the data transfer items.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callbackfn: <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a>, mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dataTransfer<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Callback for iteration through the data transfer items.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a>, mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dataTransfer<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>item: <a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></h5>
-														</li>
-														<li>
-															<h5>mimeType: <span class="tsd-signature-type">string</span></h5>
-														</li>
-														<li>
-															<h5>dataTransfer: <a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The <code>this</code> context used when invoking the handler function.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A map containing a mapping of the mime type of the corresponding transferred data.</p>
+
+                </div>
+                <p>Drag and drop controllers that implement <a href="../interfaces/vscode.TreeDragAndDropController.html#handleDrag"><code>handleDrag</code></a> can add additional mime types to the
+data transfer. These additional mime types will only be included in the <code>handleDrop</code> when the the drag was initiated from
+an element in the same drag and drop controller.</p>
+
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">DataTransfer</span>
+
+        </li>
+</ul>
+
+    </section>
+
+    <section class="tsd-panel">
+        <h3>Implements</h3>
+        <ul class="tsd-hierarchy">
+                <li><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">[</span>mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span>item<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span></li>
+        </ul>
+    </section>
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Constructors（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.DataTransfer.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Methods（3）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.DataTransfer.html#get" class="tsd-kind-icon">get</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.DataTransfer.html#set" class="tsd-kind-icon">set</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.DataTransfer.html#forEach" class="tsd-kind-icon">for<wbr>Each</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Constructors（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+    <a name="constructor" class="tsd-anchor"></a>
+        <h3>constructor</h3>
+
+        <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">new <wbr>Data<wbr>Transfer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+</aside>
+
+
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（3）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="get" class="tsd-anchor"></a>
+        <h3>get</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11261">vscode.d.ts:11261</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Retrieves the data transfer item for a given mime type.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>mimeType: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The mime type to get the data transfer item for, such as <code>text/plain</code> or <code>image/png</code>.
+Mimes type look ups are case-insensitive.</p>
+<p>Special mime types:</p>
+<ul>
+<li><code>text/uri-list</code> — A string with <code>toString()</code>ed Uris separated by <code>\r\n</code>. To specify a cursor position in the file,
+set the Uri&#39;s fragment to <code>L3,5</code>, where 3 is the line number and 5 is the column number.</li>
+</ul>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="set" class="tsd-anchor"></a>
+        <h3>set</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11269">vscode.d.ts:11269</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Sets a mime type to data transfer item mapping.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>mimeType: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The mime type to set the data for. Mimes types stored in lower case, with case-insensitive looks up.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>value: <a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The data transfer item for the given mime type.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="forEach" class="tsd-anchor"></a>
+        <h3>for<wbr>Each</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">for<wbr>Each<span class="tsd-signature-symbol">(</span>callbackfn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a>, mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dataTransfer<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L11277">vscode.d.ts:11277</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Allows iteration through the data transfer items.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>callbackfn: <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a>, mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dataTransfer<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Callback for iteration through the data transfer items.</p>
+
+        </div>
+
+                        <ul class="tsd-parameters">
+        <li class="tsd-parameter-signature">
+            <ul class="tsd-signatures tsd-kind-type-literal">
+                    <li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a>, mimeType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, dataTransfer<span class="tsd-signature-symbol">: </span><a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+            </ul>
+
+            <ul class="tsd-descriptions">
+                    <li class="tsd-description">
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>item: <a href="vscode.DataTransferItem.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransferItem</a></h5>
+
+                
+            </li>
+            <li>
+                <h5>mimeType: <span class="tsd-signature-type">string</span></h5>
+
+                
+            </li>
+            <li>
+                <h5>dataTransfer: <a href="vscode.DataTransfer.html" class="tsd-signature-type" data-tsd-kind="Class">DataTransfer</a></h5>
+
+                
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+</li>
+            </ul>
+        </li>
+</ul>
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The <code>this</code> context used when invoking the handler function.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

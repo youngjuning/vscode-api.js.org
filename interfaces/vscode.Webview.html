@@ -117,217 +117,287 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Displays html content, similarly to an iframe.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">Webview</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties（4）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.Webview.html#options" class="tsd-kind-icon">options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.Webview.html#html" class="tsd-kind-icon">html</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.Webview.html#onDidReceiveMessage" class="tsd-kind-icon">on<wbr>Did<wbr>Receive<wbr>Message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.Webview.html#cspSource" class="tsd-kind-icon">csp<wbr>Source</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods（2）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.Webview.html#postMessage" class="tsd-kind-icon">post<wbr>Message</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.Webview.html#asWebviewUri" class="tsd-kind-icon">as<wbr>Webview<wbr>Uri</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（4）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="options" class="tsd-anchor"></a>
-					<h3>options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="vscode.WebviewOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">WebviewOptions</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L9217">vscode.d.ts:9217</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Content settings for the webview.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="html" class="tsd-anchor"></a>
-					<h3>html</h3>
-					<div class="tsd-signature tsd-kind-icon">html<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L9244">vscode.d.ts:9244</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>HTML contents of the webview.</p>
-						</div>
-						<p>This should be a complete, valid html document. Changing this property causes the webview to be reloaded.</p>
-						<p>Webviews are sandboxed from normal extension process, so all communication with the webview must use
-							message passing. To send a message from the extension to the webview, use <a href="vscode.Webview.html#postMessage"><code>postMessage</code></a>.
-							To send message from the webview back to an extension, use the <code>acquireVsCodeApi</code> function inside the webview
-						to get a handle to the editor&#39;s api and then call <code>.postMessage()</code>:</p>
-						<pre><code class="language-html"><span style="color: #800000">&lt;script&gt;</span>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Displays html content, similarly to an iframe.</p>
+
+                </div>
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">Webview</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Properties（4）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.Webview.html#options" class="tsd-kind-icon">options</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.Webview.html#html" class="tsd-kind-icon">html</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.Webview.html#onDidReceiveMessage" class="tsd-kind-icon">on<wbr>Did<wbr>Receive<wbr>Message</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.Webview.html#cspSource" class="tsd-kind-icon">csp<wbr>Source</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Methods（2）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.Webview.html#postMessage" class="tsd-kind-icon">post<wbr>Message</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.Webview.html#asWebviewUri" class="tsd-kind-icon">as<wbr>Webview<wbr>Uri</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（4）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="options" class="tsd-anchor"></a>
+        <h3>options</h3>
+
+        <div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="vscode.WebviewOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">WebviewOptions</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L9217">vscode.d.ts:9217</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Content settings for the webview.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="html" class="tsd-anchor"></a>
+        <h3>html</h3>
+
+        <div class="tsd-signature tsd-kind-icon">html<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L9244">vscode.d.ts:9244</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>HTML contents of the webview.</p>
+
+                </div>
+                <p>This should be a complete, valid html document. Changing this property causes the webview to be reloaded.</p>
+<p>Webviews are sandboxed from normal extension process, so all communication with the webview must use
+message passing. To send a message from the extension to the webview, use <a href="vscode.Webview.html#postMessage"><code>postMessage</code></a>.
+To send message from the webview back to an extension, use the <code>acquireVsCodeApi</code> function inside the webview
+to get a handle to the editor&#39;s api and then call <code>.postMessage()</code>:</p>
+<pre><code class="language-html"><span style="color: #800000">&lt;script&gt;</span>
 <span style="color: #000000FF">    </span><span style="color: #0000FF">const</span><span style="color: #000000FF"> </span><span style="color: #0070C1">vscode</span><span style="color: #000000FF"> </span><span style="color: #000000">=</span><span style="color: #000000FF"> </span><span style="color: #795E26">acquireVsCodeApi</span><span style="color: #000000FF">(); </span><span style="color: #008000">// acquireVsCodeApi can only be invoked once</span>
 <span style="color: #000000FF">    </span><span style="color: #001080">vscode</span><span style="color: #000000FF">.</span><span style="color: #795E26">postMessage</span><span style="color: #000000FF">({ </span><span style="color: #001080">message:</span><span style="color: #000000FF"> </span><span style="color: #A31515">&#039;hello!&#039;</span><span style="color: #000000FF"> });</span>
 <span style="color: #800000">&lt;/script&gt;</span>
 </code></pre>
-						<p>To load a resources from the workspace inside a webview, use the <a href="vscode.Webview.html#asWebviewUri"><code>asWebviewUri</code></a> method
-						and ensure the resource&#39;s directory is listed in <a href="vscode.WebviewOptions.html#localResourceRoots"><code>WebviewOptions.localResourceRoots</code></a>.</p>
-						<p>Keep in mind that even though webviews are sandboxed, they still allow running scripts and loading arbitrary content,
-							so extensions must follow all standard web security best practices when working with webviews. This includes
-							properly sanitizing all untrusted input (including content from the workspace) and
-						setting a <a href="https://aka.ms/vscode-api-webview-csp">content security policy</a>.</p>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="onDidReceiveMessage" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Receive<wbr>Message</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Receive<wbr>Message<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L9253">vscode.d.ts:9253</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Fired when the webview content posts a message.</p>
-						</div>
-						<p>Webview content can post strings or json serializable objects back to an extension. They cannot
-							post <code>Blob</code>, <code>File</code>, <code>ImageData</code> and other DOM specific objects since the extension that receives the
-						message does not run in a browser environment.</p>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="cspSource" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> csp<wbr>Source</h3>
-					<div class="tsd-signature tsd-kind-icon">csp<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L9310">vscode.d.ts:9310</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Content security policy source for webview resources.</p>
-						</div>
-						<p>This is the origin that should be used in a content security policy rule:</p>
-						<pre><code class="language-ts"><span style="color: #A31515">`img-src https: </span><span style="color: #0000FF">${</span><span style="color: #001080">webview</span><span style="color: #000000FF">.</span><span style="color: #001080">cspSource</span><span style="color: #0000FF">}</span><span style="color: #A31515"> ...;`</span>
+<p>To load a resources from the workspace inside a webview, use the <a href="vscode.Webview.html#asWebviewUri"><code>asWebviewUri</code></a> method
+and ensure the resource&#39;s directory is listed in <a href="vscode.WebviewOptions.html#localResourceRoots"><code>WebviewOptions.localResourceRoots</code></a>.</p>
+<p>Keep in mind that even though webviews are sandboxed, they still allow running scripts and loading arbitrary content,
+so extensions must follow all standard web security best practices when working with webviews. This includes
+properly sanitizing all untrusted input (including content from the workspace) and
+setting a <a href="https://aka.ms/vscode-api-webview-csp">content security policy</a>.</p>
+
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="onDidReceiveMessage" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Did<wbr>Receive<wbr>Message</h3>
+
+        <div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Receive<wbr>Message<span class="tsd-signature-symbol">:</span> <a href="vscode.Event.html" class="tsd-signature-type" data-tsd-kind="Interface">Event</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L9253">vscode.d.ts:9253</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Fired when the webview content posts a message.</p>
+
+                </div>
+                <p>Webview content can post strings or json serializable objects back to an extension. They cannot
+post <code>Blob</code>, <code>File</code>, <code>ImageData</code> and other DOM specific objects since the extension that receives the
+message does not run in a browser environment.</p>
+
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="cspSource" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> csp<wbr>Source</h3>
+
+        <div class="tsd-signature tsd-kind-icon">csp<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L9310">vscode.d.ts:9310</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Content security policy source for webview resources.</p>
+
+                </div>
+                <p>This is the origin that should be used in a content security policy rule:</p>
+<pre><code class="language-ts"><span style="color: #A31515">`img-src https: </span><span style="color: #0000FF">${</span><span style="color: #001080">webview</span><span style="color: #000000FF">.</span><span style="color: #001080">cspSource</span><span style="color: #0000FF">}</span><span style="color: #A31515"> ...;`</span>
 </code></pre>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（2）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="postMessage" class="tsd-anchor"></a>
-					<h3>post<wbr>Message</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">post<wbr>Message<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L9286">vscode.d.ts:9286</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Post a message to the webview content.</p>
-								</div>
-								<p>Messages are only delivered if the webview is live (either visible or in the
-								background with <code>retainContextWhenHidden</code>).</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>message: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Body of the message. This must be a string or other json serializable object.</p>
-										<p>  For older versions of vscode, if an <code>ArrayBuffer</code> is included in <code>message</code>,
-											it will not be serialized properly and will not be received by the webview.
-											Similarly any TypedArrays, such as a <code>Uint8Array</code>, will be very inefficiently
-										serialized and will also not be recreated as a typed array inside the webview.</p>
-										<p>  However if your extension targets vscode 1.57+ in the <code>engines</code> field of its
-											<code>package.json</code>, any <code>ArrayBuffer</code> values that appear in <code>message</code> will be more
-											efficiently transferred to the webview and will also be correctly recreated inside
-										of the webview.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A promise that resolves when the message is posted to a webview or when it is
-							dropped because the message was not deliverable.</p>
-							<p>  Returns <code>true</code> if the message was posted to the webview. Messages can only be posted to
-							live webviews (i.e. either visible webviews or hidden webviews that set <code>retainContextWhenHidden</code>).</p>
-							<p>  A response of <code>true</code> does not mean that the message was actually received by the webview.
-								For example, no message listeners may be have been hooked up inside the webview or the webview may
-							have been destroyed after the message was posted but before it was received.</p>
-							<p>  If you want confirm that a message as actually received, you can try having your webview posting a
-							confirmation message back to your extension.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="asWebviewUri" class="tsd-anchor"></a>
-					<h3>as<wbr>Webview<wbr>Uri</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">as<wbr>Webview<wbr>Uri<span class="tsd-signature-symbol">(</span>localResource<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L9299">vscode.d.ts:9299</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Convert a uri for the local file system to one that can be used inside webviews.</p>
-								</div>
-								<p>Webviews cannot directly load resources from the workspace or local file system using <code>file:</code> uris. The
-									<code>asWebviewUri</code> function takes a local <code>file:</code> uri and converts it into a uri that can be used inside of
-								a webview to load the same resource:</p>
-								<pre><code class="language-ts"><span style="color: #001080">webview</span><span style="color: #000000">.</span><span style="color: #001080">html</span><span style="color: #000000"> = </span><span style="color: #A31515">`&lt;img src=&quot;</span><span style="color: #0000FF">${</span><span style="color: #001080">webview</span><span style="color: #000000FF">.</span><span style="color: #795E26">asWebviewUri</span><span style="color: #000000FF">(</span><span style="color: #001080">vscode</span><span style="color: #000000FF">.</span><span style="color: #001080">Uri</span><span style="color: #000000FF">.</span><span style="color: #795E26">file</span><span style="color: #000000FF">(</span><span style="color: #A31515">&#039;/Users/codey/workspace/cat.gif&#039;</span><span style="color: #000000FF">))</span><span style="color: #0000FF">}</span><span style="color: #A31515">&quot;&gt;`</span>
+
+        </div>
+
+
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（2）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="postMessage" class="tsd-anchor"></a>
+        <h3>post<wbr>Message</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+        <li class="tsd-signature tsd-kind-icon">post<wbr>Message<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L9286">vscode.d.ts:9286</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Post a message to the webview content.</p>
+
+                </div>
+                <p>Messages are only delivered if the webview is live (either visible or in the
+background with <code>retainContextWhenHidden</code>).</p>
+
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>message: <span class="tsd-signature-type">any</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Body of the message. This must be a string or other json serializable object.</p>
+<p>  For older versions of vscode, if an <code>ArrayBuffer</code> is included in <code>message</code>,
+  it will not be serialized properly and will not be received by the webview.
+  Similarly any TypedArrays, such as a <code>Uint8Array</code>, will be very inefficiently
+  serialized and will also not be recreated as a typed array inside the webview.</p>
+<p>  However if your extension targets vscode 1.57+ in the <code>engines</code> field of its
+  <code>package.json</code>, any <code>ArrayBuffer</code> values that appear in <code>message</code> will be more
+  efficiently transferred to the webview and will also be correctly recreated inside
+  of the webview.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+
+        <p>A promise that resolves when the message is posted to a webview or when it is
+dropped because the message was not deliverable.</p>
+<p>  Returns <code>true</code> if the message was posted to the webview. Messages can only be posted to
+live webviews (i.e. either visible webviews or hidden webviews that set <code>retainContextWhenHidden</code>).</p>
+<p>  A response of <code>true</code> does not mean that the message was actually received by the webview.
+  For example, no message listeners may be have been hooked up inside the webview or the webview may
+  have been destroyed after the message was posted but before it was received.</p>
+<p>  If you want confirm that a message as actually received, you can try having your webview posting a
+  confirmation message back to your extension.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="asWebviewUri" class="tsd-anchor"></a>
+        <h3>as<wbr>Webview<wbr>Uri</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+        <li class="tsd-signature tsd-kind-icon">as<wbr>Webview<wbr>Uri<span class="tsd-signature-symbol">(</span>localResource<span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L9299">vscode.d.ts:9299</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Convert a uri for the local file system to one that can be used inside webviews.</p>
+
+                </div>
+                <p>Webviews cannot directly load resources from the workspace or local file system using <code>file:</code> uris. The
+<code>asWebviewUri</code> function takes a local <code>file:</code> uri and converts it into a uri that can be used inside of
+a webview to load the same resource:</p>
+<pre><code class="language-ts"><span style="color: #001080">webview</span><span style="color: #000000">.</span><span style="color: #001080">html</span><span style="color: #000000"> = </span><span style="color: #A31515">`&lt;img src=&quot;</span><span style="color: #0000FF">${</span><span style="color: #001080">webview</span><span style="color: #000000FF">.</span><span style="color: #795E26">asWebviewUri</span><span style="color: #000000FF">(</span><span style="color: #001080">vscode</span><span style="color: #000000FF">.</span><span style="color: #001080">Uri</span><span style="color: #000000FF">.</span><span style="color: #795E26">file</span><span style="color: #000000FF">(</span><span style="color: #A31515">&#039;/Users/codey/workspace/cat.gif&#039;</span><span style="color: #000000FF">))</span><span style="color: #0000FF">}</span><span style="color: #A31515">&quot;&gt;`</span>
 </code></pre>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>localResource: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>localResource: <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h5>
+
+                
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

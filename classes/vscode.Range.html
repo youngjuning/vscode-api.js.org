@@ -117,431 +117,601 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A range represents an ordered pair of two positions.
-						It is guaranteed that <a href="vscode.Range.html#start">start</a>.isBeforeOrEqual(<a href="vscode.Range.html#end">end</a>)</p>
-					</div>
-					<p>Range objects are <strong>immutable</strong>. Use the <a href="vscode.Range.html#with">with</a>,
-						<a href="vscode.Range.html#intersection">intersection</a>, or <a href="vscode.Range.html#union">union</a> methods
-					to derive new ranges from an existing range.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">Range</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="vscode.Selection.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.Range.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Properties（4）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.Range.html#start" class="tsd-kind-icon">start</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.Range.html#end" class="tsd-kind-icon">end</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.Range.html#isEmpty" class="tsd-kind-icon">is<wbr>Empty</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.Range.html#isSingleLine" class="tsd-kind-icon">is<wbr>Single<wbr>Line</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods（5）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Range.html#contains" class="tsd-kind-icon">contains</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Range.html#isEqual" class="tsd-kind-icon">is<wbr>Equal</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Range.html#intersection" class="tsd-kind-icon">intersection</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Range.html#union" class="tsd-kind-icon">union</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Range.html#with" class="tsd-kind-icon">with</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Range<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a>, end<span class="tsd-signature-symbol">: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Range<span class="tsd-signature-symbol">(</span>startLine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endLine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L407">vscode.d.ts:407</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a new range from two positions. If <code>start</code> is not
-									before or equal to <code>end</code>, the values will be swapped.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>start: <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>A position.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5>end: <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>A position.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L418">vscode.d.ts:418</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a new range from number coordinates. It is a shorter equivalent of
-									using <code>new Range(new Position(startLine, startCharacter), new Position(endLine, endCharacter))</code></p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>startLine: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A zero-based line value.</p>
-									</div>
-								</li>
-								<li>
-									<h5>startCharacter: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A zero-based character value.</p>
-									</div>
-								</li>
-								<li>
-									<h5>endLine: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A zero-based line value.</p>
-									</div>
-								</li>
-								<li>
-									<h5>endCharacter: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A zero-based character value.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（4）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="start" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> start</h3>
-					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L393">vscode.d.ts:393</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The start position. It is before or equal to <a href="vscode.Range.html#end">end</a>.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="end" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> end</h3>
-					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L398">vscode.d.ts:398</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The end position. It is after or equal to <a href="vscode.Range.html#start">start</a>.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="isEmpty" class="tsd-anchor"></a>
-					<h3>is<wbr>Empty</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Empty<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L423">vscode.d.ts:423</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p><code>true</code> if <code>start</code> and <code>end</code> are equal.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="isSingleLine" class="tsd-anchor"></a>
-					<h3>is<wbr>Single<wbr>Line</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Single<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L428">vscode.d.ts:428</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p><code>true</code> if <code>start.line</code> and <code>end.line</code> are equal.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（5）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="contains" class="tsd-anchor"></a>
-					<h3>contains</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">contains<span class="tsd-signature-symbol">(</span>positionOrRange<span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L437">vscode.d.ts:437</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Check if a position or a range is contained in this range.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>positionOrRange: <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A position or a range.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p><code>true</code> if the position or range is inside or equal
-							to this range.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="isEqual" class="tsd-anchor"></a>
-					<h3>is<wbr>Equal</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Equal<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L446">vscode.d.ts:446</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Check if <code>other</code> equals this range.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>other: <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A range.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p><code>true</code> when start and end are <a href="vscode.Position.html#isEqual">equal</a> to
-							start and end of this range.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="intersection" class="tsd-anchor"></a>
-					<h3>intersection</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">intersection<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L456">vscode.d.ts:456</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Intersect <code>range</code> with this range and returns a new range or <code>undefined</code>
-									if the ranges have no overlap.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>range: <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A range.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
-							<p>A range of the greater start and smaller end positions. Will
-							return undefined when there is no overlap.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="union" class="tsd-anchor"></a>
-					<h3>union</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">union<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L464">vscode.d.ts:464</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Compute the union of <code>other</code> with this range.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>other: <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A range.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
-							<p>A range of smaller start position and the greater end position.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="with" class="tsd-anchor"></a>
-					<h3>with</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">with<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a>, end<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
-						<li class="tsd-signature tsd-kind-icon">with<span class="tsd-signature-symbol">(</span>change<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>start<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol">; </span>end<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L474">vscode.d.ts:474</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Derived a new range from this range.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> start: <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A position that should be used as start. The default value is the <a href="vscode.Range.html#start">current start</a>.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> end: <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A position that should be used as end. The default value is the <a href="vscode.Range.html#end">current end</a>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
-							<p>A range derived from this range with the given start and end position.
-							If start and end are not different <code>this</code> range will be returned.</p>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L483">vscode.d.ts:483</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Derived a new range from this range.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>change: <span class="tsd-signature-symbol">{ </span>start<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol">; </span>end<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol"> }</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>An object that describes a change to this range.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> start<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
-											<div class="tsd-comment tsd-typography">
-												<div class="lead">
-													<p>New start position, defaults to <a href="vscode.Range.html#start">current start</a></p>
-												</div>
-											</div>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> end<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
-											<div class="tsd-comment tsd-typography">
-												<div class="lead">
-													<p>New end position, defaults to <a href="vscode.Range.html#end">current end</a></p>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
-							<p>A range that reflects the given change. Will return <code>this</code> range if the change
-							is not changing anything.</p>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A range represents an ordered pair of two positions.
+It is guaranteed that <a href="vscode.Range.html#start">start</a>.isBeforeOrEqual(<a href="vscode.Range.html#end">end</a>)</p>
+
+                </div>
+                <p>Range objects are <strong>immutable</strong>. Use the <a href="vscode.Range.html#with">with</a>,
+<a href="vscode.Range.html#intersection">intersection</a>, or <a href="vscode.Range.html#union">union</a> methods
+to derive new ranges from an existing range.</p>
+
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">Range</span>
+
+                    <ul class="tsd-hierarchy">
+        <li>
+                <a href="vscode.Selection.html" class="tsd-signature-type" data-tsd-kind="Class">Selection</a>
+
+        </li>
+</ul>
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Constructors（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.Range.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Properties（4）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.Range.html#start" class="tsd-kind-icon">start</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.Range.html#end" class="tsd-kind-icon">end</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.Range.html#isEmpty" class="tsd-kind-icon">is<wbr>Empty</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.Range.html#isSingleLine" class="tsd-kind-icon">is<wbr>Single<wbr>Line</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Methods（5）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Range.html#contains" class="tsd-kind-icon">contains</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Range.html#isEqual" class="tsd-kind-icon">is<wbr>Equal</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Range.html#intersection" class="tsd-kind-icon">intersection</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Range.html#union" class="tsd-kind-icon">union</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-class"><a href="vscode.Range.html#with" class="tsd-kind-icon">with</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Constructors（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+    <a name="constructor" class="tsd-anchor"></a>
+        <h3>constructor</h3>
+
+        <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">new <wbr>Range<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a>, end<span class="tsd-signature-symbol">: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+        <li class="tsd-signature tsd-kind-icon">new <wbr>Range<span class="tsd-signature-symbol">(</span>startLine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endLine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endCharacter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L407">vscode.d.ts:407</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Create a new range from two positions. If <code>start</code> is not
+before or equal to <code>end</code>, the values will be swapped.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>start: <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A position.</p>
+
+                </div>
+        </div>
+
+            </li>
+            <li>
+                <h5>end: <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A position.</p>
+
+                </div>
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+
+
+        </li>
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L418">vscode.d.ts:418</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Create a new range from number coordinates. It is a shorter equivalent of
+using <code>new Range(new Position(startLine, startCharacter), new Position(endLine, endCharacter))</code></p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>startLine: <span class="tsd-signature-type">number</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A zero-based line value.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>startCharacter: <span class="tsd-signature-type">number</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A zero-based character value.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>endLine: <span class="tsd-signature-type">number</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A zero-based line value.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>endCharacter: <span class="tsd-signature-type">number</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A zero-based character value.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（4）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="start" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> start</h3>
+
+        <div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L393">vscode.d.ts:393</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The start position. It is before or equal to <a href="vscode.Range.html#end">end</a>.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="end" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> end</h3>
+
+        <div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L398">vscode.d.ts:398</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The end position. It is after or equal to <a href="vscode.Range.html#start">start</a>.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="isEmpty" class="tsd-anchor"></a>
+        <h3>is<wbr>Empty</h3>
+
+        <div class="tsd-signature tsd-kind-icon">is<wbr>Empty<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L423">vscode.d.ts:423</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p><code>true</code> if <code>start</code> and <code>end</code> are equal.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="isSingleLine" class="tsd-anchor"></a>
+        <h3>is<wbr>Single<wbr>Line</h3>
+
+        <div class="tsd-signature tsd-kind-icon">is<wbr>Single<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L428">vscode.d.ts:428</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p><code>true</code> if <code>start.line</code> and <code>end.line</code> are equal.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（5）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="contains" class="tsd-anchor"></a>
+        <h3>contains</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">contains<span class="tsd-signature-symbol">(</span>positionOrRange<span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L437">vscode.d.ts:437</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Check if a position or a range is contained in this range.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>positionOrRange: <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol"> | </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A position or a range.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+
+        <p><code>true</code> if the position or range is inside or equal
+to this range.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="isEqual" class="tsd-anchor"></a>
+        <h3>is<wbr>Equal</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">is<wbr>Equal<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L446">vscode.d.ts:446</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Check if <code>other</code> equals this range.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>other: <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A range.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+
+        <p><code>true</code> when start and end are <a href="vscode.Position.html#isEqual">equal</a> to
+start and end of this range.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="intersection" class="tsd-anchor"></a>
+        <h3>intersection</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">intersection<span class="tsd-signature-symbol">(</span>range<span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L456">vscode.d.ts:456</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Intersect <code>range</code> with this range and returns a new range or <code>undefined</code>
+if the ranges have no overlap.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>range: <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A range.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+
+        <p>A range of the greater start and smaller end positions. Will
+return undefined when there is no overlap.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="union" class="tsd-anchor"></a>
+        <h3>union</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">union<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L464">vscode.d.ts:464</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Compute the union of <code>other</code> with this range.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>other: <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A range.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+
+        <p>A range of smaller start position and the greater end position.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="with" class="tsd-anchor"></a>
+        <h3>with</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">with<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a>, end<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+        <li class="tsd-signature tsd-kind-icon">with<span class="tsd-signature-symbol">(</span>change<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>start<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol">; </span>end<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L474">vscode.d.ts:474</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Derived a new range from this range.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> start: <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A position that should be used as start. The default value is the <a href="vscode.Range.html#start">current start</a>.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> end: <a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A position that should be used as end. The default value is the <a href="vscode.Range.html#end">current end</a>.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+
+        <p>A range derived from this range with the given start and end position.
+If start and end are not different <code>this</code> range will be returned.</p>
+
+
+        </li>
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L483">vscode.d.ts:483</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Derived a new range from this range.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>change: <span class="tsd-signature-symbol">{ </span>start<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol">; </span>end<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a><span class="tsd-signature-symbol"> }</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>An object that describes a change to this range.</p>
+
+        </div>
+
+                        <ul class="tsd-parameters">
+ 
+            <li class="tsd-parameter">
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> start<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>New start position, defaults to <a href="vscode.Range.html#start">current start</a></p>
+
+                </div>
+        </div>
+
+
+            </li>
+        
+ 
+            <li class="tsd-parameter">
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> end<span class="tsd-signature-symbol">?: </span><a href="vscode.Position.html" class="tsd-signature-type" data-tsd-kind="Class">Position</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>New end position, defaults to <a href="vscode.Range.html#end">current end</a></p>
+
+                </div>
+        </div>
+
+
+            </li>
+        
+</ul>
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.Range.html" class="tsd-signature-type" data-tsd-kind="Class">Range</a></h4>
+
+        <p>A range that reflects the given change. Will return <code>this</code> range if the change
+is not changing anything.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

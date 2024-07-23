@@ -117,137 +117,183 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A color presentation object describes how a <a href="vscode.Color.html"><code>Color</code></a> should be represented as text and what
-						edits are required to refer to it from source code.</p>
-					</div>
-					<p>For some languages one color can have multiple presentations, e.g. css can represent the color red with
-						the constant <code>Red</code>, the hex-value <code>#ff0000</code>, or in rgba and hsla forms. In csharp other representations
-					apply, e.g. <code>System.Drawing.Color.Red</code>.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">ColorPresentation</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Constructors（1）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.ColorPresentation.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Properties（3）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.ColorPresentation.html#label" class="tsd-kind-icon">label</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.ColorPresentation.html#textEdit" class="tsd-kind-icon">text<wbr>Edit</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.ColorPresentation.html#additionalTextEdits" class="tsd-kind-icon">additional<wbr>Text<wbr>Edits</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors（1）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Color<wbr>Presentation<span class="tsd-signature-symbol">(</span>label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.ColorPresentation.html" class="tsd-signature-type" data-tsd-kind="Class">ColorPresentation</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L5448">vscode.d.ts:5448</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new color presentation.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>label: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>The label of this color presentation.</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.ColorPresentation.html" class="tsd-signature-type" data-tsd-kind="Class">ColorPresentation</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（3）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="label" class="tsd-anchor"></a>
-					<h3>label</h3>
-					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L5428">vscode.d.ts:5428</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The label of this color presentation. It will be shown on the color
-								picker header. By default this is also the text that is inserted when selecting
-							this color presentation.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="textEdit" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> text<wbr>Edit</h3>
-					<div class="tsd-signature tsd-kind-icon">text<wbr>Edit<span class="tsd-signature-symbol">:</span> <a href="vscode.TextEdit.html" class="tsd-signature-type" data-tsd-kind="Class">TextEdit</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L5435">vscode.d.ts:5435</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>An <a href="vscode.TextEdit.html">edit</a> which is applied to a document when selecting
-								this presentation for the color.  When <code>falsy</code> the <a href="vscode.ColorPresentation.html#label">label</a>
-							is used.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="additionalTextEdits" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> additional<wbr>Text<wbr>Edits</h3>
-					<div class="tsd-signature tsd-kind-icon">additional<wbr>Text<wbr>Edits<span class="tsd-signature-symbol">:</span> <a href="vscode.TextEdit.html" class="tsd-signature-type" data-tsd-kind="Class">TextEdit</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L5441">vscode.d.ts:5441</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>An optional array of additional <a href="vscode.TextEdit.html">text edits</a> that are applied when
-							selecting this color presentation. Edits must not overlap with the main <a href="vscode.ColorPresentation.html#textEdit">edit</a> nor with themselves.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A color presentation object describes how a <a href="vscode.Color.html"><code>Color</code></a> should be represented as text and what
+edits are required to refer to it from source code.</p>
+
+                </div>
+                <p>For some languages one color can have multiple presentations, e.g. css can represent the color red with
+the constant <code>Red</code>, the hex-value <code>#ff0000</code>, or in rgba and hsla forms. In csharp other representations
+apply, e.g. <code>System.Drawing.Color.Red</code>.</p>
+
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">ColorPresentation</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Constructors（1）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-constructor tsd-parent-kind-class"><a href="vscode.ColorPresentation.html#constructor" class="tsd-kind-icon">constructor</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Properties（3）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.ColorPresentation.html#label" class="tsd-kind-icon">label</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.ColorPresentation.html#textEdit" class="tsd-kind-icon">text<wbr>Edit</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-class"><a href="vscode.ColorPresentation.html#additionalTextEdits" class="tsd-kind-icon">additional<wbr>Text<wbr>Edits</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Constructors（1）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+    <a name="constructor" class="tsd-anchor"></a>
+        <h3>constructor</h3>
+
+        <ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">new <wbr>Color<wbr>Presentation<span class="tsd-signature-symbol">(</span>label<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.ColorPresentation.html" class="tsd-signature-type" data-tsd-kind="Class">ColorPresentation</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L5448">vscode.d.ts:5448</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Creates a new color presentation.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>label: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The label of this color presentation.</p>
+
+                </div>
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.ColorPresentation.html" class="tsd-signature-type" data-tsd-kind="Class">ColorPresentation</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（3）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="label" class="tsd-anchor"></a>
+        <h3>label</h3>
+
+        <div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L5428">vscode.d.ts:5428</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The label of this color presentation. It will be shown on the color
+picker header. By default this is also the text that is inserted when selecting
+this color presentation.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="textEdit" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> text<wbr>Edit</h3>
+
+        <div class="tsd-signature tsd-kind-icon">text<wbr>Edit<span class="tsd-signature-symbol">:</span> <a href="vscode.TextEdit.html" class="tsd-signature-type" data-tsd-kind="Class">TextEdit</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L5435">vscode.d.ts:5435</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>An <a href="vscode.TextEdit.html">edit</a> which is applied to a document when selecting
+this presentation for the color.  When <code>falsy</code> the <a href="vscode.ColorPresentation.html#label">label</a>
+is used.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+    <a name="additionalTextEdits" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> additional<wbr>Text<wbr>Edits</h3>
+
+        <div class="tsd-signature tsd-kind-icon">additional<wbr>Text<wbr>Edits<span class="tsd-signature-symbol">:</span> <a href="vscode.TextEdit.html" class="tsd-signature-type" data-tsd-kind="Class">TextEdit</a><span class="tsd-signature-symbol">[]</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L5441">vscode.d.ts:5441</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>An optional array of additional <a href="vscode.TextEdit.html">text edits</a> that are applied when
+selecting this color presentation. Edits must not overlap with the main <a href="vscode.ColorPresentation.html#textEdit">edit</a> nor with themselves.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

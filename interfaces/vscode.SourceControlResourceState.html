@@ -117,103 +117,136 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>An source control resource state represents the state of an underlying workspace
-						resource within a certain <a href="vscode.SourceControlResourceGroup.html">source control group</a>.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">SourceControlResourceState</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties（4）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.SourceControlResourceState.html#resourceUri" class="tsd-kind-icon">resource<wbr>Uri</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.SourceControlResourceState.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.SourceControlResourceState.html#decorations" class="tsd-kind-icon">decorations</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.SourceControlResourceState.html#contextValue" class="tsd-kind-icon">context<wbr>Value</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties（4）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="resourceUri" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> resource<wbr>Uri</h3>
-					<div class="tsd-signature tsd-kind-icon">resource<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15473">vscode.d.ts:15473</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The <a href="../classes/vscode.Uri.html">Uri</a> of the underlying resource inside the workspace.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="command" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <a href="vscode.Command.html" class="tsd-signature-type" data-tsd-kind="Interface">Command</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15479">vscode.d.ts:15479</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The <a href="vscode.Command.html">Command</a> which should be run when the resource
-							state is open in the Source Control viewlet.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="decorations" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> decorations</h3>
-					<div class="tsd-signature tsd-kind-icon">decorations<span class="tsd-signature-symbol">:</span> <a href="vscode.SourceControlResourceDecorations.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceControlResourceDecorations</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15485">vscode.d.ts:15485</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The <a href="vscode.SourceControlResourceDecorations.html">decorations</a> for this source control
-							resource state.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="contextValue" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> context<wbr>Value</h3>
-					<div class="tsd-signature tsd-kind-icon">context<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L15505">vscode.d.ts:15505</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Context value of the resource state. This can be used to contribute resource specific actions.
-								For example, if a resource is given a context value as <code>diffable</code>. When contributing actions to <code>scm/resourceState/context</code>
-							using <code>menus</code> extension point, you can specify context value for key <code>scmResourceState</code> in <code>when</code> expressions, like <code>scmResourceState == diffable</code>.</p>
-							<pre><code class="language-json"><span style="color: #A31515">&quot;contributes&quot;</span><span style="color: #000000">: {</span>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>An source control resource state represents the state of an underlying workspace
+resource within a certain <a href="vscode.SourceControlResourceGroup.html">source control group</a>.</p>
+
+                </div>
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">SourceControlResourceState</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Properties（4）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.SourceControlResourceState.html#resourceUri" class="tsd-kind-icon">resource<wbr>Uri</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.SourceControlResourceState.html#command" class="tsd-kind-icon">command</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.SourceControlResourceState.html#decorations" class="tsd-kind-icon">decorations</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface"><a href="vscode.SourceControlResourceState.html#contextValue" class="tsd-kind-icon">context<wbr>Value</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Properties（4）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="resourceUri" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagReadonly">Readonly</span> resource<wbr>Uri</h3>
+
+        <div class="tsd-signature tsd-kind-icon">resource<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="../classes/vscode.Uri.html" class="tsd-signature-type" data-tsd-kind="Class">Uri</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15473">vscode.d.ts:15473</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The <a href="../classes/vscode.Uri.html">Uri</a> of the underlying resource inside the workspace.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="command" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> command</h3>
+
+        <div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <a href="vscode.Command.html" class="tsd-signature-type" data-tsd-kind="Interface">Command</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15479">vscode.d.ts:15479</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The <a href="vscode.Command.html">Command</a> which should be run when the resource
+state is open in the Source Control viewlet.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="decorations" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> decorations</h3>
+
+        <div class="tsd-signature tsd-kind-icon">decorations<span class="tsd-signature-symbol">:</span> <a href="vscode.SourceControlResourceDecorations.html" class="tsd-signature-type" data-tsd-kind="Interface">SourceControlResourceDecorations</a></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15485">vscode.d.ts:15485</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>The <a href="vscode.SourceControlResourceDecorations.html">decorations</a> for this source control
+resource state.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+    <a name="contextValue" class="tsd-anchor"></a>
+        <h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> context<wbr>Value</h3>
+
+        <div class="tsd-signature tsd-kind-icon">context<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+
+<aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L15505">vscode.d.ts:15505</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Context value of the resource state. This can be used to contribute resource specific actions.
+For example, if a resource is given a context value as <code>diffable</code>. When contributing actions to <code>scm/resourceState/context</code>
+using <code>menus</code> extension point, you can specify context value for key <code>scmResourceState</code> in <code>when</code> expressions, like <code>scmResourceState == diffable</code>.</p>
+<pre><code class="language-json"><span style="color: #A31515">&quot;contributes&quot;</span><span style="color: #000000">: {</span>
 <span style="color: #000000">  </span><span style="color: #0451A5">&quot;menus&quot;</span><span style="color: #000000">: {</span>
 <span style="color: #000000">    </span><span style="color: #0451A5">&quot;scm/resourceState/context&quot;</span><span style="color: #000000">: [</span>
 <span style="color: #000000">      {</span>
@@ -224,12 +257,18 @@
 <span style="color: #000000">  }</span>
 <span style="color: #000000">}</span>
 </code></pre>
-							<p>This will show action <code>extension.diff</code> only for resources with <code>contextValue</code> is <code>diffable</code>.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<p>This will show action <code>extension.diff</code> only for resources with <code>contextValue</code> is <code>diffable</code>.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

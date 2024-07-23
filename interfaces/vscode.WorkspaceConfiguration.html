@@ -117,321 +117,415 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Represents the configuration. It is a merged view of</p>
-					</div>
-					<ul>
-						<li><em>Default Settings</em></li>
-						<li><em>Global (User) Settings</em></li>
-						<li><em>Workspace settings</em></li>
-						<li><em>Workspace Folder settings</em> - From one of the <a href="../modules/vscode.workspace.html#workspaceFolders">Workspace Folders</a> under which requested resource belongs to.</li>
-						<li><em>Language settings</em> - Settings defined under requested language.</li>
-					</ul>
-					<p>The <em>effective</em> value (returned by <a href="vscode.WorkspaceConfiguration.html#get"><code>get</code></a>) is computed by overriding or merging the values in the following order:</p>
-					<ol>
-						<li><code>defaultValue</code> (if defined in <code>package.json</code> otherwise derived from the value&#39;s type)</li>
-						<li><code>globalValue</code> (if defined)</li>
-						<li><code>workspaceValue</code> (if defined)</li>
-						<li><code>workspaceFolderValue</code> (if defined)</li>
-						<li><code>defaultLanguageValue</code> (if defined)</li>
-						<li><code>globalLanguageValue</code> (if defined)</li>
-						<li><code>workspaceLanguageValue</code> (if defined)</li>
-						<li><code>workspaceFolderLanguageValue</code> (if defined)</li>
-					</ol>
-					<p><strong>Note:</strong> Only <code>object</code> value types are merged and all other value types are overridden.</p>
-					<p>Example 1: Overriding</p>
-					<pre><code class="language-ts"><span style="color: #001080">defaultValue</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;on&#039;</span><span style="color: #000000">;</span>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Represents the configuration. It is a merged view of</p>
+
+                </div>
+                <ul>
+<li><em>Default Settings</em></li>
+<li><em>Global (User) Settings</em></li>
+<li><em>Workspace settings</em></li>
+<li><em>Workspace Folder settings</em> - From one of the <a href="../modules/vscode.workspace.html#workspaceFolders">Workspace Folders</a> under which requested resource belongs to.</li>
+<li><em>Language settings</em> - Settings defined under requested language.</li>
+</ul>
+<p>The <em>effective</em> value (returned by <a href="vscode.WorkspaceConfiguration.html#get"><code>get</code></a>) is computed by overriding or merging the values in the following order:</p>
+<ol>
+<li><code>defaultValue</code> (if defined in <code>package.json</code> otherwise derived from the value&#39;s type)</li>
+<li><code>globalValue</code> (if defined)</li>
+<li><code>workspaceValue</code> (if defined)</li>
+<li><code>workspaceFolderValue</code> (if defined)</li>
+<li><code>defaultLanguageValue</code> (if defined)</li>
+<li><code>globalLanguageValue</code> (if defined)</li>
+<li><code>workspaceLanguageValue</code> (if defined)</li>
+<li><code>workspaceFolderLanguageValue</code> (if defined)</li>
+</ol>
+<p><strong>Note:</strong> Only <code>object</code> value types are merged and all other value types are overridden.</p>
+<p>Example 1: Overriding</p>
+<pre><code class="language-ts"><span style="color: #001080">defaultValue</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;on&#039;</span><span style="color: #000000">;</span>
 <span style="color: #001080">globalValue</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;relative&#039;</span>
 <span style="color: #001080">workspaceFolderValue</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;off&#039;</span>
 <span style="color: #001080">value</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;off&#039;</span>
 </code></pre>
-					<p>Example 2: Language Values</p>
-					<pre><code class="language-ts"><span style="color: #001080">defaultValue</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;on&#039;</span><span style="color: #000000">;</span>
+<p>Example 2: Language Values</p>
+<pre><code class="language-ts"><span style="color: #001080">defaultValue</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;on&#039;</span><span style="color: #000000">;</span>
 <span style="color: #001080">globalValue</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;relative&#039;</span>
 <span style="color: #001080">workspaceFolderValue</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;off&#039;</span>
 <span style="color: #001080">globalLanguageValue</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;on&#039;</span>
 <span style="color: #001080">value</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;on&#039;</span>
 </code></pre>
-					<p>Example 3: Object Values</p>
-					<pre><code class="language-ts"><span style="color: #001080">defaultValue</span><span style="color: #000000"> = { </span><span style="color: #A31515">&quot;a&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;b&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">2</span><span style="color: #000000"> };</span>
+<p>Example 3: Object Values</p>
+<pre><code class="language-ts"><span style="color: #001080">defaultValue</span><span style="color: #000000"> = { </span><span style="color: #A31515">&quot;a&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;b&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">2</span><span style="color: #000000"> };</span>
 <span style="color: #001080">globalValue</span><span style="color: #000000"> = { </span><span style="color: #A31515">&quot;b&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;c&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">4</span><span style="color: #000000"> };</span>
 <span style="color: #001080">value</span><span style="color: #000000"> = { </span><span style="color: #A31515">&quot;a&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;b&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;c&quot;</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #098658">4</span><span style="color: #000000"> };</span>
 </code></pre>
-					<p><em>Note:</em> Workspace and Workspace Folder configurations contains <code>launch</code> and <code>tasks</code> settings. Their basename will be
-						part of the section identifier. The following snippets shows how to retrieve all configurations
-					from <code>launch.json</code>:</p>
-					<pre><code class="language-ts"><span style="color: #008000">// launch.json configuration</span>
+<p><em>Note:</em> Workspace and Workspace Folder configurations contains <code>launch</code> and <code>tasks</code> settings. Their basename will be
+part of the section identifier. The following snippets shows how to retrieve all configurations
+from <code>launch.json</code>:</p>
+<pre><code class="language-ts"><span style="color: #008000">// launch.json configuration</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">config</span><span style="color: #000000"> = </span><span style="color: #001080">workspace</span><span style="color: #000000">.</span><span style="color: #795E26">getConfiguration</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;launch&#039;</span><span style="color: #000000">, </span><span style="color: #001080">vscode</span><span style="color: #000000">.</span><span style="color: #001080">workspace</span><span style="color: #000000">.</span><span style="color: #001080">workspaceFolders</span><span style="color: #000000">[</span><span style="color: #098658">0</span><span style="color: #000000">].</span><span style="color: #001080">uri</span><span style="color: #000000">);</span>
 
 <span style="color: #008000">// retrieve values</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">values</span><span style="color: #000000"> = </span><span style="color: #001080">config</span><span style="color: #000000">.</span><span style="color: #795E26">get</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;configurations&#039;</span><span style="color: #000000">);</span>
 </code></pre>
-					<p>Refer to <a href="https://code.visualstudio.com/docs/getstarted/settings">Settings</a> for more information.</p>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">WorkspaceConfiguration</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-namespace">
-				<h3 class="tsd-before-signature">Indexable</h3>
-				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Readable dictionary that backs this configuration.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Methods（4）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="vscode.WorkspaceConfiguration.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.WorkspaceConfiguration.html#has" class="tsd-kind-icon">has</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="vscode.WorkspaceConfiguration.html#inspect" class="tsd-kind-icon">inspect</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.WorkspaceConfiguration.html#update" class="tsd-kind-icon">update</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（4）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>get</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></li>
-						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6453">vscode.d.ts:6453</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Return a value from this configuration.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>section: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Configuration name, supports <em>dotted</em> names.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></h4>
-							<p>The value <code>section</code> denotes or <code>undefined</code>.</p>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6462">vscode.d.ts:6462</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Return a value from this configuration.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>section: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Configuration name, supports <em>dotted</em> names.</p>
-									</div>
-								</li>
-								<li>
-									<h5>defaultValue: <span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A value should be returned when no value could be found, is <code>undefined</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-							<p>The value <code>section</code> denotes or the default.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="has" class="tsd-anchor"></a>
-					<h3>has</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">has<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6470">vscode.d.ts:6470</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Check if this configuration has a certain value.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>section: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Configuration name, supports <em>dotted</em> names.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p><code>true</code> if the section doesn&#39;t resolve to <code>undefined</code>.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<a name="inspect" class="tsd-anchor"></a>
-					<h3>inspect</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">inspect&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>globalValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceFolderValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>defaultLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>globalLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceFolderLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>languageIds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6486">vscode.d.ts:6486</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Retrieve all information about a configuration setting. A configuration value
-										often consists of a <em>default</em> value, a global or installation-wide value,
-										a workspace-specific value, folder-specific value
-									and language-specific values (if <a href="vscode.WorkspaceConfiguration.html">WorkspaceConfiguration</a> is scoped to a language).</p>
-								</div>
-								<p>Also provides all language ids under which the given configuration setting is defined.</p>
-								<p><em>Note:</em> The configuration name must denote a leaf in the configuration tree
-								(<code>editor.fontSize</code> vs <code>editor</code>) otherwise no result is returned.</p>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>section: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Configuration name, supports <em>dotted</em> names.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>globalValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceFolderValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>defaultLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>globalLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceFolderLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>languageIds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h4>
-							<p>Information about a configuration setting or <code>undefined</code>.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="update" class="tsd-anchor"></a>
-					<h3>update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, configurationTarget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../enums/vscode.ConfigurationTarget.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConfigurationTarget</a>, overrideInLanguage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L6569">vscode.d.ts:6569</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Update a configuration value. The updated configuration values are persisted.</p>
-								</div>
-								<p>A value can be changed in</p>
-								<ul>
-									<li><a href="../enums/vscode.ConfigurationTarget.html#Global">Global settings</a>: Changes the value for all instances of the editor.</li>
-									<li><a href="../enums/vscode.ConfigurationTarget.html#Workspace">Workspace settings</a>: Changes the value for current workspace, if available.</li>
-									<li><a href="../enums/vscode.ConfigurationTarget.html#WorkspaceFolder">Workspace folder settings</a>: Changes the value for settings from one of the <a href="../modules/vscode.workspace.html#workspaceFolders">Workspace Folders</a> under which the requested resource belongs to.</li>
-									<li>Language settings: Changes the value for the requested languageId.</li>
-								</ul>
-								<p><em>Note:</em> To remove a configuration value use <code>undefined</code>, like so: <code>config.update(&#39;somekey&#39;, undefined)</code></p>
-								<dl class="tsd-comment-tags">
-									<dt>throws</dt>
-									<dd><p>error while updating
-											- configuration which is not registered.
-											- window configuration to workspace folder
-											- configuration to workspace or workspace folder when no workspace is opened.
-											- configuration to workspace folder when there is no workspace folder settings.
-										- configuration to workspace folder when <a href="vscode.WorkspaceConfiguration.html">WorkspaceConfiguration</a> is not scoped to a resource.</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>section: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Configuration name, supports <em>dotted</em> names.</p>
-									</div>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The new value.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> configurationTarget: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../enums/vscode.ConfigurationTarget.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConfigurationTarget</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The <a href="../enums/vscode.ConfigurationTarget.html">configuration target</a> or a boolean value.
-											- If <code>true</code> updates <a href="../enums/vscode.ConfigurationTarget.html#Global">Global settings</a>.
-											- If <code>false</code> updates <a href="../enums/vscode.ConfigurationTarget.html#Workspace">Workspace settings</a>.
-											- If <code>undefined</code> or <code>null</code> updates to <a href="../enums/vscode.ConfigurationTarget.html#WorkspaceFolder">Workspace folder settings</a> if configuration is resource specific,
-										otherwise to <a href="../enums/vscode.ConfigurationTarget.html#Workspace">Workspace settings</a>.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> overrideInLanguage: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Whether to update the value in the scope of requested languageId or not.
-											- If <code>true</code> updates the value under the requested languageId.
-										- If <code>undefined</code> updates the value under the requested languageId only if the configuration is defined for the language.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<p>Refer to <a href="https://code.visualstudio.com/docs/getstarted/settings">Settings</a> for more information.</p>
+
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">WorkspaceConfiguration</span>
+
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+    <section class="tsd-panel tsd-kind-interface tsd-parent-kind-namespace">
+        <h3 class="tsd-before-signature">Indexable</h3>
+        <div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
+
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Readable dictionary that backs this configuration.</p>
+
+                </div>
+        </div>
+
+    </section>
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section ">
+                            <h3>Methods（4）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="vscode.WorkspaceConfiguration.html#get" class="tsd-kind-icon">get</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.WorkspaceConfiguration.html#has" class="tsd-kind-icon">has</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="vscode.WorkspaceConfiguration.html#inspect" class="tsd-kind-icon">inspect</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.WorkspaceConfiguration.html#update" class="tsd-kind-icon">update</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（4）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+    <a name="get" class="tsd-anchor"></a>
+        <h3>get</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+        <li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></li>
+        <li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6453">vscode.d.ts:6453</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Return a value from this configuration.</p>
+
+                </div>
+        </div>
+
+    <h4 class="tsd-type-parameters-title">Type parameters</h4>
+    <ul class="tsd-type-parameters">
+        <li>
+            <h4>T</h4>
+                    </li>
+</ul>
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>section: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Configuration name, supports <em>dotted</em> names.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></h4>
+
+        <p>The value <code>section</code> denotes or <code>undefined</code>.</p>
+
+
+        </li>
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6462">vscode.d.ts:6462</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Return a value from this configuration.</p>
+
+                </div>
+        </div>
+
+    <h4 class="tsd-type-parameters-title">Type parameters</h4>
+    <ul class="tsd-type-parameters">
+        <li>
+            <h4>T</h4>
+                    </li>
+</ul>
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>section: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Configuration name, supports <em>dotted</em> names.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>defaultValue: <span class="tsd-signature-type">T</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>A value should be returned when no value could be found, is <code>undefined</code>.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+
+        <p>The value <code>section</code> denotes or the default.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="has" class="tsd-anchor"></a>
+        <h3>has</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+        <li class="tsd-signature tsd-kind-icon">has<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6470">vscode.d.ts:6470</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Check if this configuration has a certain value.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>section: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Configuration name, supports <em>dotted</em> names.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+
+        <p><code>true</code> if the section doesn&#39;t resolve to <code>undefined</code>.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+    <a name="inspect" class="tsd-anchor"></a>
+        <h3>inspect</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+        <li class="tsd-signature tsd-kind-icon">inspect&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>globalValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceFolderValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>defaultLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>globalLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceFolderLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>languageIds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6486">vscode.d.ts:6486</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Retrieve all information about a configuration setting. A configuration value
+often consists of a <em>default</em> value, a global or installation-wide value,
+a workspace-specific value, folder-specific value
+and language-specific values (if <a href="vscode.WorkspaceConfiguration.html">WorkspaceConfiguration</a> is scoped to a language).</p>
+
+                </div>
+                <p>Also provides all language ids under which the given configuration setting is defined.</p>
+<p><em>Note:</em> The configuration name must denote a leaf in the configuration tree
+(<code>editor.fontSize</code> vs <code>editor</code>) otherwise no result is returned.</p>
+
+        </div>
+
+    <h4 class="tsd-type-parameters-title">Type parameters</h4>
+    <ul class="tsd-type-parameters">
+        <li>
+            <h4>T</h4>
+                    </li>
+</ul>
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>section: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Configuration name, supports <em>dotted</em> names.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>globalValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceFolderValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>defaultLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>globalLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>workspaceFolderLanguageValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>languageIds<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h4>
+
+        <p>Information about a configuration setting or <code>undefined</code>.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="update" class="tsd-anchor"></a>
+        <h3>update</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+        <li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, configurationTarget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../enums/vscode.ConfigurationTarget.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConfigurationTarget</a>, overrideInLanguage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L6569">vscode.d.ts:6569</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Update a configuration value. The updated configuration values are persisted.</p>
+
+                </div>
+                <p>A value can be changed in</p>
+<ul>
+<li><a href="../enums/vscode.ConfigurationTarget.html#Global">Global settings</a>: Changes the value for all instances of the editor.</li>
+<li><a href="../enums/vscode.ConfigurationTarget.html#Workspace">Workspace settings</a>: Changes the value for current workspace, if available.</li>
+<li><a href="../enums/vscode.ConfigurationTarget.html#WorkspaceFolder">Workspace folder settings</a>: Changes the value for settings from one of the <a href="../modules/vscode.workspace.html#workspaceFolders">Workspace Folders</a> under which the requested resource belongs to.</li>
+<li>Language settings: Changes the value for the requested languageId.</li>
+</ul>
+<p><em>Note:</em> To remove a configuration value use <code>undefined</code>, like so: <code>config.update(&#39;somekey&#39;, undefined)</code></p>
+
+                <dl class="tsd-comment-tags">
+                        <dt>throws</dt>
+                        <dd><p>error while updating
+    - configuration which is not registered.
+    - window configuration to workspace folder
+    - configuration to workspace or workspace folder when no workspace is opened.
+    - configuration to workspace folder when there is no workspace folder settings.
+    - configuration to workspace folder when <a href="vscode.WorkspaceConfiguration.html">WorkspaceConfiguration</a> is not scoped to a resource.</p>
+</dd>
+                </dl>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>section: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Configuration name, supports <em>dotted</em> names.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>value: <span class="tsd-signature-type">any</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The new value.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> configurationTarget: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../enums/vscode.ConfigurationTarget.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConfigurationTarget</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The <a href="../enums/vscode.ConfigurationTarget.html">configuration target</a> or a boolean value.
+    - If <code>true</code> updates <a href="../enums/vscode.ConfigurationTarget.html#Global">Global settings</a>.
+    - If <code>false</code> updates <a href="../enums/vscode.ConfigurationTarget.html#Workspace">Workspace settings</a>.
+    - If <code>undefined</code> or <code>null</code> updates to <a href="../enums/vscode.ConfigurationTarget.html#WorkspaceFolder">Workspace folder settings</a> if configuration is resource specific,
+    otherwise to <a href="../enums/vscode.ConfigurationTarget.html#Workspace">Workspace settings</a>.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> overrideInLanguage: <span class="tsd-signature-type">boolean</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Whether to update the value in the scope of requested languageId or not.
+    - If <code>true</code> updates the value under the requested languageId.
+    - If <code>undefined</code> updates the value under the requested languageId only if the configuration is defined for the language.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="Thenable.html" class="tsd-signature-type" data-tsd-kind="Interface">Thenable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

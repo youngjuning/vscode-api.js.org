@@ -117,427 +117,592 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556" data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A collection of mutations that an extension can apply to a process environment. Applies to all scopes.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">GlobalEnvironmentVariableCollection</span>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
-							<h3>Properties（2）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#persistent" class="tsd-kind-icon">persistent</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#description" class="tsd-kind-icon">description</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods（8）</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#replace" class="tsd-kind-icon">replace</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#append" class="tsd-kind-icon">append</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#prepend" class="tsd-kind-icon">prepend</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#forEach" class="tsd-kind-icon">for<wbr>Each</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#delete" class="tsd-kind-icon">delete</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#clear" class="tsd-kind-icon">clear</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.GlobalEnvironmentVariableCollection.html#getScoped" class="tsd-kind-icon">get<wbr>Scoped</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
-				<h2>Properties（2）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="persistent" class="tsd-anchor"></a>
-					<h3>persistent</h3>
-					<div class="tsd-signature tsd-kind-icon">persistent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#persistent">persistent</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L12130">vscode.d.ts:12130</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether the collection should be cached for the workspace and applied to the terminal
-								across window reloads. When true the collection will be active immediately such when the
-								window reloads. Additionally, this API will return the cached version if it exists. The
-								collection will be invalidated when the extension is uninstalled or when the collection
-							is cleared. Defaults to true.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="description" class="tsd-anchor"></a>
-					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#description">description</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L12136">vscode.d.ts:12136</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A description for the environment variable collection, this will be used to describe the
-							changes in the UI.</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods（8）</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="replace" class="tsd-anchor"></a>
-					<h3>replace</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">replace<span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#replace">replace</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L12149">vscode.d.ts:12149</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Replace an environment variable with a value.</p>
-								</div>
-								<p>Note that an extension can only make a single change to any one variable, so this will
-								overwrite any previous calls to replace, append or prepend.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>variable: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The variable to replace.</p>
-									</div>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The value to replace the variable with.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Options applied to the mutator, when no options are provided this will
-										default to <code>{ applyAtProcessCreation: true }</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="append" class="tsd-anchor"></a>
-					<h3>append</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">append<span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#append">append</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L12162">vscode.d.ts:12162</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Append a value to an environment variable.</p>
-								</div>
-								<p>Note that an extension can only make a single change to any one variable, so this will
-								overwrite any previous calls to replace, append or prepend.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>variable: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The variable to append to.</p>
-									</div>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The value to append to the variable.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Options applied to the mutator, when no options are provided this will
-										default to <code>{ applyAtProcessCreation: true }</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="prepend" class="tsd-anchor"></a>
-					<h3>prepend</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">prepend<span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#prepend">prepend</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L12175">vscode.d.ts:12175</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Prepend a value to an environment variable.</p>
-								</div>
-								<p>Note that an extension can only make a single change to any one variable, so this will
-								overwrite any previous calls to replace, append or prepend.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>variable: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The variable to prepend.</p>
-									</div>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The value to prepend to the variable.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Options applied to the mutator, when no options are provided this will
-										default to <code>{ applyAtProcessCreation: true }</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>get</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#get">get</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L12182">vscode.d.ts:12182</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets the mutator that this collection applies to a variable, if any.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>variable: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The variable to get the mutator for.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="forEach" class="tsd-anchor"></a>
-					<h3>for<wbr>Each</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">for<wbr>Each<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mutator<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a>, collection<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#forEach">forEach</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L12190">vscode.d.ts:12190</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Iterate over each mutator in this collection.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mutator<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a>, collection<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Function to execute for each entry.</p>
-									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-signature">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mutator<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a>, collection<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>variable: <span class="tsd-signature-type">string</span></h5>
-														</li>
-														<li>
-															<h5>mutator: <a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a></h5>
-														</li>
-														<li>
-															<h5>collection: <a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The <code>this</code> context used when invoking the handler function.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="delete" class="tsd-anchor"></a>
-					<h3>delete</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#delete">delete</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L12197">vscode.d.ts:12197</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Deletes this collection&#39;s mutator for a variable.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>variable: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The variable to delete the mutator for.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="clear" class="tsd-anchor"></a>
-					<h3>clear</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#clear">clear</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L12202">vscode.d.ts:12202</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Clears all mutators from this collection.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="getScoped" class="tsd-anchor"></a>
-					<h3>get<wbr>Scoped</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Scoped<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableScope.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/5882dd1/vscode.d.ts#L12225">vscode.d.ts:12225</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets scope-specific environment variable collection for the extension. This enables alterations to
-										terminal environment variables solely within the designated scope, and is applied in addition to (and
-									after) the global collection.</p>
-								</div>
-								<p>Each object obtained through this method is isolated and does not impact objects for other scopes,
-								including the global collection.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>scope: <a href="vscode.EnvironmentVariableScope.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableScope</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The scope to which the environment variable collection applies to.</p>
-										<p>If a scope parameter is omitted, collection applicable to all relevant scopes for that parameter is
-											returned. For instance, if the &#39;workspaceFolder&#39; parameter is not specified, the collection that applies
-										across all workspace folders will be returned.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a></h4>
-							<p>Environment variable collection for the passed in scope.</p>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="5596588097"  data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>
+                    <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A collection of mutations that an extension can apply to a process environment. Applies to all scopes.</p>
+
+                </div>
+        </div>
+        </section>
+
+
+    <section class="tsd-panel tsd-hierarchy">
+        <h3>Hierarchy</h3>
+        <ul class="tsd-hierarchy">
+        <li>
+                <a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a>
+
+                    <ul class="tsd-hierarchy">
+        <li>
+                <span class="target">GlobalEnvironmentVariableCollection</span>
+
+        </li>
+</ul>
+        </li>
+</ul>
+
+    </section>
+
+
+
+
+
+        <section class="tsd-panel-group tsd-index-group">
+        <h2>Index</h2>
+        <section class="tsd-panel tsd-index-panel">
+            <div class="tsd-index-content">
+                    <section class="tsd-index-section tsd-is-inherited">
+                            <h3>Properties（2）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#persistent" class="tsd-kind-icon">persistent</a></li>
+                                    <li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#description" class="tsd-kind-icon">description</a></li>
+                            </ul>
+                    </section>
+                    <section class="tsd-index-section ">
+                            <h3>Methods（8）</h3>
+                            <ul class="tsd-index-list">
+                                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#replace" class="tsd-kind-icon">replace</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#append" class="tsd-kind-icon">append</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#prepend" class="tsd-kind-icon">prepend</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#get" class="tsd-kind-icon">get</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#forEach" class="tsd-kind-icon">for<wbr>Each</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#delete" class="tsd-kind-icon">delete</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="vscode.GlobalEnvironmentVariableCollection.html#clear" class="tsd-kind-icon">clear</a></li>
+                                    <li class="tsd-kind-method tsd-parent-kind-interface"><a href="vscode.GlobalEnvironmentVariableCollection.html#getScoped" class="tsd-kind-icon">get<wbr>Scoped</a></li>
+                            </ul>
+                    </section>
+            </div>
+        </section>
+    </section>
+                    <section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+        <h2>Properties（2）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+    <a name="persistent" class="tsd-anchor"></a>
+        <h3>persistent</h3>
+
+        <div class="tsd-signature tsd-kind-icon">persistent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+
+<aside class="tsd-sources">
+        <p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#persistent">persistent</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L12130">vscode.d.ts:12130</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Whether the collection should be cached for the workspace and applied to the terminal
+across window reloads. When true the collection will be active immediately such when the
+window reloads. Additionally, this API will return the cached version if it exists. The
+collection will be invalidated when the extension is uninstalled or when the collection
+is cleared. Defaults to true.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+    <a name="description" class="tsd-anchor"></a>
+        <h3>description</h3>
+
+        <div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../classes/vscode.MarkdownString.html" class="tsd-signature-type" data-tsd-kind="Class">MarkdownString</a></div>
+
+<aside class="tsd-sources">
+        <p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#description">description</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L12136">vscode.d.ts:12136</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>A description for the environment variable collection, this will be used to describe the
+changes in the UI.</p>
+
+                </div>
+        </div>
+
+
+    
+
+</section>
+    </section>
+                <section class="tsd-panel-group tsd-member-group ">
+        <h2>Methods（8）</h2>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+    <a name="replace" class="tsd-anchor"></a>
+        <h3>replace</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+        <li class="tsd-signature tsd-kind-icon">replace<span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#replace">replace</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L12149">vscode.d.ts:12149</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Replace an environment variable with a value.</p>
+
+                </div>
+                <p>Note that an extension can only make a single change to any one variable, so this will
+overwrite any previous calls to replace, append or prepend.</p>
+
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>variable: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The variable to replace.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>value: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The value to replace the variable with.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Options applied to the mutator, when no options are provided this will
+default to <code>{ applyAtProcessCreation: true }</code>.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+    <a name="append" class="tsd-anchor"></a>
+        <h3>append</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+        <li class="tsd-signature tsd-kind-icon">append<span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#append">append</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L12162">vscode.d.ts:12162</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Append a value to an environment variable.</p>
+
+                </div>
+                <p>Note that an extension can only make a single change to any one variable, so this will
+overwrite any previous calls to replace, append or prepend.</p>
+
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>variable: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The variable to append to.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>value: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The value to append to the variable.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Options applied to the mutator, when no options are provided this will
+default to <code>{ applyAtProcessCreation: true }</code>.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+    <a name="prepend" class="tsd-anchor"></a>
+        <h3>prepend</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+        <li class="tsd-signature tsd-kind-icon">prepend<span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#prepend">prepend</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L12175">vscode.d.ts:12175</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Prepend a value to an environment variable.</p>
+
+                </div>
+                <p>Note that an extension can only make a single change to any one variable, so this will
+overwrite any previous calls to replace, append or prepend.</p>
+
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>variable: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The variable to prepend.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5>value: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The value to prepend to the variable.</p>
+
+        </div>
+
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="vscode.EnvironmentVariableMutatorOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutatorOptions</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Options applied to the mutator, when no options are provided this will
+default to <code>{ applyAtProcessCreation: true }</code>.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+    <a name="get" class="tsd-anchor"></a>
+        <h3>get</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+        <li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#get">get</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L12182">vscode.d.ts:12182</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Gets the mutator that this collection applies to a variable, if any.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>variable: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The variable to get the mutator for.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+    <a name="forEach" class="tsd-anchor"></a>
+        <h3>for<wbr>Each</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+        <li class="tsd-signature tsd-kind-icon">for<wbr>Each<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mutator<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a>, collection<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#forEach">forEach</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L12190">vscode.d.ts:12190</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Iterate over each mutator in this collection.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>callback: <span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mutator<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a>, collection<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>Function to execute for each entry.</p>
+
+        </div>
+
+                        <ul class="tsd-parameters">
+        <li class="tsd-parameter-signature">
+            <ul class="tsd-signatures tsd-kind-type-literal">
+                    <li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, mutator<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a>, collection<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+            </ul>
+
+            <ul class="tsd-descriptions">
+                    <li class="tsd-description">
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>variable: <span class="tsd-signature-type">string</span></h5>
+
+                
+            </li>
+            <li>
+                <h5>mutator: <a href="vscode.EnvironmentVariableMutator.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableMutator</a></h5>
+
+                
+            </li>
+            <li>
+                <h5>collection: <a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a></h5>
+
+                
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+
+
+</li>
+            </ul>
+        </li>
+</ul>
+            </li>
+            <li>
+                <h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The <code>this</code> context used when invoking the handler function.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+    <a name="delete" class="tsd-anchor"></a>
+        <h3>delete</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+        <li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>variable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#delete">delete</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L12197">vscode.d.ts:12197</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Deletes this collection&#39;s mutator for a variable.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>variable: <span class="tsd-signature-type">string</span></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The variable to delete the mutator for.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+    <a name="clear" class="tsd-anchor"></a>
+        <h3>clear</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+        <li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <p>Inherited from <a href="vscode.EnvironmentVariableCollection.html">EnvironmentVariableCollection</a>.<a href="vscode.EnvironmentVariableCollection.html#clear">clear</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L12202">vscode.d.ts:12202</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Clears all mutators from this collection.</p>
+
+                </div>
+        </div>
+
+
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+    <a name="getScoped" class="tsd-anchor"></a>
+        <h3>get<wbr>Scoped</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+        <li class="tsd-signature tsd-kind-icon">get<wbr>Scoped<span class="tsd-signature-symbol">(</span>scope<span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableScope.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableScope</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/youngjuning/vscode-api.js.org/blob/a8b76e8/vscode.d.ts#L12225">vscode.d.ts:12225</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Gets scope-specific environment variable collection for the extension. This enables alterations to
+terminal environment variables solely within the designated scope, and is applied in addition to (and
+after) the global collection.</p>
+
+                </div>
+                <p>Each object obtained through this method is isolated and does not impact objects for other scopes,
+including the global collection.</p>
+
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>scope: <a href="vscode.EnvironmentVariableScope.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableScope</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>The scope to which the environment variable collection applies to.</p>
+<p>If a scope parameter is omitted, collection applicable to all relevant scopes for that parameter is
+returned. For instance, if the &#39;workspaceFolder&#39; parameter is not specified, the collection that applies
+across all workspace folders will be returned.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <a href="vscode.EnvironmentVariableCollection.html" class="tsd-signature-type" data-tsd-kind="Interface">EnvironmentVariableCollection</a></h4>
+
+        <p>Environment variable collection for the passed in scope.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+    </section>
+
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5641491107630454" data-ad-slot="1206633556"data-page-url="https://www.nablepart.com" data-override-format="true" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">

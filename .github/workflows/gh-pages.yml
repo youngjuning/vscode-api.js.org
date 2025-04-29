@@ -16,6 +16,7 @@ jobs:
       - run: mv game/ docs/
       - run: mv beauty/ docs/
       - run: mv puzzle/ docs/
+      - run: mv sports/ docs/
       - run: node sitemap.js
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

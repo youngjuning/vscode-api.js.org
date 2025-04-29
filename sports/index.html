@@ -7,7 +7,7 @@
   <meta name="description" content="We've a collection of impressively addicting games for you to enjoy your free time playing the
     stylish free games online,we work to give you with a free and addicting fun game
     experience soon we will have our exclusive games sector with surprise and always free.">
-  <title>Aoki Puzzle Games</title>
+  <title>Aoki Sports Games</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/type.css">
   <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/youngjuning/images@main/1742301937620.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
@@ -178,7 +178,7 @@
         title: '',
         type: 'null',
         list: [],
-        gameChannelId: 0,
+        gameChannelId: 0
       }
     },
     created() {
@@ -190,14 +190,14 @@
     methods: {
       init() {
         window.addEventListener("scroll", debounce(handleScroll, 500), true)
-        this.title = 'Puzzle'
+        this.title = 'Sports'
       },
       getList() {
         axios({
           method: 'post',
           url: 'https://www.migame.vip/gamefront/gameList/SelectGameByGameType',
           data: {
-            gameTypeId: 2,
+            gameTypeId: 4,
             page: 1,
             limit: 30
           }

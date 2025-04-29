@@ -4,14 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="We've a collection of impressively addicting games for you to enjoy your free time playing the
-    stylish free games online,we work to give you with a free and addicting fun game
-    experience soon we will have our exclusive games sector with surprise and always free.">
-  <title>Aoki Puzzle Games</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/type.css">
-  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/youngjuning/images@main/1742301937620.png" type="image/x-icon">
+  <meta name="description"
+    content="We've a collection of impressively addicting games for you to enjoy your free time playing the stylish free games online,we work to give you with a free and addicting fun game experience soon we will have our exclusive games sector with surprise and always free.">
+  <title>Aoki H5 Games</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/detail.css">
   <link href="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/style2.css">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/youngjuning/images@main/1742301937620.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/header/reset.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/header/swiper.min.css" />
   <link rel="stylesheet" type="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/header/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
@@ -28,6 +27,16 @@
           <a :href="`index.html?gameChannelId=${gameChannelId}`"><img src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/logo.png" alt="" class="img1" /></a>
           <a :href="`index.html?gameChannelId=${gameChannelId}`"><img src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/logo.png" alt="" class="img2" /></a>
         </div>
+        <div class="fr nav">
+          <ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
+            <li class="active" v-for="cate in categories" :key="cate.id">
+              <a :href="handleToType(cate)">{{cate.name}}</a>
+            </li>
+          </ul>
+        </div>
+        <a href="javascript:void(0)" id="navToggle">
+          <span></span>
+        </a>
       </div>
     </header>
     <!--移动端的导航-->
@@ -38,43 +47,44 @@
       <div class="logo">
         <img src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/logo.png" alt="" />
       </div>
+      <ul class="ul" data-in="fadeInDown" data-out="fadeOutUp">
+        <li class="active" v-for="cate in categories" :key="cate.id">
+          <a :href="handleToType(cate)">{{cate.name}}</a>
+        </li>
+      </ul>
     </div>
+    <div style="height: 60px;"></div>
+    <center>
+      <!-- game_detail_top -->
+			<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-7962287588031867"
+			data-ad-slot="7216948334"
+			data-ad-format="auto"
+			data-full-width-responsive="true"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+    </center>
     <main>
+      <section class="game">
+        <div class="game-detail">
+          <div class="game-left">
+            <img class="game-logo_img img-load" src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/loading.svg" :data-src="detail.gameLogo"
+              :alt="detail.gameName">
+          </div>
+          <div class="game-right">
+            <div class="game-name">{{detail.gameName}}</div>
+            <p class="game-desc">{{detail.gameDesc}}</p>
+            <a class="game-button disabled" href="javascript:;" v-if="disabled">PLAY NOW</a>
+            <a class="game-button" :href="handleToPlay()" v-else>PLAY NOW</a>
+          </div>
+        </div>
+      </section>
       <section class="section">
-        <center>
-					<!-- game_index_1 -->
-					<ins class="adsbygoogle"
-					style="display:block"
-					data-ad-client="ca-pub-7962287588031867"
-					data-ad-slot="6965682803"
-					data-ad-format="auto"
-					data-full-width-responsive="true"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</center>
         <div class="container">
           <div class="row">
-            <div class="col-12">
-              <div class="section-title text-center mb-4">
-                <h4 class="title">{{title}}</h4>
-              </div>
-            </div>
-          </div>
-					<center>
-						<!-- game_index_2 -->
-						<ins class="adsbygoogle"
-						style="display:block"
-						data-ad-client="ca-pub-7962287588031867"
-						data-ad-slot="8566539081"
-						data-ad-format="auto"
-						data-full-width-responsive="true"></ins>
-						<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-					</center>
-          <div class="row">
-            <div class="col-lg-3 mt-4 pt-2" v-for="item in list" :key="item.gameId">
+            <div class="col-lg-3 mt-4 pt-2" v-for="item in detail.gameListIndexVos" :key="item.gameId">
               <a :href="handleToDetail(item.gameId, 'Popular')">
                 <div class="position-relative overflow-hidden blog  rounded shadow">
                   <div class="position-relative overflow-hidden">
@@ -104,6 +114,84 @@
     </main>
   </div>
 	<style>
+    .game-detail {
+      background-color: #f0f0f0;
+    }
+
+    .game-detail .game-right {
+      margin-left: 30px;
+      flex: 1;
+    }
+
+    @media (max-width: 600px) {
+      .game-detail {
+        flex-wrap: wrap;
+      }
+
+      .game-left {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+
+    .game-detail .game-left {
+      width: 300px;
+      height: 300px;
+    }
+
+    .titleimage {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center;
+      margin: 30px 0;
+      font-size: 40px !important;
+    }
+
+    .titleicons {
+      margin-right: 10px;
+      display: flex !important;
+      align-items: center !important;
+    }
+
+    .content-title img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .games-item_a .games-item_img {
+      height: auto !important;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .title-text {
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .title-overflow {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .categories a {
+      font-size: 26px !important;
+    }
+
+    .categories {
+      flex: 1 !important;
+      display: flex;
+      justify-content: center;
+    }
+
+    header {
+      background: url(https://www.4399.com/images/h5xyx/top-mask.png) repeat-x;
+    }
+
     .content {
       background-color: #fff;
     }
@@ -174,15 +262,45 @@
     el: '#app',
     data() {
       return {
+        disabled: true,
         showCate: false,
-        title: '',
         type: 'null',
-        list: [],
+        detail: {},
         gameChannelId: 0,
+        categories: [
+          {
+            name: 'Beauty',
+            id: 1
+          },
+          {
+            name: 'Puzzle',
+            id: 2
+          },
+          {
+            name: 'Sports',
+            id: 4
+          },
+          {
+            name: 'New',
+            id: 5
+          },
+          {
+            name: 'Action',
+            id: 8
+          },
+          {
+            name: 'Best',
+            id: 14
+          },
+          {
+            name: 'Home',
+            id: 15
+          },
+        ]
       }
     },
     created() {
-      this.getList()
+      this.getDetail()
     },
     mounted() {
       this.init()
@@ -190,23 +308,34 @@
     methods: {
       init() {
         window.addEventListener("scroll", debounce(handleScroll, 500), true)
-        this.title = 'Puzzle'
+        this.type = getQueryVariable('type') ? getQueryVariable('type') : null
       },
-      getList() {
+      handleToPlay() {
+        return `play.html?gameChannelId=${this.gameChannelId}&gameFileName=${this.detail.gameFileName}`
+      },
+      getDetail() {
+        const gameId = getQueryVariable('gameId') ? getQueryVariable('gameId') : 1506
         axios({
-          method: 'post',
-          url: 'https://www.migame.vip/gamefront/gameList/SelectGameByGameType',
+          method: "post",
+          url: "https://www.migame.vip/gamefront/gameList/tempGameDetails",
           data: {
-            gameTypeId: 2,
-            page: 1,
-            limit: 30
+            gameChannelId: this.gameChannelId,
+            gameId
           }
         }).then(res => {
-          this.list.push(...res.data.data)
+          this.detail = res.data.data
+          this.disabled = false
+          this.gameSrc = `https://www.datinginfo.top/game/index.html?gameFileName=${this.detail.gameFileName}/`
           this.$nextTick(() => {
             handleScroll()
           })
         })
+      },
+      handleToType({
+        id,
+        name
+      }) {
+        return `type.html?type=${id}&typeName=${name}&gameChannelId=${this.gameChannelId}`;
       },
       handleToDetail(gameId, type) {
         return `detail.html?gameId=${gameId}&gameChannelId=${this.gameChannelId}&type=${type}`

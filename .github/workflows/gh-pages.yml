@@ -14,6 +14,7 @@ jobs:
       - run: mv robots.txt docs/
       - run: mv ads.txt docs/
       - run: mv game/ docs/
+      - run: mv beauty/ docs/
       - run: node sitemap.js
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

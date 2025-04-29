@@ -15,33 +15,6 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/header/swiper.min.css" />
 		<link rel="stylesheet" type="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/header/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/css/header/head.css" />
-    <style>
-      .content{
-        background-color: #fff;
-      }
-      .play-imgs {
-        cursor: pointer;
-        position: absolute;
-        right: 0;
-      }
-
-      .play-imgs img {
-        width: 50px;
-      }
-
-      .img-fluid {
-        width: 100%;
-      }
-
-      .score-icon {
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        background-image: url(https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/start.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-    </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7962287588031867" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -84,7 +57,15 @@
           <div class="container">
             <center>
               <!-- game_index_1 -->
-              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="6965682803" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+							<ins class="adsbygoogle"
+							style="display:block"
+							data-ad-client="ca-pub-7962287588031867"
+							data-ad-slot="6965682803"
+							data-ad-format="auto"
+							data-full-width-responsive="true"></ins>
+							<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
             </center>
 						<div class="row">
 							<div class="col-12">
@@ -95,8 +76,16 @@
 						</div>
 						<div class="row">
               <center>
-                <!-- game_index_2 -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867" data-ad-slot="8566539081" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+								<!-- game_index_2 -->
+								<ins class="adsbygoogle"
+								style="display:block"
+								data-ad-client="ca-pub-7962287588031867"
+								data-ad-slot="8566539081"
+								data-ad-format="auto"
+								data-full-width-responsive="true"></ins>
+								<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
               </center>
 							<div class="col-lg-3 mt-4 pt-2" v-for="item in popular" :key="item.gameId">
 								<a :href="handleToDetail(item.gameId, 'Popular')">
@@ -129,6 +118,33 @@
 				</section>
 			</main>
 		</div>
+		<style>
+      .content{
+        background-color: #fff;
+      }
+      .play-imgs {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+      }
+
+      .play-imgs img {
+        width: 50px;
+      }
+
+      .img-fluid {
+        width: 100%;
+      }
+
+      .score-icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/start.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    </style>
 	</body>
 	<script src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/main.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/js/gameData.js"></script>

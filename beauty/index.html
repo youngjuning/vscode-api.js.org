@@ -179,35 +179,6 @@
         type: 'null',
         list: [],
         gameChannelId: 0,
-        categories: [{
-          name: 'Beauty',
-          id: 1
-        },
-        {
-          name: 'Puzzle',
-          id: 2
-        },
-        {
-          name: 'Sports',
-          id: 4
-        },
-        {
-          name: 'New',
-          id: 5
-        },
-        {
-          name: 'Action',
-          id: 8
-        },
-        {
-          name: 'Best',
-          id: 14
-        },
-        {
-          name: 'Home',
-          id: 15
-        },
-        ]
       }
     },
     created() {
@@ -222,12 +193,11 @@
         this.title = 'Beauty'
       },
       getList() {
-        const type = 1
         axios({
           method: 'post',
           url: 'https://www.migame.vip/gamefront/gameList/SelectGameByGameType',
           data: {
-            gameTypeId: type,
+            gameTypeId: 1,
             page: 1,
             limit: 30
           }

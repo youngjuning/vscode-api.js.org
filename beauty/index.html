@@ -41,18 +41,6 @@
     </div>
     <main>
       <section class="section">
-        <center>
-					<!-- game_index_1 -->
-					<ins class="adsbygoogle"
-					style="display:block"
-					data-ad-client="ca-pub-7962287588031867"
-					data-ad-slot="6965682803"
-					data-ad-format="auto"
-					data-full-width-responsive="true"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</center>
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -62,23 +50,19 @@
             </div>
           </div>
 					<center>
-						<!-- game_index_2 -->
+						<!-- game_index_1 -->
 						<ins class="adsbygoogle"
 						style="display:block"
 						data-ad-client="ca-pub-7962287588031867"
-						data-ad-slot="8566539081"
+						data-ad-slot="6965682803"
 						data-ad-format="auto"
 						data-full-width-responsive="true"></ins>
 						<script>
 						(adsbygoogle = window.adsbygoogle || []).push({});
 						</script>
 					</center>
-    <center>
-     <script async="async" data-cfasync="false" src="//pl26583143.profitableratecpm.com/22e6f15dbe5d80449c2ffcaf375eb5ac/invoke.js"></script>
-<div id="container-22e6f15dbe5d80449c2ffcaf375eb5ac"></div>
-    </center>
           <div class="row">
-            <div class="col-lg-3 mt-4 pt-2" v-for="item in list" :key="item.gameId">
+            <div class="col-lg-3 mt-4 pt-2" v-for="(item, index) in list" :key="item.gameId">
               <a :href="handleToDetail(item.gameId, 'Popular')">
                 <div class="position-relative overflow-hidden blog  rounded shadow">
                   <div class="position-relative overflow-hidden">
@@ -101,6 +85,18 @@
                   </div>
                 </div>
               </a>
+							<center v-if="index === 0">
+								<!-- game_index_2 -->
+								<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7962287588031867"
+									data-ad-slot="8566539081" data-ad-format="auto" data-full-width-responsive="true"></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</center>
+							<center v-if="index === 1">
+								<script async="async" data-cfasync="false" src="//pl26583143.profitableratecpm.com/22e6f15dbe5d80449c2ffcaf375eb5ac/invoke.js"></script>
+								<div id="container-22e6f15dbe5d80449c2ffcaf375eb5ac"></div>
+							</center>
             </div>
           </div>
         </div>
@@ -108,35 +104,35 @@
       <script type='text/javascript' src='//pl26585053.profitableratecpm.com/e0/4b/b7/e04bb7b42cc457aae6015a097d8653e6.js'></script>
     </main>
   </div>
-	<style>
-    .content {
-      background-color: #fff;
-    }
-
-    .play-imgs {
-      cursor: pointer;
-      position: absolute;
-      right: 0;
-    }
-
-    .play-imgs img {
-      width: 50px;
-    }
-
-    .img-fluid {
-      width: 100%;
-    }
-
-    .score-icon {
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      background-image: url(https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/start.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  </style>
 </body>
+<style>
+	.content {
+		background-color: #fff;
+	}
+
+	.play-imgs {
+		cursor: pointer;
+		position: absolute;
+		right: 0;
+	}
+
+	.play-imgs img {
+		width: 50px;
+	}
+
+	.img-fluid {
+		width: 100%;
+	}
+
+	.score-icon {
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		background-image: url(https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/start.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+</style>
 <script src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/main.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/js/vue.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/js/axios.min.js"></script>

@@ -36,6 +36,16 @@
 					<a :href="`index.html?gameChannelId=${gameChannelId}`"><img
 							src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/logo.png" alt="" class="img2" /></a>
 				</div>
+				<div class="fr nav">
+					<ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
+						<li class="active" v-for="cate in categories" :key="cate.id">
+							<a :href="handleToType(cate)">{{cate.name}}</a>
+						</li>
+					</ul>
+				</div>
+				<a href="javascript:void(0)" id="navToggle">
+					<span></span>
+				</a>
 			</div>
 		</header>
 		<!--移动端的导航-->
@@ -46,6 +56,11 @@
 			<div class="logo">
 				<img src="https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/logo.png" alt="" />
 			</div>
+			<ul class="ul" data-in="fadeInDown" data-out="fadeOutUp">
+				<li class="active" v-for="cate in categories" :key="cate.id">
+					<a :href="handleToType(cate)">{{cate.name}}</a>
+				</li>
+			</ul>
 		</div>
 		<main>
 			<center>
@@ -74,7 +89,7 @@
 						</script>
 					</center>
 					<div class="row">
-						<div class="col-lg-3 mt-4 pt-2" v-for="(item, index) in list" :key="item.gameId">
+						<div class="col-lg-3 mt-4 pt-2" v-for="(item, index) in popular" :key="item.gameId">
 							<a :href="handleToDetail(item.gameId, 'Popular')">
 								<div class="position-relative overflow-hidden blog  rounded shadow">
 									<div class="position-relative overflow-hidden">
@@ -109,34 +124,6 @@
 				src='//pl26562418.profitableratecpm.com/49/89/a9/4989a90eb2813454416c1bdddec9157e.js'></script>
 		</main>
 	</div>
-	<style>
-		.content {
-			background-color: #fff;
-		}
-
-		.play-imgs {
-			cursor: pointer;
-			position: absolute;
-			right: 0;
-		}
-
-		.play-imgs img {
-			width: 50px;
-		}
-
-		.img-fluid {
-			width: 100%;
-		}
-
-		.score-icon {
-			display: inline-block;
-			width: 24px;
-			height: 24px;
-			background-image: url(https://cdn.jsdelivr.net/gh/youngjuning/cdn@main/poki/imgs/start.svg);
-			background-repeat: no-repeat;
-			background-size: contain;
-		}
-	</style>
 </body>
 <style>
 	.content {
